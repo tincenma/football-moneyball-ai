@@ -1,0 +1,9 @@
+short_name,player_positions,age,value_eur,overall,pace,shooting,passing,dribbling,defending,physic
+Demo Reference,CM,26,50000000,87,74,76,88,86,76,79
+Demo Candidate A,CM,24,12000000,82,73,74,85,83,74,77
+Demo Candidate B,CM,22,9000000,79,69,70,82,81,75,73
+Demo Candidate C,CM,29,15000000,84,64,80,84,80,71,82
+Demo Candidate D,CM,23,7000000,78,78,62,76,75,80,79
+Demo Candidate E,CM,25,10000000,81,73,76,83,84,76,76
+Demo Forward,ST,25,5000000,83,91,88,58,84,34,78
+Demo Defensive Midfielder,CDM,23,5000000,82,68,58,76,70,85,84
