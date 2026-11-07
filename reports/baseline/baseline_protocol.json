@@ -1,0 +1,59 @@
+{
+  "algorithm": "CM + individual budget + maximum age; overall descending; lower value then string fifa_id for ties",
+  "version": "baseline-v1",
+  "cutoff": "2022-09-26",
+  "max_value": 15000000,
+  "max_age": 30.0,
+  "top_k": 5,
+  "age_semantics": "fractional years at cutoff <= max_age",
+  "max_value_age_days": 365,
+  "price_column": "tm_market_value",
+  "currency_assumption": "EUR",
+  "currency_status": "assumed_for_scenario_not_verified_in_TM_archive",
+  "budget_semantics": "per alternative player, not sum across TOP-5",
+  "input_sha256": "858a9db539ae159394d75cb4fc44c86d61f1881a4342c18775a5be7ae6f0e9c2",
+  "excluded_fifa_ids": [],
+  "ranking_columns": [
+    "overall",
+    "tm_market_value",
+    "fifa_id"
+  ],
+  "ranking_ascending": [
+    false,
+    true,
+    true
+  ],
+  "full_pool": {
+    "source_rows": 2886,
+    "eligible_rows": 2153,
+    "returned_rows": 5,
+    "eligible_ids_sha256": "4b43d3922c3e5b36b413b1e98603577ce9919f50b01dbaee325828a807400bb0"
+  },
+  "train_gallery": {
+    "source_rows": 2308,
+    "eligible_rows": 1726,
+    "returned_rows": 5,
+    "eligible_ids_sha256": "17f121e7f99577c11385283887c78acdebd27c10b8207ddba5f03b735615acee"
+  },
+  "validation": {
+    "correct_five_step_algorithm": true,
+    "at_most_top_k": true,
+    "unique_players": true,
+    "exact_cm_token": true,
+    "individual_budget": true,
+    "maximum_fractional_age": true,
+    "no_future_prices": true,
+    "overall_descending": true,
+    "deterministic_under_shuffle": true,
+    "all_selected_ids_eligible": true,
+    "audit_reconciles": true,
+    "train_gallery_only": true
+  },
+  "figures": [
+    "01_baseline_filter_funnel",
+    "02_baseline_top5",
+    "03_baseline_sensitivity"
+  ],
+  "comparison_rule": "ML and baseline must use identical eligible IDs, budget, age, cutoff, top_k and excluded reference IDs",
+  "holdout_status": "already_explored_in_EDA_not_untouched_final_test"
+}

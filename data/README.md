@@ -12,6 +12,8 @@ Step 3 exports `moneyball_features_2022-09-26.csv`, similarity/valuation matrice
 
 Step 4 stores per-player neighbor pairs, affordable candidates, holdout predictions and cluster assignments locally in `data/processed/eda/`. Aggregate metrics, hypothesis summaries and PNG/SVG figures are in `reports/eda/`; interpreted findings are in `docs/eda_findings.md`. Research intervals are conditional on the selected cohort and fixed fitted models. The test split is now used for exploratory research, not reserved as an untouched final evaluation set.
 
+Step 5 exports the rating-only `baseline_top5.csv`, complete eligible pool, eligibility audit and train-gallery control lists to `data/processed/baseline/`. The comparison protocol and three PNG/SVG figures are in `reports/baseline/`. Baseline and ML must use the same candidate IDs and eligibility parameters. TOP-5 contains alternatives for one transfer; its prices are not summed against the budget. Recorded TM values are screening proxies, with EUR explicitly assumed for the 15-million example.
+
 Required columns:
 
 - `short_name` (str) — player name
