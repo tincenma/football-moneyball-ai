@@ -1,0 +1,111 @@
+{
+  "cutoff": "2022-09-26",
+  "rows": 2886,
+  "train_rows": 2308,
+  "test_rows": 578,
+  "features": [
+    "attacking_short_passing",
+    "skill_long_passing",
+    "mentality_vision",
+    "skill_ball_control",
+    "skill_dribbling",
+    "movement_agility",
+    "movement_balance",
+    "movement_reactions",
+    "mentality_composure",
+    "power_stamina",
+    "power_strength",
+    "mentality_aggression",
+    "mentality_interceptions",
+    "defending_marking_awareness",
+    "defending_standing_tackle",
+    "movement_acceleration",
+    "movement_sprint_speed",
+    "power_long_shots",
+    "age_at_cutoff",
+    "height_cm",
+    "weight_kg",
+    "weak_foot",
+    "league_level",
+    "preferred_foot",
+    "work_rate_attack",
+    "work_rate_defence",
+    "league_id"
+  ],
+  "target": "log1p(tm_market_value), inverse expm1; original source units, currency unverified",
+  "selected_rf_parameters": {
+    "min_samples_leaf": 2,
+    "max_features": 0.7
+  },
+  "n_estimators": 160,
+  "ridge_alpha": 1.0,
+  "test_metrics": {
+    "Train median": {
+      "MAE": 3284256.0553633217,
+      "RMSE": 7901858.684812104,
+      "R2_raw": -0.14716271277937265,
+      "MAE_log": 1.2735716855420047,
+      "R2_log": -0.020918440474016142,
+      "median_multiplicative_error": 2.7499978125027327,
+      "mean_gap": -2830190.311418685
+    },
+    "Ridge log": {
+      "MAE": 1315547.0362724762,
+      "RMSE": 2950271.8508287775,
+      "R2_raw": 0.840084494095128,
+      "MAE_log": 0.5087853611341557,
+      "R2_log": 0.824075648437868,
+      "median_multiplicative_error": 1.5317680131991334,
+      "mean_gap": -695556.8335292642
+    },
+    "Random Forest log": {
+      "MAE": 1333985.2668253148,
+      "RMSE": 3203744.742328183,
+      "R2_raw": 0.811425780841347,
+      "MAE_log": 0.48693546923838743,
+      "R2_log": 0.8392249661961362,
+      "median_multiplicative_error": 1.474840260623647,
+      "mean_gap": -802453.4433941778
+    }
+  },
+  "nested_oof_train_metrics": {
+    "MAE": 1471783.0503990757,
+    "RMSE": 4659034.422921093,
+    "R2_raw": 0.6909722501854039,
+    "MAE_log": 0.506826399183435,
+    "R2_log": 0.7973222245494693,
+    "median_multiplicative_error": 1.490575391331378,
+    "mean_gap": -901913.0796883743
+  },
+  "paired_ridge_minus_rf_log_mae_ci95": [
+    -0.008661999978716937,
+    0.05170416490492313
+  ],
+  "test_positive_gaps": 282,
+  "train_oof_positive_gaps": 1130,
+  "top10_subsample_overlap_mean": 0.69,
+  "test_top10_positive_sign_frequency_mean": 0.9,
+  "train_ids_sha256": "f54f3e8fab0bd40a899e220d83cdc040dd57cd8da56e1e97fafa78094362966e",
+  "test_ids_sha256": "8b70db55d605a118bc8e50a58f9bc79ef1374d469984d227262581f591184420",
+  "source_sha256": "87a552730bd4f3832a8ba175aa508feade3fad4665697dc7b07760049bae6f73",
+  "model_sha256": "f0ae800cc1016b1344a4978d14fd0a01f706a00c321ab797449940d41b402313",
+  "sklearn_version": "1.7.2",
+  "validation": {
+    "source_hash_verified": true,
+    "27_allowlisted_inputs": true,
+    "disjoint_train_test": true,
+    "one_out_of_fit_prediction_per_player": true,
+    "gap_sign_correct": true,
+    "all_predictions_nonnegative_finite": true,
+    "in_sample_gap_rejected": true,
+    "bundle_roundtrip": true
+  },
+  "figures": [
+    "01_test_prediction_and_baselines",
+    "02_signed_value_gaps",
+    "03_positive_gap_candidates",
+    "04_importance_and_price_bias",
+    "05_gap_sensitivity"
+  ],
+  "limitations": "Explored test; matched cohort; unobserved factors; log-inverse bias; model gap is not fair value or transfer-success evidence."
+}

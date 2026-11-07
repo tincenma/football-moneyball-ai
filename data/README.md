@@ -16,6 +16,8 @@ Step 5 exports the rating-only `baseline_top5.csv`, complete eligible pool, elig
 
 Step 6 saves the fitted local bundle `player_models_2022-09-26.joblib`, KNN and same-pool baseline lists, pool hashes, cluster assignments and per-reference diagnostics in `data/processed/models/`. `reports/models/models_summary.json` records the bundle/source hashes and versions; the same directory contains aggregate quality tables and PNG/SVG figures. No price, age, overall or potential enters either model's geometry. Budget and age remain shared eligibility filters. Hidden-block and internal similarity metrics do not establish future sporting performance.
 
+Model 3 saves `market_value_rf_2022-09-26.joblib`, `test_value_gaps.csv`, `train_nested_oof_value_gaps.csv`, `all_out_of_fit_predictions.csv`, separate TOP-10 lists, test sensitivity, outer-fold ID audit and a hashed prediction manifest in `data/processed/valuation/`. All 2,886 predictions exclude the player's own target from fitting and parameter selection: nested 5×3 CV for train, train-only model for test. Aggregate metrics and five PNG/SVG figures are in `reports/valuation/`. Preserve `prediction_origin`; OOF and test lists come from different fits and are ranked separately. Values are in unverified source currency units. Positive model gaps are screening signals, not objective fair prices.
+
 Required columns:
 
 - `short_name` (str) — player name

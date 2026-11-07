@@ -8,6 +8,8 @@ This document retains the confirmatory evaluation plan. Completed exploratory wo
 
 **Model implementation update:** [Step 6](../notebooks/06_ml_models.ipynb) implements the reusable K-Means/KNN engine and compares it with the frozen baseline on identical eligible candidate IDs. [Validation findings](ml_models_validation.md) distinguish computational correctness, cluster separation/stability and hidden-attribute diagnostics from real transfer outcomes. The 41 expensive test references are reported separately; conditional uncertainty and inconclusive findings are retained.
 
+**Valuation update:** [Model 3](../notebooks/07_market_value_prediction.ipynb) uses Random Forest regression on 27 allowlisted inputs with a log-transformed historical target. Parameter selection and preprocessing stay within training folds; training-player signals use nested out-of-fold predictions. The fixed test split remains exploratory. [Computed results](market_value_prediction.md) compare median/Ridge baselines, raw/log errors, price-dependent bias and candidate sensitivity. Predicted minus recorded value is a screening signal with omitted-factor and target-transformation limitations, not an objective fair price. It does not enter style similarity.
+
 ## 1. Study scope
 
 Focus on central midfielders (`CM`). Keep the dataset season fixed. Filter to comparable positions before computing recommendations. Record how multi-position players are handled.

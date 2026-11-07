@@ -1,0 +1,5 @@
+params,mean_test_score,std_test_score,rank_test_score,cv_log_mae
+"{'regressor__forest__max_features': 0.7, 'regressor__forest__min_samples_leaf': 2}",-0.5123816492046913,0.012980320102215129,1,0.5123816492046913
+"{'regressor__forest__max_features': 0.7, 'regressor__forest__min_samples_leaf': 5}",-0.5191662525509304,0.015502422521449767,3,0.5191662525509304
+"{'regressor__forest__max_features': 1.0, 'regressor__forest__min_samples_leaf': 2}",-0.5150851179107087,0.014241139451151519,2,0.5150851179107087
+"{'regressor__forest__max_features': 1.0, 'regressor__forest__min_samples_leaf': 5}",-0.5207432425858193,0.014825879031933347,4,0.5207432425858193
