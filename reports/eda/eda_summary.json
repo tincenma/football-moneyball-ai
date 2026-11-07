@@ -1,0 +1,106 @@
+{
+  "cutoff": "2022-09-26",
+  "n_players": 2886,
+  "n_train": 2308,
+  "n_test": 578,
+  "thresholds": {
+    "cosine": 0.9,
+    "rms_z": 0.75,
+    "price_ratio": 2.0
+  },
+  "H1": {
+    "test_anchors": 578,
+    "high_similarity_pairs": 221,
+    "pairs_ratio_ge_2": 132,
+    "fraction_ratio_ge_2": 0.5972850678733032,
+    "conditional_bootstrap_95": [
+      0.5339366515837104,
+      0.6606334841628959
+    ],
+    "cosine_only_pairs": 267
+  },
+  "H2": {
+    "selected_technical_by_cv": "technical_nonlinear",
+    "technical_test_r2": 0.7648549624714922,
+    "context_minus_technical_log_mae_improvement": 0.14612457268648366,
+    "paired_bootstrap_95": [
+      0.1153647613204003,
+      0.17794657701024613
+    ]
+  },
+  "H3": {
+    "k": 3,
+    "train_style_silhouette": 0.16963496093734845,
+    "test_style_silhouette": 0.16901115764979838,
+    "bootstrap_ari_median": 0.8597702839070323,
+    "bootstrap_ari_p05_p95": [
+      0.7785944983901077,
+      0.9676257250052223
+    ],
+    "overall_range_of_cluster_means": 7.105987539458667
+  },
+  "H4": {
+    "budget_train_median": 800000.0,
+    "expensive_train_q75": 2425000.0,
+    "expensive_test_references": 172,
+    "references_with_candidate": 41,
+    "references_with_age_gap_le3": 8,
+    "references_with_same_league": 3,
+    "coverage_fraction": 0.23837209302325582
+  },
+  "conclusions": [
+    {
+      "hypothesis": "H1",
+      "status": "наблюдается в выборке",
+      "evidence": "132 из 221 ближайших пар с высоким сходством имеют разницу ≥2×; всего test-референсов 578.",
+      "limit": "Условно на train-галерее и порогах; причины разницы цен не установлены."
+    },
+    {
+      "hypothesis": "H2",
+      "status": "остаточная ошибка измерена; не причинный вывод",
+      "evidence": "Лучшая technical по CV: technical_nonlinear; test R²=0.765. Улучшение log-MAE от контекста=0.146, 95% paired CI [0.115, 0.178].",
+      "limit": "Остаток включает ошибки модели/измерения; невозможно доказать универсальную недостаточность всех игровых признаков."
+    },
+    {
+      "hypothesis": "H3",
+      "status": "рабочие критерии выполнены не полностью",
+      "evidence": "k=3; train silhouette=0.170; median bootstrap ARI=0.860. Размах средних overall между группами даже после коррекции уровня: 7.11 пункта.",
+      "limit": "Алгоритмические группы, а не доказанная естественная таксономия игровых ролей."
+    },
+    {
+      "hypothesis": "H4",
+      "status": "кандидаты найдены",
+      "evidence": "41 из 172 дорогих test-референсов имеют более дешёвого train-кандидата; бюджет=800,000, дорогой сегмент от 2,425,000 единиц.",
+      "limit": "Скаутинговые кандидаты; не доказательство недооценённости и не обещание успеха трансфера."
+    }
+  ],
+  "validation": {
+    "unique_ids": true,
+    "disjoint_train_test": true,
+    "historical_values": true,
+    "no_economics_in_similarity": true,
+    "neighbors_not_self": true,
+    "h1_anchors_test_neighbors_train": true,
+    "h4_prices_and_style": true,
+    "h4_dates_historical": true,
+    "cluster_fit_train": true,
+    "pca_fit_train": true,
+    "finite_predictions": true,
+    "finite_pair_metrics": true,
+    "bh_adjustment_example": true,
+    "context_input_allowlist": true
+  },
+  "figures": [
+    "01_distributions",
+    "02_h1_similar_profiles_price_gap",
+    "03_h2_correlations",
+    "04_h2_holdout_regression",
+    "05_h3_cluster_selection_stability",
+    "06_h3_pca_profiles",
+    "07_h3_centroid_profiles",
+    "08_h4_affordable_neighbors",
+    "09_h4_case_profile"
+  ],
+  "input_sha256": "87a552730bd4f3832a8ba175aa508feade3fad4665697dc7b07760049bae6f73",
+  "holdout_status": "used_for_exploratory_analysis_not_untouched_final_test"
+}

@@ -1,0 +1,4 @@
+model,cv_log_mae,best_params
+technical_ridge,0.6462185221204175,{'model__alpha': 10.0}
+technical_nonlinear,0.6203182731832315,{'model__max_leaf_nodes': 7}
+context_nonlinear,0.48250526818870065,{'model__max_leaf_nodes': 7}

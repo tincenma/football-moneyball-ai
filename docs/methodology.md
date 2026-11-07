@@ -1,8 +1,10 @@
 # Proposed Methodology (Pre-Registration Draft)
 
-This is a plan, **not evidence that a study has already been conducted**.
+This document retains the confirmatory evaluation plan. Completed exploratory work is linked below; it does not establish superiority over the scouting baseline.
 
-**Data preparation update (2026-11-07):** the full [dataset profiling and join audit](data_profiling.md) is complete. The [v1 feature contract](feature_set.md) fixes the primary 2022-09-26 male CM snapshot, 18 similarity attributes, and 27 raw valuation inputs. It supersedes provisional feature choices in the starter prototype. Training and the independent evaluation described here have not yet been executed.
+**Data preparation update (2026-11-07):** the full [dataset profiling and join audit](data_profiling.md) is complete. The [v1 feature contract](feature_set.md) fixes the primary 2022-09-26 male CM snapshot, 18 similarity attributes, and 27 raw valuation inputs. It supersedes provisional feature choices in the starter prototype. Exploratory model fitting is documented below; independent confirmatory evaluation remains pending.
+
+**Exploratory research update:** [Step 4](../notebooks/04_exploratory_data_analysis.ipynb) executes regression, clustering and nearest-neighbor analyses for H1–H4. [Computed findings](eda_findings.md) are exploratory observations. The existing holdout has been inspected during EDA and is no longer an untouched final test.
 
 ## 1. Study scope
 

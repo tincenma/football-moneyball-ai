@@ -1,6 +1,6 @@
 # Moneyball 2.0 — AI-Powered Football Scouting
 
-> **Status:** supplied datasets have been fully profiled and Feature Set v1 is fixed. The runnable scouting prototype still uses its original six-attribute demo schema; model training, empirical validation, and research conclusions remain pending.
+> **Status:** data profiling, preprocessing, feature engineering and exploratory hypothesis analysis are complete. Feature Set v1 is fixed. Exploratory regression and clustering have been executed; independent confirmatory evaluation remains pending. The runnable scouting prototype still uses its original six-attribute demo schema.
 
 An academic research project exploring whether machine-learning-based player similarity can identify **potentially cost-effective alternatives** to expensive central midfielders (CM) for football clubs with limited transfer budgets.
 
@@ -49,6 +49,8 @@ Open [Step 1: Data Profiling & Understanding](notebooks/01_data_profiling.ipynb)
 
 [Step 3: Feature Engineering](notebooks/03_feature_engineering.ipynb) separates playing, performance and economic features. It derives total-goals/90 and assists/90 for the retrospective 21/22 layer, adds same-snapshot potential for economic analysis, and fits scaling/imputation/encoding on training players only. Standardized and block-weighted 18-attribute similarity matrices exclude price, age, potential and performance. Feature tables, player splits and transformation parameters are exported to `data/processed/features/`; five figures and all execution results are embedded in the notebook.
 
+[Step 4: Exploratory Data Analysis](notebooks/04_exploratory_data_analysis.ipynb) examines H1–H4 through price-independent neighbors, train-only correlations and model selection, holdout regression, cluster separation/stability and budget-aware candidates. Nine figures are embedded and exported as PNG/SVG to `reports/eda/`. See [computed research findings](docs/eda_findings.md) for evidence and limitations. The existing test split has now been inspected for EDA and must not be described as an untouched final test in later work.
+
 Requires Python 3.10+.
 
 ```bash
@@ -71,7 +73,7 @@ pytest -q
 
 The assignment recommends [FIFA 23 Complete Player Dataset](https://www.kaggle.com/datasets/stefanoleone992/fifa-23-complete-player-dataset), alongside other open football datasets. Verify licensing and available columns before importing. **FIFA ratings and FIFA in-game values do not necessarily represent actual market performance or transfer fees.** We will record the season, measurement definitions, missing values, and sources before drawing conclusions.
 
-## Evaluation plan (not yet executed)
+## Independent evaluation plan (pending)
 
 - Baseline: select affordable players in the same position using highest `overall` rating.
 - Candidate system: feature-based similarity plus the same budget / position / age filters.

@@ -10,6 +10,8 @@ The Step 2 notebook exports the unified historical table to `data/processed/prep
 
 Step 3 exports `moneyball_features_2022-09-26.csv`, similarity/valuation matrices, economic/performance layers, `player_split.csv`, `transform_parameters.json` and `feature_manifest.json` to `data/processed/features/`. Matrix ID columns are lookup keys, not model inputs. Scalers and encoders are fit on train only. Performance rates include all goals and retain missing values; publication time of the 21/22 aggregates is unverified, so they remain outside the core v1 model. Potential is economic analysis context, also excluded from style similarity and the fixed valuation v1 inputs.
 
+Step 4 stores per-player neighbor pairs, affordable candidates, holdout predictions and cluster assignments locally in `data/processed/eda/`. Aggregate metrics, hypothesis summaries and PNG/SVG figures are in `reports/eda/`; interpreted findings are in `docs/eda_findings.md`. Research intervals are conditional on the selected cohort and fixed fitted models. The test split is now used for exploratory research, not reserved as an untouched final evaluation set.
+
 Required columns:
 
 - `short_name` (str) — player name
