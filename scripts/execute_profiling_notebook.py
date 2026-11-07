@@ -45,6 +45,7 @@ def save(path, notebook):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--notebook", type=Path, default=ROOT / "notebooks/01_data_profiling.ipynb")
+    parser.add_argument("--min-images", type=int, default=12)
     args = parser.parse_args()
     path = args.notebook.resolve()
     notebook = json.loads(path.read_text(encoding="utf-8"))
@@ -88,7 +89,7 @@ def main():
         save(path, notebook)
     errors = [o for c in notebook["cells"] if c["cell_type"] == "code" for o in c["outputs"] if o["output_type"] == "error"]
     images = sum("image/png" in o.get("data", {}) for c in notebook["cells"] for o in c.get("outputs", []))
-    assert not errors and images >= 12
+    assert not errors and images >= args.min_images
     notebook["metadata"]["execution"] = {"status": "completed", "backend": "IPython", "code_cells": executed,
                                            "elapsed_seconds": round(time.monotonic() - start, 2), "inline_pngs": images}
     save(path, notebook)

@@ -6,6 +6,8 @@ The three supplied local ZIP archives were fully audited on 2026-11-07. See [the
 
 ## CSV schema for the starter app
 
+The Step 2 notebook exports the unified historical table to `data/processed/preprocessing/moneyball_cm_2022-09-26_clean.csv` (2,886 CM, 47 columns). `dataset_manifest.json` specifies the 27 model inputs, metadata, baseline and target roles, source hashes, selection counts and validation results. Read IDs and categorical `league_id` as strings. Seven missing `league_level` values are intentional and flagged; impute them only after a train/test split. This dataset does not use the starter-app schema below.
+
 Required columns:
 
 - `short_name` (str) — player name

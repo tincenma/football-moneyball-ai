@@ -45,6 +45,8 @@ The completed [data profiling report](docs/data_profiling.md) covers all 19 CSVs
 
 Open [Step 1: Data Profiling & Understanding](notebooks/01_data_profiling.ipynb) for executable checks, saved tables and 12 embedded figures. For rerunning, install `requirements-notebooks.txt` and use Run All. The default run validates the complete cached audit against archive SHA-256 hashes and independently recounts 18 CSVs; set `RUN_FULL_PROFILE=True` to repeat the full scan of all 19 CSVs. Archive paths are configurable with `MONEYBALL_DATA_DIR`.
 
+[Step 2: Data Cleaning & Integration](notebooks/02_data_preprocessing.ipynb) rebuilds the cleaned 2022-09-26 CM dataset directly from the ZIPs, normalizes positions, quarantines conflicting keys, matches identities, and joins only historical market values. It exports 2,886 players with 27 model inputs plus targets and metadata to `data/processed/preprocessing/`, alongside a schema/manifest and selection audit. Seven unknown league levels remain explicitly marked for training-fold imputation. All notebook cells have saved outputs, including four figures.
+
 Requires Python 3.10+.
 
 ```bash
