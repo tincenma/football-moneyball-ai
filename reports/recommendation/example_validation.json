@@ -1,0 +1,95 @@
+{
+  "cutoff": "2022-09-26",
+  "style_name": "Deep-Lying Playmaker",
+  "style_anchors": 450,
+  "ranking_default": "similarity descending; relative value gap descending for exact ties; recorded price then ID",
+  "currency": "EUR scenario assumption; source currency unverified",
+  "artifact_hashes": {
+    "features": "87a552730bd4f3832a8ba175aa508feade3fad4665697dc7b07760049bae6f73",
+    "player_models_2022-09-26.joblib": "02d18f64935389341676ec6ab9fea3b8fbe46f1ef9ccf75065595936416d271a",
+    "market_value_rf_2022-09-26.joblib": "f0ae800cc1016b1344a4978d14fd0a01f706a00c321ab797449940d41b402313",
+    "train_nested_oof_value_gaps.csv": "c435cab98de03b96e34ba8c5a4349ad8dfc87aa67348015e84584b0c3c6de57c",
+    "nested_fold_audit.json": "bdb38ddd1f682e8815423e971bdbcd90000ff040a0cdaedd42901d55af098f6f"
+  },
+  "serving_did_not_change_fitted_transforms": true,
+  "scenarios": {
+    "director_example": {
+      "request_overrides": {
+        "currency": "EUR"
+      },
+      "returned": 5,
+      "status": "ok",
+      "eligible_count": 986,
+      "profile_qualified": 32,
+      "economic_available": 32,
+      "all_returned_economics_out_of_fit": true,
+      "csv_sha256": "b7e1f5a39c8a79128cfab1e664e821087e8c3122e114aca426ec4f79d55ec0b5"
+    },
+    "economic_priority": {
+      "request_overrides": {
+        "currency": "EUR",
+        "ranking": "value_gap"
+      },
+      "returned": 5,
+      "status": "ok",
+      "eligible_count": 986,
+      "profile_qualified": 32,
+      "economic_available": 32,
+      "all_returned_economics_out_of_fit": true,
+      "csv_sha256": "3ec8fa77bdc756898710db8f8a680726d1f5b415c7042307e0543bd7a7dc11b2"
+    },
+    "kroos_reference": {
+      "request_overrides": {
+        "reference": "182521",
+        "playing_style": null,
+        "currency": "EUR"
+      },
+      "returned": 5,
+      "status": "ok",
+      "eligible_count": 986,
+      "profile_qualified": 11,
+      "economic_available": 11,
+      "all_returned_economics_out_of_fit": true,
+      "csv_sha256": "c509e3ec554deb42e432374d85bc1a78b7d3ea34d52bf076d2ba6421d6401c3a"
+    },
+    "style_and_reference": {
+      "request_overrides": {
+        "reference": "182521",
+        "currency": "EUR"
+      },
+      "returned": 5,
+      "status": "ok",
+      "eligible_count": 986,
+      "profile_qualified": 9,
+      "economic_available": 9,
+      "all_returned_economics_out_of_fit": true,
+      "csv_sha256": "e52010975f876479ac0f0fbc52f7b11edd31e8b38ef2790537a782d526b24155"
+    },
+    "same_cluster": {
+      "request_overrides": {
+        "within_cluster": true,
+        "currency": "EUR"
+      },
+      "returned": 5,
+      "status": "ok",
+      "eligible_count": 140,
+      "profile_qualified": 22,
+      "economic_available": 22,
+      "all_returned_economics_out_of_fit": true,
+      "csv_sha256": "b7e1f5a39c8a79128cfab1e664e821087e8c3122e114aca426ec4f79d55ec0b5"
+    },
+    "empty_budget": {
+      "request_overrides": {
+        "budget": 0
+      },
+      "returned": 0,
+      "status": "no_candidates",
+      "eligible_count": 0,
+      "profile_qualified": 0,
+      "economic_available": 0,
+      "all_returned_economics_out_of_fit": true,
+      "csv_sha256": "0da3f42da0356706e1f04567d5a847a330a543d95a4c96e7a1b852b90cdf061a"
+    }
+  },
+  "limitations": "Historical data; hand-defined training archetype; cosine is not success probability; model gap is not fair price; this serving policy has not been independently validated."
+}
