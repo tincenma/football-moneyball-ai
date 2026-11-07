@@ -47,6 +47,8 @@ Open [Step 1: Data Profiling & Understanding](notebooks/01_data_profiling.ipynb)
 
 [Step 2: Data Cleaning & Integration](notebooks/02_data_preprocessing.ipynb) rebuilds the cleaned 2022-09-26 CM dataset directly from the ZIPs, normalizes positions, quarantines conflicting keys, matches identities, and joins only historical market values. It exports 2,886 players with 27 model inputs plus targets and metadata to `data/processed/preprocessing/`, alongside a schema/manifest and selection audit. Seven unknown league levels remain explicitly marked for training-fold imputation. All notebook cells have saved outputs, including four figures.
 
+[Step 3: Feature Engineering](notebooks/03_feature_engineering.ipynb) separates playing, performance and economic features. It derives total-goals/90 and assists/90 for the retrospective 21/22 layer, adds same-snapshot potential for economic analysis, and fits scaling/imputation/encoding on training players only. Standardized and block-weighted 18-attribute similarity matrices exclude price, age, potential and performance. Feature tables, player splits and transformation parameters are exported to `data/processed/features/`; five figures and all execution results are embedded in the notebook.
+
 Requires Python 3.10+.
 
 ```bash
