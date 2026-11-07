@@ -14,6 +14,8 @@ Step 4 stores per-player neighbor pairs, affordable candidates, holdout predicti
 
 Step 5 exports the rating-only `baseline_top5.csv`, complete eligible pool, eligibility audit and train-gallery control lists to `data/processed/baseline/`. The comparison protocol and three PNG/SVG figures are in `reports/baseline/`. Baseline and ML must use the same candidate IDs and eligibility parameters. TOP-5 contains alternatives for one transfer; its prices are not summed against the budget. Recorded TM values are screening proxies, with EUR explicitly assumed for the 15-million example.
 
+Step 6 saves the fitted local bundle `player_models_2022-09-26.joblib`, KNN and same-pool baseline lists, pool hashes, cluster assignments and per-reference diagnostics in `data/processed/models/`. `reports/models/models_summary.json` records the bundle/source hashes and versions; the same directory contains aggregate quality tables and PNG/SVG figures. No price, age, overall or potential enters either model's geometry. Budget and age remain shared eligibility filters. Hidden-block and internal similarity metrics do not establish future sporting performance.
+
 Required columns:
 
 - `short_name` (str) — player name

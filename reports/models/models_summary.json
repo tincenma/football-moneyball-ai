@@ -1,0 +1,118 @@
+{
+  "cutoff": "2022-09-26",
+  "rows": 2886,
+  "train_rows": 2308,
+  "query_rows": 578,
+  "features": [
+    "attacking_short_passing",
+    "skill_long_passing",
+    "mentality_vision",
+    "skill_ball_control",
+    "skill_dribbling",
+    "movement_agility",
+    "movement_balance",
+    "movement_reactions",
+    "mentality_composure",
+    "power_stamina",
+    "power_strength",
+    "mentality_aggression",
+    "mentality_interceptions",
+    "defending_marking_awareness",
+    "defending_standing_tackle",
+    "movement_acceleration",
+    "movement_sprint_speed",
+    "power_long_shots"
+  ],
+  "budget": 15000000,
+  "max_age": 30.0,
+  "top_k": 5,
+  "currency": "EUR assumed for scenario, source unverified",
+  "cluster_quality": {
+    "k": 3,
+    "train_silhouette": 0.16960894121504397,
+    "test_silhouette": 0.16894033570422504,
+    "test_davies_bouldin": 1.7757059936444464,
+    "ari_median": 0.8626346049737121,
+    "ari_p05": 0.7528175793605171,
+    "ari_p95": 0.9361275674809502
+  },
+  "internal_cosine_gain": {
+    "mean": 0.8036870618013232,
+    "conditional_95_ci": [
+      0.7561267641264697,
+      0.8526437671880551
+    ],
+    "interpretation": "same-feature descriptive metric, not independent transfer quality"
+  },
+  "expensive_internal_cosine_gain": {
+    "references": 41,
+    "mean": 0.11493050230412355,
+    "conditional_95_ci": [
+      0.08208529184647496,
+      0.1511265780525218
+    ]
+  },
+  "hidden_block_diagnostic": {
+    "mean_rms_improvement": 1.024334337732415,
+    "paired_reference_bootstrap_95": [
+      0.974416225746865,
+      1.0761543347350075
+    ],
+    "positive_improvement_blocks": 7,
+    "total_blocks": 7
+  },
+  "hidden_block_expensive_diagnostic": {
+    "references": 41,
+    "mean_rms_improvement": 0.053333623815052085,
+    "paired_reference_bootstrap_95": [
+      -0.037731875668287965,
+      0.1481234583929585
+    ],
+    "positive_improvement_blocks": 4,
+    "total_blocks": 7
+  },
+  "noise_robustness": {
+    "references": 50,
+    "repeats": 10,
+    "noise_sigma_rating": 1.0,
+    "mean_overlap_at5": 0.7975999999999999,
+    "mean_cluster_overlap_at5": 0.8128,
+    "cluster_change_fraction": 0.014
+  },
+  "reference_id": "182521",
+  "reference_name": "T. Kroos",
+  "model_bundle": "player_models_2022-09-26.joblib",
+  "model_sha256": "02d18f64935389341676ec6ab9fea3b8fbe46f1ef9ccf75065595936416d271a",
+  "input_sha256": "87a552730bd4f3832a8ba175aa508feade3fad4665697dc7b07760049bae6f73",
+  "example_strong_matches_in_top5": 0,
+  "train_ids_sha256": "f54f3e8fab0bd40a899e220d83cdc040dd57cd8da56e1e97fafa78094362966e",
+  "sklearn_version": "1.7.2",
+  "validation": {
+    "fit_train_only": true,
+    "gallery_train_only": true,
+    "features_exactly_18_playing": true,
+    "no_economic_features_in_geometry": true,
+    "oracle_correct_all_probes": true,
+    "no_self_match": true,
+    "budget_respected": true,
+    "age_respected": true,
+    "no_future_values": true,
+    "cluster_constraint_respected": true,
+    "same_global_pool_as_baseline": true,
+    "topk_no_hidden_fallback": true,
+    "queries_do_not_refit": true,
+    "roundtrip_same_recommendations": true,
+    "finite_distances": true,
+    "all_query_ids_evaluated": true,
+    "hidden_block_diagnostic_complete": true
+  },
+  "figures": [
+    "01_kmeans_quality",
+    "02_kmeans_test_projection",
+    "03_same_pool_baseline_comparison",
+    "04_hidden_block_validation",
+    "05_noise_robustness"
+  ],
+  "default_search": "global_knn; same-cluster restriction optional; retrieve-all then eligibility then TOP-k",
+  "evaluation_limit": "explored holdout, gaming-attribute diagnostics, no independent sporting outcomes or transfer-success proof"
+}

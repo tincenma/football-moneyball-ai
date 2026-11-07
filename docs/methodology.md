@@ -6,6 +6,8 @@ This document retains the confirmatory evaluation plan. Completed exploratory wo
 
 **Exploratory research update:** [Step 4](../notebooks/04_exploratory_data_analysis.ipynb) executes regression, clustering and nearest-neighbor analyses for H1–H4. [Computed findings](eda_findings.md) are exploratory observations. The existing holdout has been inspected during EDA and is no longer an untouched final test.
 
+**Model implementation update:** [Step 6](../notebooks/06_ml_models.ipynb) implements the reusable K-Means/KNN engine and compares it with the frozen baseline on identical eligible candidate IDs. [Validation findings](ml_models_validation.md) distinguish computational correctness, cluster separation/stability and hidden-attribute diagnostics from real transfer outcomes. The 41 expensive test references are reported separately; conditional uncertainty and inconclusive findings are retained.
+
 ## 1. Study scope
 
 Focus on central midfielders (`CM`). Keep the dataset season fixed. Filter to comparable positions before computing recommendations. Record how multi-position players are handled.

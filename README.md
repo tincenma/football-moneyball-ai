@@ -1,6 +1,6 @@
 # Moneyball 2.0 — AI-Powered Football Scouting
 
-> **Status:** data profiling, preprocessing, feature engineering and exploratory hypothesis analysis are complete. Feature Set v1 is fixed. Exploratory regression and clustering have been executed; independent confirmatory evaluation remains pending. The runnable scouting prototype still uses its original six-attribute demo schema.
+> **Status:** data preparation, exploratory research and a tested K-Means/KNN engine are implemented. Feature Set v1 and the rating-only baseline are fixed. Independent confirmatory evaluation remains pending. The Streamlit starter still uses its original six-attribute demo schema; the new engine is exercised in Step 6.
 
 An academic research project exploring whether machine-learning-based player similarity can identify **potentially cost-effective alternatives** to expensive central midfielders (CM) for football clubs with limited transfer budgets.
 
@@ -52,6 +52,8 @@ Open [Step 1: Data Profiling & Understanding](notebooks/01_data_profiling.ipynb)
 [Step 4: Exploratory Data Analysis](notebooks/04_exploratory_data_analysis.ipynb) examines H1–H4 through price-independent neighbors, train-only correlations and model selection, holdout regression, cluster separation/stability and budget-aware candidates. Nine figures are embedded and exported as PNG/SVG to `reports/eda/`. See [computed research findings](docs/eda_findings.md) for evidence and limitations. The existing test split has now been inspected for EDA and must not be described as an untouched final test in later work.
 
 [Step 5: Baseline Model](notebooks/05_baseline_model.ipynb) implements the independent rating-only control: exact CM token, individual budget, maximum age, descending FIFA overall, TOP-5. The demonstration uses 15 million and age ≤30.0 years; EUR is explicitly a scenario assumption for the unverified TM currency. The reusable [baseline module](src/baseline.py) has no fitting or similarity dependency. Candidate lists and eligible IDs are local under `data/processed/baseline/`; `reports/baseline/baseline_protocol.json` fixes ranking, tie-breaks, source hashes and identical-pool requirements for later ML comparisons.
+
+[Step 6: ML Models](notebooks/06_ml_models.ipynb) fits [K-Means and an exact KNN recommendation engine](src/models.py) on training players only. KNN ranks the entire gallery before applying budget/age/self filters, then returns TOP-k. Same-cluster search is optional and never silently falls back to other clusters. Validation covers independent distance calculations, identical baseline pools, all 578 query players, refitted cluster stability, rating noise, held-out feature blocks and persistence. See [measured results and limitations](docs/ml_models_validation.md); aggregate metrics/PNG/SVG are in `reports/models/`. Diagnostic results for the 41 expensive references are reported separately, including cases where baseline performs better.
 
 Requires Python 3.10+.
 
