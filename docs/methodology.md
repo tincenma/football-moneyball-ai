@@ -2,6 +2,8 @@
 
 This is a plan, **not evidence that a study has already been conducted**.
 
+**Data preparation update (2026-11-07):** the full [dataset profiling and join audit](data_profiling.md) is complete. The [v1 feature contract](feature_set.md) fixes the primary 2022-09-26 male CM snapshot, 18 similarity attributes, and 27 raw valuation inputs. It supersedes provisional feature choices in the starter prototype. Training and the independent evaluation described here have not yet been executed.
+
 ## 1. Study scope
 
 Focus on central midfielders (`CM`). Keep the dataset season fixed. Filter to comparable positions before computing recommendations. Record how multi-position players are handled.

@@ -1,6 +1,6 @@
 # Moneyball 2.0 — AI-Powered Football Scouting
 
-> **Status:** initial research and runnable scouting prototype. Data collection, empirical validation, and final conclusions are still pending.
+> **Status:** supplied datasets have been fully profiled and Feature Set v1 is fixed. The runnable scouting prototype still uses its original six-attribute demo schema; model training, empirical validation, and research conclusions remain pending.
 
 An academic research project exploring whether machine-learning-based player similarity can identify **potentially cost-effective alternatives** to expensive central midfielders (CM) for football clubs with limited transfer budgets.
 
@@ -34,12 +34,16 @@ app/                     Streamlit UI (starter demo)
 src/                     Similarity and baseline ranking logic
 tests/                   Unit tests with synthetic data
 data/                    Instructions; external datasets are not committed
-notebooks/               Future EDA and modeling notebooks
+notebooks/               Executed data profiling notebook and future modeling notebooks
 docs/                    Research question, hypotheses, methodological plan
 requirements.txt         Python dependencies
 ```
 
 ## Quick start
+
+The completed [data profiling report](docs/data_profiling.md) covers all 19 CSVs in the supplied FIFA and Transfermarkt archives, missingness, historical dates, CM counts, entity matching, and dated market-value joins. The [feature specification](docs/feature_set.md) and [machine-readable contract](config/feature_set_v1.json) fix 18 playing attributes for similarity and 27 raw inputs for valuation. The primary 2022-09-26 snapshot contains 4,184 CM players; 2,886 have a usable linked historical valuation. This contract has not yet been integrated into the demo below.
+
+Open [Step 1: Data Profiling & Understanding](notebooks/01_data_profiling.ipynb) for executable checks, saved tables and 12 embedded figures. For rerunning, install `requirements-notebooks.txt` and use Run All. The default run validates the complete cached audit against archive SHA-256 hashes and independently recounts 18 CSVs; set `RUN_FULL_PROFILE=True` to repeat the full scan of all 19 CSVs. Archive paths are configurable with `MONEYBALL_DATA_DIR`.
 
 Requires Python 3.10+.
 

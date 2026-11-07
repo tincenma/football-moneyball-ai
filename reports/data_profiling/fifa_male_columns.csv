@@ -1,0 +1,283 @@
+source,file,column,missing,missing_pct,literal_sentinels,numeric_first_chunk,n,invalid,min,max,zero,negative
+fifa_male,male_players (legacy).csv,player_id,0,0.0,0,True,161583.0,0.0,2.0,271817.0,0.0,0.0
+fifa_male,male_players (legacy).csv,player_url,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,fifa_version,0,0.0,0,True,161583.0,0.0,15.0,23.0,0.0,0.0
+fifa_male,male_players (legacy).csv,fifa_update,0,0.0,0,True,161583.0,0.0,2.0,2.0,0.0,0.0
+fifa_male,male_players (legacy).csv,fifa_update_date,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,short_name,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,long_name,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,player_positions,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,overall,0,0.0,0,True,161583.0,0.0,40.0,94.0,0.0,0.0
+fifa_male,male_players (legacy).csv,potential,0,0.0,0,True,161583.0,0.0,40.0,95.0,0.0,0.0
+fifa_male,male_players (legacy).csv,value_eur,2053,1.2705544518915974,0,True,159530.0,0.0,1000.0,194000000.0,0.0,0.0
+fifa_male,male_players (legacy).csv,wage_eur,1761,1.0898423720317112,0,True,159822.0,0.0,500.0,575000.0,0.0,0.0
+fifa_male,male_players (legacy).csv,age,0,0.0,0,True,161583.0,0.0,16.0,54.0,0.0,0.0
+fifa_male,male_players (legacy).csv,dob,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,height_cm,0,0.0,0,True,161583.0,0.0,154.0,208.0,0.0,0.0
+fifa_male,male_players (legacy).csv,weight_kg,0,0.0,0,True,161583.0,0.0,49.0,110.0,0.0,0.0
+fifa_male,male_players (legacy).csv,league_id,1773,1.0972688958615695,0,True,159810.0,0.0,1.0,2149.0,0.0,0.0
+fifa_male,male_players (legacy).csv,league_name,1773,1.0972688958615695,0,False,,,,,,
+fifa_male,male_players (legacy).csv,league_level,2717,1.6814887704770922,0,True,158866.0,0.0,1.0,5.0,0.0,0.0
+fifa_male,male_players (legacy).csv,club_team_id,1773,1.0972688958615695,0,True,159810.0,0.0,1.0,116361.0,0.0,0.0
+fifa_male,male_players (legacy).csv,club_name,1773,1.0972688958615695,0,False,,,,,,
+fifa_male,male_players (legacy).csv,club_position,1773,1.0972688958615695,0,False,,,,,,
+fifa_male,male_players (legacy).csv,club_jersey_number,1773,1.0972688958615695,0,True,159810.0,0.0,1.0,99.0,0.0,0.0
+fifa_male,male_players (legacy).csv,club_loaned_from,152045,94.09715130923426,0,False,,,,,,
+fifa_male,male_players (legacy).csv,club_joined_date,11311,7.000117586627306,0,False,,,,,,
+fifa_male,male_players (legacy).csv,club_contract_valid_until_year,1773,1.0972688958615695,0,True,159810.0,0.0,2014.0,2032.0,0.0,0.0
+fifa_male,male_players (legacy).csv,nationality_id,0,0.0,0,True,161583.0,0.0,1.0,219.0,0.0,0.0
+fifa_male,male_players (legacy).csv,nationality_name,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,nation_team_id,152267,94.23454200008665,0,True,9316.0,0.0,974.0,111527.0,0.0,0.0
+fifa_male,male_players (legacy).csv,nation_position,152267,94.23454200008665,0,False,,,,,,
+fifa_male,male_players (legacy).csv,nation_jersey_number,152267,94.23454200008665,0,True,9316.0,0.0,1.0,30.0,0.0,0.0
+fifa_male,male_players (legacy).csv,preferred_foot,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,weak_foot,0,0.0,0,True,161583.0,0.0,1.0,5.0,0.0,0.0
+fifa_male,male_players (legacy).csv,skill_moves,0,0.0,0,True,161583.0,0.0,1.0,5.0,0.0,0.0
+fifa_male,male_players (legacy).csv,international_reputation,0,0.0,0,True,161583.0,0.0,1.0,5.0,0.0,0.0
+fifa_male,male_players (legacy).csv,work_rate,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,body_type,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,real_face,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,release_clause_eur,57961,35.8707289752016,0,False,,,,,,
+fifa_male,male_players (legacy).csv,player_tags,148920,92.16316072854198,0,False,,,,,,
+fifa_male,male_players (legacy).csv,player_traits,88433,54.72914848715521,0,False,,,,,,
+fifa_male,male_players (legacy).csv,pace,17969,11.120600558227041,0,True,143614.0,0.0,21.0,97.0,0.0,0.0
+fifa_male,male_players (legacy).csv,shooting,17969,11.120600558227041,0,True,143614.0,0.0,14.0,94.0,0.0,0.0
+fifa_male,male_players (legacy).csv,passing,17969,11.120600558227041,0,True,143614.0,0.0,20.0,93.0,0.0,0.0
+fifa_male,male_players (legacy).csv,dribbling,17969,11.120600558227041,0,True,143614.0,0.0,22.0,96.0,0.0,0.0
+fifa_male,male_players (legacy).csv,defending,17969,11.120600558227041,0,True,143614.0,0.0,14.0,91.0,0.0,0.0
+fifa_male,male_players (legacy).csv,physic,17969,11.120600558227041,0,True,143614.0,0.0,27.0,92.0,0.0,0.0
+fifa_male,male_players (legacy).csv,attacking_crossing,0,0.0,0,True,161583.0,0.0,5.0,94.0,0.0,0.0
+fifa_male,male_players (legacy).csv,attacking_finishing,0,0.0,0,True,161583.0,0.0,2.0,95.0,0.0,0.0
+fifa_male,male_players (legacy).csv,attacking_heading_accuracy,0,0.0,0,True,161583.0,0.0,4.0,95.0,0.0,0.0
+fifa_male,male_players (legacy).csv,attacking_short_passing,0,0.0,0,True,161583.0,0.0,7.0,95.0,0.0,0.0
+fifa_male,male_players (legacy).csv,attacking_volleys,0,0.0,0,True,161583.0,0.0,3.0,93.0,0.0,0.0
+fifa_male,male_players (legacy).csv,skill_dribbling,0,0.0,0,True,161583.0,0.0,2.0,97.0,0.0,0.0
+fifa_male,male_players (legacy).csv,skill_curve,0,0.0,0,True,161583.0,0.0,4.0,94.0,0.0,0.0
+fifa_male,male_players (legacy).csv,skill_fk_accuracy,0,0.0,0,True,161583.0,0.0,3.0,95.0,0.0,0.0
+fifa_male,male_players (legacy).csv,skill_long_passing,0,0.0,0,True,161583.0,0.0,5.0,95.0,0.0,0.0
+fifa_male,male_players (legacy).csv,skill_ball_control,0,0.0,0,True,161583.0,0.0,5.0,96.0,0.0,0.0
+fifa_male,male_players (legacy).csv,movement_acceleration,0,0.0,0,True,161583.0,0.0,11.0,97.0,0.0,0.0
+fifa_male,male_players (legacy).csv,movement_sprint_speed,0,0.0,0,True,161583.0,0.0,11.0,97.0,0.0,0.0
+fifa_male,male_players (legacy).csv,movement_agility,0,0.0,0,True,161583.0,0.0,11.0,96.0,0.0,0.0
+fifa_male,male_players (legacy).csv,movement_reactions,0,0.0,0,True,161583.0,0.0,20.0,96.0,0.0,0.0
+fifa_male,male_players (legacy).csv,movement_balance,0,0.0,0,True,161583.0,0.0,10.0,97.0,0.0,0.0
+fifa_male,male_players (legacy).csv,power_shot_power,0,0.0,0,True,161583.0,0.0,2.0,96.0,0.0,0.0
+fifa_male,male_players (legacy).csv,power_jumping,0,0.0,0,True,161583.0,0.0,13.0,97.0,0.0,0.0
+fifa_male,male_players (legacy).csv,power_stamina,0,0.0,0,True,161583.0,0.0,10.0,97.0,0.0,0.0
+fifa_male,male_players (legacy).csv,power_strength,0,0.0,0,True,161583.0,0.0,12.0,98.0,0.0,0.0
+fifa_male,male_players (legacy).csv,power_long_shots,0,0.0,0,True,161583.0,0.0,3.0,94.0,0.0,0.0
+fifa_male,male_players (legacy).csv,mentality_aggression,0,0.0,0,True,161583.0,0.0,2.0,96.0,0.0,0.0
+fifa_male,male_players (legacy).csv,mentality_interceptions,0,0.0,0,True,161583.0,0.0,3.0,93.0,0.0,0.0
+fifa_male,male_players (legacy).csv,mentality_positioning,0,0.0,0,True,161583.0,0.0,2.0,96.0,0.0,0.0
+fifa_male,male_players (legacy).csv,mentality_vision,0,0.0,0,True,161583.0,0.0,3.0,96.0,0.0,0.0
+fifa_male,male_players (legacy).csv,mentality_penalties,0,0.0,0,True,161583.0,0.0,5.0,96.0,0.0,0.0
+fifa_male,male_players (legacy).csv,mentality_composure,32861,20.33691663108124,0,False,,,,,,
+fifa_male,male_players (legacy).csv,defending_marking_awareness,0,0.0,0,True,161583.0,0.0,1.0,94.0,0.0,0.0
+fifa_male,male_players (legacy).csv,defending_standing_tackle,0,0.0,0,True,161583.0,0.0,2.0,94.0,0.0,0.0
+fifa_male,male_players (legacy).csv,defending_sliding_tackle,0,0.0,0,True,161583.0,0.0,3.0,95.0,0.0,0.0
+fifa_male,male_players (legacy).csv,goalkeeping_diving,0,0.0,0,True,161583.0,0.0,1.0,91.0,0.0,0.0
+fifa_male,male_players (legacy).csv,goalkeeping_handling,0,0.0,0,True,161583.0,0.0,1.0,92.0,0.0,0.0
+fifa_male,male_players (legacy).csv,goalkeeping_kicking,0,0.0,0,True,161583.0,0.0,1.0,95.0,0.0,0.0
+fifa_male,male_players (legacy).csv,goalkeeping_positioning,0,0.0,0,True,161583.0,0.0,1.0,92.0,0.0,0.0
+fifa_male,male_players (legacy).csv,goalkeeping_reflexes,0,0.0,0,True,161583.0,0.0,1.0,94.0,0.0,0.0
+fifa_male,male_players (legacy).csv,goalkeeping_speed,143614,88.87939944177296,0,True,17969.0,0.0,12.0,68.0,0.0,0.0
+fifa_male,male_players (legacy).csv,ls,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,st,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,rs,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,lw,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,lf,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,cf,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,rf,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,rw,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,lam,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,cam,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,ram,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,lm,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,lcm,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,cm,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,rcm,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,rm,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,lwb,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,ldm,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,cdm,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,rdm,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,rwb,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,lb,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,lcb,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,cb,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,rcb,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,rb,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,gk,0,0.0,0,False,,,,,,
+fifa_male,male_players (legacy).csv,player_face_url,0,0.0,0,False,,,,,,
+fifa_male,male_teams.csv,team_id,0,0.0,0,True,385055.0,0.0,1.0,116361.0,0.0,0.0
+fifa_male,male_teams.csv,team_url,0,0.0,0,False,,,,,,
+fifa_male,male_teams.csv,fifa_version,0,0.0,0,True,385055.0,0.0,15.0,23.0,0.0,0.0
+fifa_male,male_teams.csv,fifa_update,0,0.0,0,True,385055.0,0.0,1.0,91.0,0.0,0.0
+fifa_male,male_teams.csv,fifa_update_date,0,0.0,0,False,,,,,,
+fifa_male,male_teams.csv,team_name,0,0.0,0,False,,,,,,
+fifa_male,male_teams.csv,league_id,0,0.0,0,True,385055.0,0.0,1.0,2149.0,0.0,0.0
+fifa_male,male_teams.csv,league_name,0,0.0,0,False,,,,,,
+fifa_male,male_teams.csv,league_level,25879,6.7208580592382905,0,True,359176.0,0.0,1.0,5.0,0.0,0.0
+fifa_male,male_teams.csv,nationality_id,0,0.0,0,True,385055.0,0.0,4.0,1037.0,0.0,0.0
+fifa_male,male_teams.csv,nationality_name,0,0.0,0,False,,,,,,
+fifa_male,male_teams.csv,overall,0,0.0,0,True,385055.0,0.0,50.0,86.0,0.0,0.0
+fifa_male,male_teams.csv,attack,0,0.0,0,True,385055.0,0.0,46.0,93.0,0.0,0.0
+fifa_male,male_teams.csv,midfield,0,0.0,0,True,385055.0,0.0,48.0,89.0,0.0,0.0
+fifa_male,male_teams.csv,defence,0,0.0,0,True,385055.0,0.0,48.0,87.0,0.0,0.0
+fifa_male,male_teams.csv,coach_id,2328,0.6045889548246355,0,True,382727.0,0.0,24.0,37666625.0,0.0,0.0
+fifa_male,male_teams.csv,home_stadium,288,0.07479450987521263,0,False,,,,,,
+fifa_male,male_teams.csv,rival_team,0,0.0,0,True,385055.0,0.0,1.0,116361.0,0.0,0.0
+fifa_male,male_teams.csv,international_prestige,0,0.0,0,True,385055.0,0.0,1.0,20.0,0.0,0.0
+fifa_male,male_teams.csv,domestic_prestige,25829,6.707872901273844,0,True,359226.0,0.0,1.0,20.0,0.0,0.0
+fifa_male,male_teams.csv,transfer_budget_eur,31922,8.290244250821312,0,True,353133.0,0.0,100000.0,190900000.0,0.0,0.0
+fifa_male,male_teams.csv,club_worth_eur,94962,24.66193141239563,0,True,290093.0,0.0,-2147483648.0,2100000000.0,0.0,3549.0
+fifa_male,male_teams.csv,starting_xi_average_age,0,0.0,0,True,385055.0,0.0,18.82,33.64,0.0,0.0
+fifa_male,male_teams.csv,whole_team_average_age,0,0.0,0,True,385055.0,0.0,19.0,33.11,0.0,0.0
+fifa_male,male_teams.csv,captain,444,0.11530820272428614,0,True,384611.0,0.0,16.0,270005.0,0.0,0.0
+fifa_male,male_teams.csv,short_free_kick,478,0.12413811014010985,0,True,384577.0,0.0,16.0,270478.0,0.0,0.0
+fifa_male,male_teams.csv,long_free_kick,573,0.14880991027255847,0,True,384482.0,0.0,2.0,271857.0,0.0,0.0
+fifa_male,male_teams.csv,left_short_free_kick,573,0.14880991027255847,0,True,384482.0,0.0,16.0,270478.0,0.0,0.0
+fifa_male,male_teams.csv,right_short_free_kick,513,0.13322772071522251,0,True,384542.0,0.0,16.0,270574.0,0.0,0.0
+fifa_male,male_teams.csv,penalties,533,0.13842178390100116,0,True,384522.0,0.0,16.0,271644.0,0.0,0.0
+fifa_male,male_teams.csv,left_corner,454,0.11790523431717546,0,True,384601.0,0.0,2.0,271857.0,0.0,0.0
+fifa_male,male_teams.csv,right_corner,348,0.0903766994325486,0,True,384707.0,0.0,16.0,271644.0,0.0,0.0
+fifa_male,male_teams.csv,def_style,195025,50.648608640324106,0,False,,,,,,
+fifa_male,male_teams.csv,def_team_width,195025,50.648608640324106,0,True,190030.0,0.0,3.0,81.0,0.0,0.0
+fifa_male,male_teams.csv,def_team_depth,195025,50.648608640324106,0,True,190030.0,0.0,3.0,81.0,0.0,0.0
+fifa_male,male_teams.csv,def_defence_pressure,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,def_defence_aggression,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,def_defence_width,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,def_defence_defender_line,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,off_style,247821,64.3598966381426,0,False,,,,,,
+fifa_male,male_teams.csv,off_build_up_play,332259,86.28871200218151,0,False,,,,,,
+fifa_male,male_teams.csv,off_chance_creation,332259,86.28871200218151,0,False,,,,,,
+fifa_male,male_teams.csv,off_team_width,195025,50.648608640324106,0,True,190030.0,0.0,3.0,81.0,0.0,0.0
+fifa_male,male_teams.csv,off_players_in_box,195025,50.648608640324106,0,True,190030.0,0.0,3.0,8.0,0.0,0.0
+fifa_male,male_teams.csv,off_corners,195025,50.648608640324106,0,True,190030.0,0.0,3.0,3.0,0.0,0.0
+fifa_male,male_teams.csv,off_free_kicks,195025,50.648608640324106,0,True,190030.0,0.0,3.0,3.0,0.0,0.0
+fifa_male,male_teams.csv,build_up_play_speed,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,build_up_play_dribbling,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,build_up_play_passing,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,build_up_play_positioning,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,chance_creation_passing,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,chance_creation_crossing,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,chance_creation_shooting,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_teams.csv,chance_creation_positioning,142494,37.006141979717185,0,False,,,,,,
+fifa_male,male_players.csv,player_id,0,0.0,0,True,10003590.0,0.0,2.0,273129.0,0.0,0.0
+fifa_male,male_players.csv,player_url,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,fifa_version,0,0.0,0,True,10003590.0,0.0,15.0,23.0,0.0,0.0
+fifa_male,male_players.csv,fifa_update,0,0.0,0,True,10003590.0,0.0,1.0,91.0,0.0,0.0
+fifa_male,male_players.csv,fifa_update_date,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,short_name,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,long_name,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,player_positions,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,overall,0,0.0,0,True,10003590.0,0.0,35.0,94.0,0.0,0.0
+fifa_male,male_players.csv,potential,0,0.0,0,True,10003590.0,0.0,40.0,98.0,0.0,0.0
+fifa_male,male_players.csv,value_eur,132797,1.3274934298586807,0,True,9870793.0,0.0,1000.0,194000000.0,0.0,0.0
+fifa_male,male_players.csv,wage_eur,115974,1.159323802754811,0,True,9887616.0,0.0,500.0,575000.0,0.0,0.0
+fifa_male,male_players.csv,age,0,0.0,0,True,10003590.0,0.0,15.0,55.0,0.0,0.0
+fifa_male,male_players.csv,dob,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,height_cm,0,0.0,0,True,10003590.0,0.0,149.0,210.0,0.0,0.0
+fifa_male,male_players.csv,weight_kg,0,0.0,0,True,10003590.0,0.0,48.0,110.0,0.0,0.0
+fifa_male,male_players.csv,league_id,116395,1.1635322919072053,0,True,9887195.0,0.0,1.0,2149.0,0.0,0.0
+fifa_male,male_players.csv,league_name,116395,1.1635322919072053,0,False,,,,,,
+fifa_male,male_players.csv,league_level,170349,1.7028786665587055,0,True,9833241.0,0.0,1.0,5.0,0.0,0.0
+fifa_male,male_players.csv,club_team_id,116395,1.1635322919072053,0,True,9887195.0,0.0,1.0,116361.0,0.0,0.0
+fifa_male,male_players.csv,club_name,116395,1.1635322919072053,0,False,,,,,,
+fifa_male,male_players.csv,club_position,116395,1.1635322919072053,0,False,,,,,,
+fifa_male,male_players.csv,club_jersey_number,116395,1.1635322919072053,0,True,9887195.0,0.0,1.0,99.0,0.0,0.0
+fifa_male,male_players.csv,club_loaned_from,9299422,92.96084705590692,0,False,,,,,,
+fifa_male,male_players.csv,club_joined_date,820563,8.202685236000276,0,False,,,,,,
+fifa_male,male_players.csv,club_contract_valid_until_year,116395,1.1635322919072053,0,True,9887195.0,0.0,2014.0,2032.0,0.0,0.0
+fifa_male,male_players.csv,nationality_id,0,0.0,0,True,10003590.0,0.0,1.0,219.0,0.0,0.0
+fifa_male,male_players.csv,nationality_name,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,nation_team_id,9410000,94.06623022334982,0,True,593590.0,0.0,974.0,111527.0,0.0,0.0
+fifa_male,male_players.csv,nation_position,9410000,94.06623022334982,0,False,,,,,,
+fifa_male,male_players.csv,nation_jersey_number,9410000,94.06623022334982,0,True,593590.0,0.0,1.0,99.0,0.0,0.0
+fifa_male,male_players.csv,preferred_foot,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,weak_foot,0,0.0,0,True,10003590.0,0.0,1.0,5.0,0.0,0.0
+fifa_male,male_players.csv,skill_moves,0,0.0,0,True,10003590.0,0.0,1.0,5.0,0.0,0.0
+fifa_male,male_players.csv,international_reputation,0,0.0,0,True,10003590.0,0.0,1.0,5.0,0.0,0.0
+fifa_male,male_players.csv,work_rate,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,body_type,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,real_face,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,release_clause_eur,4094223,40.9275370142119,0,True,5909367.0,0.0,5000.0,373500000.0,0.0,0.0
+fifa_male,male_players.csv,player_tags,9238676,92.35360505578497,0,False,,,,,,
+fifa_male,male_players.csv,player_traits,5353356,53.51434834894273,0,False,,,,,,
+fifa_male,male_players.csv,pace,1121112,11.207096652301823,0,True,8882478.0,0.0,21.0,97.0,0.0,0.0
+fifa_male,male_players.csv,shooting,1121112,11.207096652301823,0,True,8882478.0,0.0,14.0,94.0,0.0,0.0
+fifa_male,male_players.csv,passing,1121112,11.207096652301823,0,True,8882478.0,0.0,20.0,93.0,0.0,0.0
+fifa_male,male_players.csv,dribbling,1121112,11.207096652301823,0,True,8882478.0,0.0,22.0,96.0,0.0,0.0
+fifa_male,male_players.csv,defending,1121112,11.207096652301823,0,True,8882478.0,0.0,14.0,91.0,0.0,0.0
+fifa_male,male_players.csv,physic,1121112,11.207096652301823,0,True,8882478.0,0.0,25.0,92.0,0.0,0.0
+fifa_male,male_players.csv,attacking_crossing,0,0.0,0,True,10003590.0,0.0,5.0,94.0,0.0,0.0
+fifa_male,male_players.csv,attacking_finishing,0,0.0,0,True,10003590.0,0.0,2.0,95.0,0.0,0.0
+fifa_male,male_players.csv,attacking_heading_accuracy,0,0.0,0,True,10003590.0,0.0,4.0,95.0,0.0,0.0
+fifa_male,male_players.csv,attacking_short_passing,0,0.0,0,True,10003590.0,0.0,7.0,95.0,0.0,0.0
+fifa_male,male_players.csv,attacking_volleys,0,0.0,0,True,10003590.0,0.0,3.0,93.0,0.0,0.0
+fifa_male,male_players.csv,skill_dribbling,0,0.0,0,True,10003590.0,0.0,2.0,97.0,0.0,0.0
+fifa_male,male_players.csv,skill_curve,0,0.0,0,True,10003590.0,0.0,2.0,94.0,0.0,0.0
+fifa_male,male_players.csv,skill_fk_accuracy,0,0.0,0,True,10003590.0,0.0,3.0,95.0,0.0,0.0
+fifa_male,male_players.csv,skill_long_passing,0,0.0,0,True,10003590.0,0.0,4.0,95.0,0.0,0.0
+fifa_male,male_players.csv,skill_ball_control,0,0.0,0,True,10003590.0,0.0,5.0,96.0,0.0,0.0
+fifa_male,male_players.csv,movement_acceleration,0,0.0,0,True,10003590.0,0.0,5.0,97.0,0.0,0.0
+fifa_male,male_players.csv,movement_sprint_speed,0,0.0,0,True,10003590.0,0.0,11.0,97.0,0.0,0.0
+fifa_male,male_players.csv,movement_agility,0,0.0,0,True,10003590.0,0.0,4.0,96.0,0.0,0.0
+fifa_male,male_players.csv,movement_reactions,0,0.0,0,True,10003590.0,0.0,20.0,96.0,0.0,0.0
+fifa_male,male_players.csv,movement_balance,0,0.0,0,True,10003590.0,0.0,10.0,99.0,0.0,0.0
+fifa_male,male_players.csv,power_shot_power,0,0.0,0,True,10003590.0,0.0,2.0,96.0,0.0,0.0
+fifa_male,male_players.csv,power_jumping,0,0.0,0,True,10003590.0,0.0,13.0,97.0,0.0,0.0
+fifa_male,male_players.csv,power_stamina,0,0.0,0,True,10003590.0,0.0,8.0,97.0,0.0,0.0
+fifa_male,male_players.csv,power_strength,0,0.0,0,True,10003590.0,0.0,12.0,98.0,0.0,0.0
+fifa_male,male_players.csv,power_long_shots,0,0.0,0,True,10003590.0,0.0,2.0,94.0,0.0,0.0
+fifa_male,male_players.csv,mentality_aggression,0,0.0,0,True,10003590.0,0.0,2.0,96.0,0.0,0.0
+fifa_male,male_players.csv,mentality_interceptions,0,0.0,0,True,10003590.0,0.0,2.0,93.0,0.0,0.0
+fifa_male,male_players.csv,mentality_positioning,0,0.0,0,True,10003590.0,0.0,1.0,96.0,0.0,0.0
+fifa_male,male_players.csv,mentality_vision,0,0.0,0,True,10003590.0,0.0,3.0,96.0,0.0,0.0
+fifa_male,male_players.csv,mentality_penalties,0,0.0,0,True,10003590.0,0.0,5.0,96.0,0.0,0.0
+fifa_male,male_players.csv,mentality_composure,1948724,19.480246591473662,0,True,8054866.0,0.0,3.0,97.0,0.0,0.0
+fifa_male,male_players.csv,defending_marking_awareness,0,0.0,0,True,10003590.0,0.0,1.0,95.0,0.0,0.0
+fifa_male,male_players.csv,defending_standing_tackle,0,0.0,0,True,10003590.0,0.0,2.0,94.0,0.0,0.0
+fifa_male,male_players.csv,defending_sliding_tackle,0,0.0,0,True,10003590.0,0.0,3.0,95.0,0.0,0.0
+fifa_male,male_players.csv,goalkeeping_diving,0,0.0,0,True,10003590.0,0.0,1.0,91.0,0.0,0.0
+fifa_male,male_players.csv,goalkeeping_handling,0,0.0,0,True,10003590.0,0.0,1.0,92.0,0.0,0.0
+fifa_male,male_players.csv,goalkeeping_kicking,0,0.0,0,True,10003590.0,0.0,1.0,95.0,0.0,0.0
+fifa_male,male_players.csv,goalkeeping_positioning,0,0.0,0,True,10003590.0,0.0,1.0,92.0,0.0,0.0
+fifa_male,male_players.csv,goalkeeping_reflexes,0,0.0,0,True,10003590.0,0.0,1.0,94.0,0.0,0.0
+fifa_male,male_players.csv,goalkeeping_speed,8882723,88.79535246846382,0,True,1120867.0,0.0,12.0,68.0,0.0,0.0
+fifa_male,male_players.csv,ls,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,st,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,rs,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,lw,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,lf,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,cf,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,rf,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,rw,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,lam,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,cam,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,ram,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,lm,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,lcm,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,cm,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,rcm,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,rm,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,lwb,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,ldm,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,cdm,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,rdm,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,rwb,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,lb,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,lcb,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,cb,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,rcb,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,rb,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,gk,0,0.0,0,False,,,,,,
+fifa_male,male_players.csv,player_face_url,0,0.0,0,False,,,,,,
+fifa_male,male_coaches.csv,coach_id,0,0.0,0,True,1155.0,0.0,24.0,37666625.0,0.0,0.0
+fifa_male,male_coaches.csv,coach_url,0,0.0,0,False,,,,,,
+fifa_male,male_coaches.csv,short_name,0,0.0,0,False,,,,,,
+fifa_male,male_coaches.csv,long_name,0,0.0,0,False,,,,,,
+fifa_male,male_coaches.csv,dob,83,7.186147186147186,0,False,,,,,,
+fifa_male,male_coaches.csv,nationality_id,0,0.0,0,True,1155.0,0.0,3.0,198.0,0.0,0.0
+fifa_male,male_coaches.csv,nationality_name,0,0.0,0,False,,,,,,
+fifa_male,male_coaches.csv,face_url,805,69.6969696969697,0,False,,,,,,

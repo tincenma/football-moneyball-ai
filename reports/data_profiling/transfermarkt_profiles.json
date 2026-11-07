@@ -1,0 +1,1326 @@
+[
+  {
+    "source": "transfermarkt",
+    "file": "player_injuries.csv",
+    "member": "player_injuries/player_injuries.csv",
+    "uncompressed_bytes": 8051385,
+    "zip_crc32": "ff2f5fdd",
+    "rows": 143195,
+    "columns": 7,
+    "missing_cells": 1567,
+    "missing_pct": 0.15633027889042417,
+    "missing_by_column": {
+      "player_id": 0,
+      "season_name": 0,
+      "injury_reason": 0,
+      "from_date": 22,
+      "end_date": 1523,
+      "days_missed": 22,
+      "games_missed": 0
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "season_name": 0,
+      "injury_reason": 0,
+      "from_date": 0,
+      "end_date": 0,
+      "days_missed": 0,
+      "games_missed": 0
+    },
+    "duplicate_rows_hash": 111,
+    "key": [
+      "player_id",
+      "from_date",
+      "end_date",
+      "injury_reason"
+    ],
+    "duplicate_key_rows_hash": 111,
+    "unique_ids": {
+      "player_id": 34561
+    },
+    "date_ranges_lexical": {
+      "end_date": {
+        "min": "1973-09-06",
+        "max": "2026-09-01"
+      },
+      "from_date": {
+        "min": "1973-09-02",
+        "max": "2025-12-22"
+      }
+    },
+    "categories": {
+      "season_name": {
+        "24/25": 15102,
+        "21/22": 14885,
+        "20/21": 14058,
+        "18/19": 10463,
+        "23/24": 14483,
+        "17/18": 8734,
+        "22/23": 14296,
+        "19/20": 10372,
+        "16/17": 7596,
+        "15/16": 5816,
+        "14/15": 4689,
+        "13/14": 4145,
+        "12/13": 3399,
+        "11/12": 2835,
+        "10/11": 2417,
+        "08/09": 1993,
+        "09/10": 1772,
+        "25/26": 2108,
+        "07/08": 1386,
+        "02/03": 253,
+        "04/05": 348,
+        "01/02": 250,
+        "00/01": 218,
+        "06/07": 397,
+        "03/04": 277,
+        "05/06": 337,
+        "99/00": 160,
+        "98/99": 124,
+        "96/97": 65,
+        "97/98": 84,
+        "95/96": 47,
+        "94/95": 23,
+        "93/94": 22,
+        "91/92": 5,
+        "89/90": 5,
+        "1910/11": 2,
+        "1909/10": 5,
+        "83/84": 3,
+        "90/91": 3,
+        "92/93": 6,
+        "80/81": 3,
+        "74/75": 3,
+        "75/76": 2,
+        "73/74": 2,
+        "82/83": 1,
+        "81/82": 1
+      }
+    },
+    "numeric": {
+      "player_id": {
+        "n": 143195,
+        "invalid": 0,
+        "min": 2.0,
+        "max": 1396965.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "days_missed": {
+        "n": 143173,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 8655.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "games_missed": {
+        "n": 143195,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 208.0,
+        "zero": 6479,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "player_latest_market_value.csv",
+    "member": "player_latest_market_value/player_latest_market_value.csv",
+    "uncompressed_bytes": 1679013,
+    "zip_crc32": "81e2d510",
+    "rows": 69441,
+    "columns": 3,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "missing_by_column": {
+      "player_id": 0,
+      "date_unix": 0,
+      "value": 0
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "date_unix": 0,
+      "value": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "player_id"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "player_id": 69441
+    },
+    "date_ranges_lexical": {
+      "date_unix": {
+        "min": "2004-10-03",
+        "max": "2025-09-11"
+      }
+    },
+    "categories": {},
+    "numeric": {
+      "player_id": {
+        "n": 69441,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 1407924.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "value": {
+        "n": 69441,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 200000000.0,
+        "zero": 35851,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "player_market_value.csv",
+    "member": "player_market_value/player_market_value.csv",
+    "uncompressed_bytes": 23873747,
+    "zip_crc32": "7df89957",
+    "rows": 901429,
+    "columns": 3,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "missing_by_column": {
+      "player_id": 0,
+      "date_unix": 0,
+      "value": 0
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "date_unix": 0,
+      "value": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "player_id",
+      "date_unix"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "player_id": 69441
+    },
+    "date_ranges_lexical": {
+      "date_unix": {
+        "min": "2003-12-14",
+        "max": "2025-09-11"
+      }
+    },
+    "categories": {},
+    "numeric": {
+      "player_id": {
+        "n": 901429,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 1407924.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "value": {
+        "n": 901429,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 200000000.0,
+        "zero": 48009,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "player_national_performances.csv",
+    "member": "player_national_performances/player_national_performances.csv",
+    "uncompressed_bytes": 5074980,
+    "zip_crc32": "db7c8642",
+    "rows": 92701,
+    "columns": 9,
+    "missing_cells": 159970,
+    "missing_pct": 19.17395113800762,
+    "missing_by_column": {
+      "player_id": 0,
+      "team_id": 0,
+      "matches": 0,
+      "goals": 0,
+      "shirt_number": 0,
+      "debut": 92701,
+      "coach_id": 36922,
+      "debut_game_id": 30347,
+      "career_state": 0
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "team_id": 0,
+      "matches": 0,
+      "goals": 0,
+      "shirt_number": 0,
+      "debut": 0,
+      "coach_id": 0,
+      "debut_game_id": 0,
+      "career_state": 0
+    },
+    "duplicate_rows_hash": 32,
+    "key": [
+      "player_id",
+      "team_id"
+    ],
+    "duplicate_key_rows_hash": 69,
+    "unique_ids": {
+      "player_id": 36339,
+      "team_id": 1108,
+      "coach_id": 3117
+    },
+    "date_ranges_lexical": {},
+    "categories": {},
+    "numeric": {
+      "player_id": {
+        "n": 92701,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 1428280.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "team_id": {
+        "n": 92701,
+        "invalid": 0,
+        "min": 3262.0,
+        "max": 134572.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "matches": {
+        "n": 92701,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 223.0,
+        "zero": 12062,
+        "negative": 0
+      },
+      "goals": {
+        "n": 92701,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 141.0,
+        "zero": 65322,
+        "negative": 0
+      },
+      "shirt_number": {
+        "n": 92701,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 255.0,
+        "zero": 52915,
+        "negative": 0
+      },
+      "coach_id": {
+        "n": 55779,
+        "invalid": 0,
+        "min": 2.0,
+        "max": 147663.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "debut_game_id": {
+        "n": 62354,
+        "invalid": 0,
+        "min": 263.0,
+        "max": 4729550.0,
+        "zero": 0,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "player_performances.csv",
+    "member": "player_performances/player_performances.csv",
+    "uncompressed_bytes": 157647289,
+    "zip_crc32": "929b7623",
+    "rows": 1878719,
+    "columns": 20,
+    "missing_cells": 1308760,
+    "missing_pct": 3.4831180181815378,
+    "missing_by_column": {
+      "player_id": 0,
+      "season_name": 0,
+      "competition_id": 0,
+      "competition_name": 0,
+      "team_id": 0,
+      "team_name": 0,
+      "nb_in_group": 0,
+      "nb_on_pitch": 0,
+      "goals": 138202,
+      "assists": 0,
+      "own_goals": 0,
+      "subed_in": 0,
+      "subed_out": 0,
+      "yellow_cards": 0,
+      "second_yellow_cards": 0,
+      "direct_red_cards": 0,
+      "penalty_goals": 0,
+      "minutes_played": 1170558,
+      "goals_conceded": 0,
+      "clean_sheets": 0
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "season_name": 0,
+      "competition_id": 0,
+      "competition_name": 0,
+      "team_id": 0,
+      "team_name": 0,
+      "nb_in_group": 0,
+      "nb_on_pitch": 0,
+      "goals": 0,
+      "assists": 0,
+      "own_goals": 0,
+      "subed_in": 0,
+      "subed_out": 0,
+      "yellow_cards": 0,
+      "second_yellow_cards": 0,
+      "direct_red_cards": 0,
+      "penalty_goals": 0,
+      "minutes_played": 0,
+      "goals_conceded": 0,
+      "clean_sheets": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "player_id",
+      "season_name",
+      "competition_id",
+      "team_id"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "player_id": 88375,
+      "team_id": 13511
+    },
+    "date_ranges_lexical": {},
+    "categories": {
+      "season_name": {
+        "24/25": 103828,
+        "23/24": 105401,
+        "22/23": 106476,
+        "21/22": 104402,
+        "25/26": 45593,
+        "2024": 28887,
+        "2023": 29092,
+        "2025": 25405,
+        "11/12": 48989,
+        "12/13": 53926,
+        "14/15": 62182,
+        "10/11": 45245,
+        "13/14": 58142,
+        "2022": 27364,
+        "15/16": 66720,
+        "08/09": 37970,
+        "16/17": 72807,
+        "09/10": 41283,
+        "17/18": 79168,
+        "18/19": 85763,
+        "19/20": 86765,
+        "06/07": 30999,
+        "07/08": 33877,
+        "04/05": 25649,
+        "20/21": 89959,
+        "05/06": 28045,
+        "03/04": 22753,
+        "02/03": 19771,
+        "01/02": 17363,
+        "00/01": 14657,
+        "98/99": 10659,
+        "99/00": 12792,
+        "2013": 12394,
+        "97/98": 8803,
+        "2010": 7686,
+        "2020": 21227,
+        "2011": 8552,
+        "2012": 10302,
+        "2017": 17000,
+        "2016": 15477,
+        "96/97": 6688,
+        "2018": 17544,
+        "2021": 22388,
+        "2014": 12753,
+        "2019": 20082,
+        "2009": 6757,
+        "2015": 14621,
+        "95/96": 5158,
+        "94/95": 3871,
+        "93/94": 3047,
+        "92/93": 2348,
+        "91/92": 1820,
+        "2007": 4962,
+        "2008": 5539,
+        "2000": 1992,
+        "90/91": 1338,
+        "2002": 2281,
+        "1999": 1319,
+        "2001": 2251,
+        "2006": 3787,
+        "2005": 3226,
+        "2003": 2779,
+        "89/90": 886,
+        "2004": 3033,
+        "88/89": 642,
+        "1998": 991,
+        "87/88": 426,
+        "86/87": 273,
+        "1997": 669,
+        "85/86": 144,
+        "1996": 479,
+        "84/85": 84,
+        "1994": 206,
+        "2026": 177,
+        "1993": 133,
+        "1995": 316,
+        "83/84": 51,
+        "1989": 28,
+        "1992": 53,
+        "1990": 36,
+        "1988": 18,
+        "82/83": 20,
+        "80/81": 12,
+        "1991": 47,
+        "81/82": 14,
+        "1986": 3,
+        "79/80": 9,
+        "78/79": 5,
+        "77/78": 6,
+        "76/77": 6,
+        "1985": 3,
+        "75/76": 5,
+        "74/75": 4,
+        "1975": 1,
+        "73/74": 3,
+        "65/66": 1,
+        "1987": 5,
+        "1960": 1,
+        "72/73": 2,
+        "61/62": 1,
+        "60/61": 1,
+        "1984": 1
+      }
+    },
+    "numeric": {
+      "player_id": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 1453181.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "team_id": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 134550.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nb_in_group": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 51.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nb_on_pitch": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 51.0,
+        "zero": 182507,
+        "negative": 0
+      },
+      "goals": {
+        "n": 1740517,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 50.0,
+        "zero": 1170451,
+        "negative": 0
+      },
+      "assists": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 29.0,
+        "zero": 1497089,
+        "negative": 0
+      },
+      "own_goals": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 9.0,
+        "zero": 1851414,
+        "negative": 0
+      },
+      "subed_in": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 38.0,
+        "zero": 985788,
+        "negative": 0
+      },
+      "subed_out": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 40.0,
+        "zero": 935339,
+        "negative": 0
+      },
+      "yellow_cards": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 21.0,
+        "zero": 1087239,
+        "negative": 0
+      },
+      "second_yellow_cards": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 5.0,
+        "zero": 1818879,
+        "negative": 0
+      },
+      "direct_red_cards": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 4.0,
+        "zero": 1816205,
+        "negative": 0
+      },
+      "penalty_goals": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 14.0,
+        "zero": 1796411,
+        "negative": 0
+      },
+      "minutes_played": {
+        "n": 708161,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 4590.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goals_conceded": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": -1.0,
+        "max": 111.0,
+        "zero": 1751248,
+        "negative": 1
+      },
+      "clean_sheets": {
+        "n": 1878719,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 29.0,
+        "zero": 1788524,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "player_profiles.csv",
+    "member": "player_profiles/player_profiles.csv",
+    "uncompressed_bytes": 26380409,
+    "zip_crc32": "6369eb8c",
+    "rows": 92671,
+    "columns": 34,
+    "missing_cells": 1508269,
+    "missing_pct": 47.869185550146724,
+    "missing_by_column": {
+      "player_id": 0,
+      "player_slug": 0,
+      "player_name": 520,
+      "player_image_url": 0,
+      "name_in_home_country": 43018,
+      "date_of_birth": 1006,
+      "place_of_birth": 16633,
+      "country_of_birth": 16645,
+      "height": 4,
+      "citizenship": 28,
+      "is_eu": 0,
+      "position": 2,
+      "main_position": 2,
+      "foot": 21790,
+      "current_club_id": 0,
+      "current_club_name": 0,
+      "joined": 3382,
+      "contract_expires": 54005,
+      "outfitter": 86713,
+      "social_media_url": 72334,
+      "player_agent_id": 54614,
+      "player_agent_name": 49791,
+      "contract_option": 89100,
+      "date_of_last_contract_extension": 84308,
+      "on_loan_from_club_id": 88913,
+      "on_loan_from_club_name": 88913,
+      "contract_there_expires": 90165,
+      "second_club_url": 91693,
+      "second_club_name": 91693,
+      "third_club_url": 92629,
+      "third_club_name": 92629,
+      "fourth_club_url": 92670,
+      "fourth_club_name": 92670,
+      "date_of_death": 92399
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "player_slug": 0,
+      "player_name": 0,
+      "player_image_url": 0,
+      "name_in_home_country": 0,
+      "date_of_birth": 0,
+      "place_of_birth": 51,
+      "country_of_birth": 0,
+      "height": 0,
+      "citizenship": 29,
+      "is_eu": 0,
+      "position": 0,
+      "main_position": 0,
+      "foot": 1698,
+      "current_club_id": 0,
+      "current_club_name": 0,
+      "joined": 0,
+      "contract_expires": 0,
+      "outfitter": 0,
+      "social_media_url": 0,
+      "player_agent_id": 0,
+      "player_agent_name": 0,
+      "contract_option": 0,
+      "date_of_last_contract_extension": 0,
+      "on_loan_from_club_id": 0,
+      "on_loan_from_club_name": 0,
+      "contract_there_expires": 0,
+      "second_club_url": 0,
+      "second_club_name": 0,
+      "third_club_url": 0,
+      "third_club_name": 0,
+      "fourth_club_url": 0,
+      "fourth_club_name": 0,
+      "date_of_death": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "player_id"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "player_id": 92671
+    },
+    "date_ranges_lexical": {
+      "contract_expires": {
+        "min": "2025-01-01",
+        "max": "2035-06-30"
+      },
+      "joined": {
+        "min": "1988-07-01",
+        "max": "2025-09-13"
+      },
+      "contract_there_expires": {
+        "min": "2025-06-30",
+        "max": "2033-06-30"
+      },
+      "date_of_birth": {
+        "min": "1952-02-13",
+        "max": "2010-10-12"
+      },
+      "date_of_last_contract_extension": {
+        "min": "2015-07-31",
+        "max": "2029-12-17"
+      },
+      "date_of_death": {
+        "min": "01.01.2020 (39)",
+        "max": "31.12.2024 (24)"
+      }
+    },
+    "categories": {
+      "position": {
+        "Defender - Centre-Back": 15074,
+        "Attack - Centre-Forward": 12070,
+        "Goalkeeper": 10276,
+        "Midfield - Central Midfield": 9546,
+        "Midfield - Defensive Midfield": 6999,
+        "Defender - Right-Back": 6502,
+        "Defender - Left-Back": 6116,
+        "Midfield - Attacking Midfield": 5821,
+        "Midfield": 3148,
+        "Attack - Right Winger": 4790,
+        "Attack - Left Winger": 4756,
+        "Attack": 1885,
+        "Defender": 2013,
+        "Midfield - Right Midfield": 1545,
+        "Midfield - Left Midfield": 1314,
+        "Attack - Second Striker": 786,
+        "Defender - Sweeper": 28,
+        "": 2
+      },
+      "main_position": {
+        "Defender": 29733,
+        "Midfield": 28373,
+        "Attack": 24287,
+        "Goalkeeper": 10276,
+        "": 2
+      }
+    },
+    "numeric": {
+      "player_id": {
+        "n": 92671,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 1459023.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "height": {
+        "n": 92667,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 210.0,
+        "zero": 18867,
+        "negative": 0
+      },
+      "current_club_id": {
+        "n": 92671,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 134553.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "player_agent_id": {
+        "n": 38057,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 15015.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "on_loan_from_club_id": {
+        "n": 3758,
+        "invalid": 0,
+        "min": 2.0,
+        "max": 132806.0,
+        "zero": 0,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "player_teammates_played_with.csv",
+    "member": "player_teammates_played_with/player_teammates_played_with.csv",
+    "uncompressed_bytes": 47705635,
+    "zip_crc32": "56dfff53",
+    "rows": 1257342,
+    "columns": 6,
+    "missing_cells": 1876410,
+    "missing_pct": 24.87270766426318,
+    "missing_by_column": {
+      "player_id": 0,
+      "teammate_player_id": 0,
+      "teammate_player_name": 0,
+      "ppg_played_with": 37080,
+      "joint_goal_participation": 1035177,
+      "minutes_played_with": 804153
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "teammate_player_id": 0,
+      "teammate_player_name": 0,
+      "ppg_played_with": 0,
+      "joint_goal_participation": 0,
+      "minutes_played_with": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "player_id",
+      "teammate_player_id"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "player_id": 84401
+    },
+    "date_ranges_lexical": {},
+    "categories": {},
+    "numeric": {
+      "player_id": {
+        "n": 1257342,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 1458683.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "teammate_player_id": {
+        "n": 1257342,
+        "invalid": 0,
+        "min": 45.0,
+        "max": 1458255.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "ppg_played_with": {
+        "n": 1220262,
+        "invalid": 0,
+        "min": 0.02,
+        "max": 3.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "joint_goal_participation": {
+        "n": 222165,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 80.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "minutes_played_with": {
+        "n": 453189,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 999.0,
+        "zero": 2991,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "team_children.csv",
+    "member": "team_children/team_children.csv",
+    "uncompressed_bytes": 510791,
+    "zip_crc32": "72c511dc",
+    "rows": 7695,
+    "columns": 5,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "missing_by_column": {
+      "parent_team_id": 0,
+      "parent_team_name": 0,
+      "child_team_id": 0,
+      "child_team_name": 0,
+      "_last_modified_at": 0
+    },
+    "literal_sentinel_counts": {
+      "parent_team_id": 0,
+      "parent_team_name": 0,
+      "child_team_id": 0,
+      "child_team_name": 0,
+      "_last_modified_at": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "parent_team_id",
+      "child_team_id"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {},
+    "date_ranges_lexical": {
+      "_last_modified_at": {
+        "min": "2025-09-11 18:16:45",
+        "max": "2025-09-13 13:38:39"
+      }
+    },
+    "categories": {},
+    "numeric": {
+      "parent_team_id": {
+        "n": 7695,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 132806.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "child_team_id": {
+        "n": 7695,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 134550.0,
+        "zero": 0,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "team_competitions_seasons.csv",
+    "member": "team_competitions_seasons/team_competitions_seasons.csv",
+    "uncompressed_bytes": 17075504,
+    "zip_crc32": "64f4cd48",
+    "rows": 196378,
+    "columns": 7,
+    "missing_cells": 96567,
+    "missing_pct": 7.024863128398147,
+    "missing_by_column": {
+      "club_id": 0,
+      "team_name": 0,
+      "season_id": 0,
+      "competition_name": 32189,
+      "competition_id": 32189,
+      "club_division": 32189,
+      "_last_modified_at": 0
+    },
+    "literal_sentinel_counts": {
+      "club_id": 0,
+      "team_name": 0,
+      "season_id": 0,
+      "competition_name": 0,
+      "competition_id": 0,
+      "club_division": 0,
+      "_last_modified_at": 0
+    },
+    "duplicate_rows_hash": 143359,
+    "key": [
+      "club_id",
+      "season_id",
+      "competition_id"
+    ],
+    "duplicate_key_rows_hash": 143359,
+    "unique_ids": {
+      "club_id": 2175
+    },
+    "date_ranges_lexical": {
+      "_last_modified_at": {
+        "min": "2025-09-11 18:16:45",
+        "max": "2025-09-13 13:38:39"
+      }
+    },
+    "categories": {
+      "season_id": {
+        "2025": 9899,
+        "2023": 9772,
+        "2024": 9782,
+        "2022": 9696,
+        "2020": 9627,
+        "2021": 9705,
+        "2015": 7101,
+        "2018": 7163,
+        "2019": 7200,
+        "2008": 6872,
+        "2001": 6684,
+        "2012": 6931,
+        "2003": 6767,
+        "2007": 6791,
+        "2006": 6817,
+        "2005": 6758,
+        "2010": 6953,
+        "2002": 6801,
+        "2014": 7003,
+        "2004": 6648,
+        "2009": 6773,
+        "2000": 6764,
+        "2016": 7120,
+        "2017": 7091,
+        "2013": 6866,
+        "2011": 6794
+      }
+    },
+    "numeric": {
+      "club_id": {
+        "n": 196378,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 133273.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "season_id": {
+        "n": 196378,
+        "invalid": 0,
+        "min": 2000.0,
+        "max": 2025.0,
+        "zero": 0,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "team_details.csv",
+    "member": "team_details/team_details.csv",
+    "uncompressed_bytes": 609556,
+    "zip_crc32": "9c8ed8f0",
+    "rows": 2175,
+    "columns": 12,
+    "missing_cells": 2024,
+    "missing_pct": 7.754789272030652,
+    "missing_by_column": {
+      "club_id": 0,
+      "club_slug": 0,
+      "club_name": 0,
+      "logo_url": 0,
+      "country_name": 0,
+      "season_id": 0,
+      "competition_id": 506,
+      "competition_slug": 506,
+      "competition_name": 506,
+      "club_division": 506,
+      "source_url": 0,
+      "_last_modified_at": 0
+    },
+    "literal_sentinel_counts": {
+      "club_id": 0,
+      "club_slug": 0,
+      "club_name": 0,
+      "logo_url": 0,
+      "country_name": 0,
+      "season_id": 0,
+      "competition_id": 0,
+      "competition_slug": 0,
+      "competition_name": 0,
+      "club_division": 0,
+      "source_url": 0,
+      "_last_modified_at": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "club_id"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "club_id": 2175
+    },
+    "date_ranges_lexical": {
+      "_last_modified_at": {
+        "min": "2025-09-11 18:16:40",
+        "max": "2025-09-13 13:38:39"
+      }
+    },
+    "categories": {
+      "season_id": {
+        "2023": 143,
+        "2024": 121,
+        "2021": 113,
+        "2022": 106,
+        "2025": 103,
+        "2020": 103,
+        "2017": 90,
+        "2014": 82,
+        "2018": 81,
+        "2012": 79,
+        "2002": 78,
+        "2015": 77,
+        "2000": 77,
+        "2006": 76,
+        "2010": 76,
+        "2005": 75,
+        "2016": 74,
+        "2003": 74,
+        "2011": 74,
+        "2009": 72,
+        "2019": 70,
+        "2008": 69,
+        "2001": 69,
+        "2013": 65,
+        "2004": 64,
+        "2007": 64
+      }
+    },
+    "numeric": {
+      "club_id": {
+        "n": 2175,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 133273.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "season_id": {
+        "n": 2175,
+        "invalid": 0,
+        "min": 2000.0,
+        "max": 2025.0,
+        "zero": 0,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "transfermarkt",
+    "file": "transfer_history.csv",
+    "member": "transfer_history/transfer_history.csv",
+    "uncompressed_bytes": 81069349,
+    "zip_crc32": "341d5857",
+    "rows": 1101440,
+    "columns": 10,
+    "missing_cells": 582,
+    "missing_pct": 0.005283991865194654,
+    "missing_by_column": {
+      "player_id": 0,
+      "season_name": 2,
+      "transfer_date": 580,
+      "from_team_id": 0,
+      "from_team_name": 0,
+      "to_team_id": 0,
+      "to_team_name": 0,
+      "transfer_type": 0,
+      "value_at_transfer": 0,
+      "transfer_fee": 0
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "season_name": 0,
+      "transfer_date": 0,
+      "from_team_id": 0,
+      "from_team_name": 0,
+      "to_team_id": 0,
+      "to_team_name": 0,
+      "transfer_type": 0,
+      "value_at_transfer": 0,
+      "transfer_fee": 0
+    },
+    "duplicate_rows_hash": 123,
+    "key": null,
+    "duplicate_key_rows_hash": null,
+    "unique_ids": {
+      "player_id": 117944
+    },
+    "date_ranges_lexical": {
+      "transfer_date": {
+        "min": "1900-07-01",
+        "max": "3026-06-30"
+      }
+    },
+    "categories": {
+      "season_name": {
+        "24/25": 66022,
+        "22/23": 68568,
+        "23/24": 68472,
+        "21/22": 66546,
+        "25/26": 34783,
+        "20/21": 61566,
+        "12/13": 41167,
+        "10/11": 35526,
+        "11/12": 38515,
+        "19/20": 60328,
+        "13/14": 44182,
+        "08/09": 30106,
+        "09/10": 33152,
+        "18/19": 59801,
+        "17/18": 55739,
+        "14/15": 47087,
+        "15/16": 50547,
+        "16/17": 52113,
+        "07/08": 27803,
+        "06/07": 24100,
+        "05/06": 21534,
+        "04/05": 19045,
+        "03/04": 16283,
+        "02/03": 13616,
+        "01/02": 11870,
+        "00/01": 10155,
+        "99/00": 8358,
+        "98/99": 6910,
+        "97/98": 5901,
+        "96/97": 4825,
+        "95/96": 3862,
+        "94/95": 3027,
+        "93/94": 2366,
+        "92/93": 1891,
+        "91/92": 1540,
+        "90/91": 1153,
+        "89/90": 873,
+        "88/89": 675,
+        "87/88": 401,
+        "86/87": 348,
+        "85/86": 194,
+        "84/85": 148,
+        "83/84": 85,
+        "26/27": 112,
+        "81/82": 33,
+        "82/83": 51,
+        "": 2,
+        "78/79": 4,
+        "79/80": 6,
+        "80/81": 20,
+        "76/77": 4,
+        "1900/01": 1,
+        "71/72": 1,
+        "69/70": 2,
+        "1904/05": 1,
+        "75/76": 1,
+        "1909/10": 1,
+        "77/78": 8,
+        "73/74": 4,
+        "72/73": 2,
+        "70/71": 2,
+        "27/28": 1,
+        "1905/06": 1
+      },
+      "transfer_type": {
+        "Transfer": 844501,
+        "Loan": 128087,
+        "Return from loan": 127680,
+        "Draft": 1172
+      }
+    },
+    "numeric": {
+      "player_id": {
+        "n": 1101440,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 1459023.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "from_team_id": {
+        "n": 1101440,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 134587.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "to_team_id": {
+        "n": 1101440,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 134587.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "value_at_transfer": {
+        "n": 1101440,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 180000000.0,
+        "zero": 598500,
+        "negative": 0
+      },
+      "transfer_fee": {
+        "n": 1101440,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 222000000.0,
+        "zero": 1061443,
+        "negative": 0
+      }
+    }
+  }
+]

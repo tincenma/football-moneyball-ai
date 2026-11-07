@@ -1,0 +1,77 @@
+{
+  "name": "Moneyball 2.0",
+  "version": "1.0.0",
+  "decision_date": "2026-11-07",
+  "primary_population": "male players with exact CM token among FIFA player_positions",
+  "primary_snapshot": {"fifa_version": 23, "fifa_update_date": "2022-09-26", "source": "male_players (legacy).csv"},
+  "observation_key": ["fifa_id", "fifa_update_date"],
+  "entity_match": {
+    "rule": "unique normalized exact alias AND exact date of birth; reciprocal one-to-one; quarantine height difference >10cm",
+    "accepted_name_sources_fifa": ["long_name", "short_name", "player_url slug"],
+    "accepted_name_sources_transfermarkt": ["player_name without trailing numeric ID", "name_in_home_country", "player_slug"],
+    "fuzzy_matches": "review_only_excluded_from_training"
+  },
+  "similarity_features": [
+    "attacking_short_passing", "skill_long_passing", "mentality_vision",
+    "skill_ball_control", "skill_dribbling", "movement_agility", "movement_balance",
+    "movement_reactions", "mentality_composure", "power_stamina", "power_strength",
+    "mentality_aggression", "mentality_interceptions", "defending_marking_awareness",
+    "defending_standing_tackle", "movement_acceleration", "movement_sprint_speed", "power_long_shots"
+  ],
+  "similarity_feature_groups": {
+    "passing": ["attacking_short_passing", "skill_long_passing", "mentality_vision"],
+    "ball_control": ["skill_ball_control", "skill_dribbling"],
+    "mobility": ["movement_agility", "movement_balance", "movement_acceleration", "movement_sprint_speed"],
+    "decisions": ["movement_reactions", "mentality_composure"],
+    "physical": ["power_stamina", "power_strength", "mentality_aggression"],
+    "defending": ["mentality_interceptions", "defending_marking_awareness", "defending_standing_tackle"],
+    "long_shots": ["power_long_shots"]
+  },
+  "similarity_preprocessing": {
+    "numeric": "StandardScaler fit on training CM only; persist scaler",
+    "group_weighting": "multiply each standardized attribute by sqrt(1 / (7 * number_of_attributes_in_its_group))",
+    "ranking": "cosine similarity of weighted standardized vectors",
+    "missing_core": "exclude from v1; never impute using future observations"
+  },
+  "valuation_additional_numeric_features": ["age_at_cutoff", "height_cm", "weight_kg", "weak_foot", "league_level"],
+  "valuation_additional_categorical_features": ["preferred_foot", "work_rate_attack", "work_rate_defence", "league_id"],
+  "valuation_total_raw_features": 27,
+  "derivations": {
+    "age_at_cutoff": "(cutoff_date - FIFA dob).days / 365.2425",
+    "work_rate_attack": "first component of FIFA work_rate split by /",
+    "work_rate_defence": "second component of FIFA work_rate split by /"
+  },
+  "valuation_preprocessing": {
+    "missing_league_id": "UNKNOWN category; league_id is categorical, not a continuous player identifier",
+    "missing_league_level": "training-fold median; no full-dataset fitting",
+    "categorical": "one-hot encoding with unknown-category handling, fit on training fold",
+    "numeric": "fit imputer and any scaling on training fold only",
+    "feature_selection": "explicit allowlist only; never use all columns except target"
+  },
+  "target": {
+    "field": "target_log1p_tm_value",
+    "definition": "log1p of positive TM market value with latest date <= cutoff",
+    "max_staleness_days": 365,
+    "currency": "source units; supplied TM CSV has no currency column; EUR denomination is not independently certified by this audit",
+    "zero": "exclude from valuation target; do not interpret as a zero-cost transfer",
+    "interpretation": "cross-sectional recorded market valuation, not transfer fee or future performance"
+  },
+  "metadata_only": ["fifa_id", "tm_id", "fifa_update_date", "market_value_date", "market_value_age_days", "short_name", "long_name", "dob", "player_positions", "club_name", "nationality_name"],
+  "filters_only": ["player_positions", "age_at_cutoff", "tm_market_value"],
+  "baseline_only": ["overall"],
+  "excluded_as_model_inputs": {
+    "price_proxies": ["value_eur", "wage_eur", "release_clause_eur", "tm_market_value", "value_at_transfer", "transfer_fee"],
+    "rating_proxies_and_duplicate_aggregates": ["overall", "potential", "international_reputation", "pace", "shooting", "passing", "dribbling", "defending", "physic", "ls", "st", "rs", "lw", "lf", "cf", "rf", "rw", "lam", "cam", "ram", "lm", "lcm", "cm", "rcm", "rm", "lwb", "ldm", "cdm", "rdm", "rwb", "lb", "lcb", "cb", "rcb", "rb", "gk"],
+    "inappropriate_position": ["goalkeeping_diving", "goalkeeping_handling", "goalkeeping_kicking", "goalkeeping_positioning", "goalkeeping_reflexes", "goalkeeping_speed", "goals_conceded", "clean_sheets"],
+    "nonhistorical_tables": ["player_latest_market_value", "player_national_performances", "player_teammates_played_with"],
+    "current_transfermarkt_profile": ["current_club_id", "current_club_name", "joined", "contract_expires", "date_of_last_contract_extension", "player_agent_name", "player_agent_id", "outfitter", "social_media_url", "position", "main_position"],
+    "insufficient_coverage_or_period_provenance": ["prev_minutes_played", "prev_goals_p90", "prev_assists_p90", "prev_yellow_cards_p90", "injury_days_365", "games_missed", "contract_remaining_months"]
+  },
+  "unavailable_in_supplied_data": ["xG", "xA", "progressive_passes", "progressive_carries", "pressures", "pass_completion", "tackles_per_90", "interceptions_per_90"],
+  "evaluation_contract": {
+    "single_snapshot": "group holdout by player identity; preprocessing fit inside training folds; compare to training-median valuation baseline",
+    "historical_panel": "chronological train/validation/test; purge future snapshots and duplicate player observations across partitions for a cold-start test",
+    "similarity": "same CM, age and budget filters for method and overall baseline; internal similarity is descriptive",
+    "claims": "market-value residual is a screening signal, not evidence of real-world underpricing or sporting success"
+  }
+}

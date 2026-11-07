@@ -1,0 +1,20 @@
+source,file,rows,columns,missing_cells,missing_pct,duplicate_rows_hash,duplicate_key_rows_hash
+fifa_male,male_players (legacy).csv,161583,110,1218702,6.85660563976971,0,0.0
+fifa_male,male_teams.csv,385055,54,4172566,20.06719578780713,0,0.0
+fifa_male,male_players.csv,10003590,110,75828244,6.891002857246975,0,0.0
+fifa_male,male_coaches.csv,1155,8,888,9.61038961038961,0,0.0
+fifa_female,female_coaches.csv,52,8,55,13.221153846153847,0,0.0
+fifa_female,female_players (legacy).csv,3196,110,46602,13.255774263283651,0,0.0
+fifa_female,female_players.csv,181361,110,2883528,14.453984544136231,0,0.0
+fifa_female,female_teams.csv,7941,54,115261,26.879019808121935,0,0.0
+transfermarkt,player_injuries.csv,143195,7,1567,0.15633027889042417,111,111.0
+transfermarkt,player_latest_market_value.csv,69441,3,0,0.0,0,0.0
+transfermarkt,player_market_value.csv,901429,3,0,0.0,0,0.0
+transfermarkt,player_national_performances.csv,92701,9,159970,19.17395113800762,32,69.0
+transfermarkt,player_performances.csv,1878719,20,1308760,3.4831180181815378,0,0.0
+transfermarkt,player_profiles.csv,92671,34,1508269,47.869185550146724,0,0.0
+transfermarkt,player_teammates_played_with.csv,1257342,6,1876410,24.87270766426318,0,0.0
+transfermarkt,team_children.csv,7695,5,0,0.0,0,0.0
+transfermarkt,team_competitions_seasons.csv,196378,7,96567,7.024863128398147,143359,143359.0
+transfermarkt,team_details.csv,2175,12,2024,7.754789272030652,0,0.0
+transfermarkt,transfer_history.csv,1101440,10,582,0.005283991865194654,123,

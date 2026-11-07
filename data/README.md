@@ -2,6 +2,8 @@
 
 External real-world datasets are **not bundled** with this starter. Download only datasets you are licensed to use, track original source, season and retrieval date, and avoid committing large or restricted data to GitHub.
 
+The three supplied local ZIP archives were fully audited on 2026-11-07. See [the profiling report](../docs/data_profiling.md), [all actual source columns](../docs/data_dictionary.md), and [Feature Set v1](../config/feature_set_v1.json). Aggregate evidence is in `reports/data_profiling/`; extracted records, identity mappings and the 2,886-row valuation dataset are local only under gitignored `data/processed/profiling/`. The finalized training schema differs from the starter-app schema below.
+
 ## CSV schema for the starter app
 
 Required columns:

@@ -1,0 +1,137 @@
+{
+  "player_injuries.csv:from_date": {
+    "blank": 22,
+    "non_iso": 0,
+    "unparseable_iso": 0,
+    "min_valid": "1973-09-02",
+    "max_valid": "2025-12-22",
+    "before_1950": 0,
+    "after_extract_anchor": 2,
+    "beyond_2035": 0,
+    "date_before_player_birth": 1
+  },
+  "player_injuries.csv:end_date": {
+    "blank": 1523,
+    "non_iso": 0,
+    "unparseable_iso": 0,
+    "min_valid": "1973-09-06",
+    "max_valid": "2026-09-01",
+    "before_1950": 0,
+    "after_extract_anchor": 390,
+    "beyond_2035": 0,
+    "date_before_player_birth": 1
+  },
+  "player_injuries.csv:date_year_outside_season_years": 253,
+  "injury_end_before_start": 0,
+  "player_market_value.csv:date_unix": {
+    "blank": 0,
+    "non_iso": 0,
+    "unparseable_iso": 0,
+    "min_valid": "2003-12-14",
+    "max_valid": "2025-09-11",
+    "before_1950": 0,
+    "after_extract_anchor": 0,
+    "beyond_2035": 0,
+    "date_before_player_birth": 0
+  },
+  "player_latest_market_value.csv:date_unix": {
+    "blank": 0,
+    "non_iso": 0,
+    "unparseable_iso": 0,
+    "min_valid": "2004-10-03",
+    "max_valid": "2025-09-11",
+    "before_1950": 0,
+    "after_extract_anchor": 0,
+    "beyond_2035": 0,
+    "date_before_player_birth": 0
+  },
+  "transfer_history.csv:transfer_date": {
+    "blank": 580,
+    "non_iso": 0,
+    "unparseable_iso": 0,
+    "min_valid": "1900-07-01",
+    "max_valid": "3026-06-30",
+    "before_1950": 5,
+    "after_extract_anchor": 4193,
+    "beyond_2035": 1,
+    "date_before_player_birth": 3
+  },
+  "transfer_history.csv:date_year_outside_season_years": 656,
+  "transfer_types": {
+    "Transfer": 844501,
+    "Loan": 128087,
+    "Return from loan": 127680,
+    "Draft": 1172
+  },
+  "transfer_value_at_transfer_zero": 598500,
+  "transfer_fee_zero": 1061443,
+  "player_profiles.csv:date_of_birth": {
+    "blank": 1006,
+    "non_iso": 0,
+    "unparseable_iso": 0,
+    "min_valid": "1952-02-13",
+    "max_valid": "2010-10-12",
+    "before_1950": 0,
+    "after_extract_anchor": 0,
+    "beyond_2035": 0
+  },
+  "player_profiles.csv:joined": {
+    "blank": 3382,
+    "non_iso": 0,
+    "unparseable_iso": 0,
+    "min_valid": "1988-07-01",
+    "max_valid": "2025-09-13",
+    "before_1950": 0,
+    "after_extract_anchor": 0,
+    "beyond_2035": 0
+  },
+  "player_profiles.csv:contract_expires": {
+    "blank": 54005,
+    "non_iso": 0,
+    "unparseable_iso": 0,
+    "min_valid": "2025-01-01",
+    "max_valid": "2035-06-30",
+    "before_1950": 0,
+    "after_extract_anchor": 36345,
+    "beyond_2035": 0
+  },
+  "player_profiles.csv:date_of_last_contract_extension": {
+    "blank": 84308,
+    "non_iso": 0,
+    "unparseable_iso": 0,
+    "min_valid": "2015-07-31",
+    "max_valid": "2029-12-17",
+    "before_1950": 0,
+    "after_extract_anchor": 5,
+    "beyond_2035": 0
+  },
+  "player_profiles.csv:date_of_death": {
+    "blank": 92399,
+    "non_iso": 272,
+    "unparseable_iso": 0,
+    "min_valid": null,
+    "max_valid": null,
+    "before_1950": 0,
+    "after_extract_anchor": 0,
+    "beyond_2035": 0
+  },
+  "tm_placeholder_counts": {
+    "place_of_birth": {
+      "-": 51
+    },
+    "citizenship": {
+      "N/A": 29
+    },
+    "foot": {
+      "N/A": 1698
+    }
+  },
+  "tm_height_zero": 18867,
+  "tm_height_blank": 4,
+  "latest_history_consistency": {
+    "rows": 69441,
+    "date_disagreements": 0,
+    "value_disagreements": 0,
+    "latest_after_2022_cutoff": 48468
+  }
+}

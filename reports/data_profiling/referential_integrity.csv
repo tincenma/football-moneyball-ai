@@ -1,0 +1,8 @@
+file,unique_player_ids,ids_in_profiles,ids_without_profile,rows_without_profile
+player_injuries.csv,34561,34561,0,0
+player_market_value.csv,69441,69441,0,0
+player_latest_market_value.csv,69441,69441,0,0
+player_national_performances.csv,36339,28150,8189,17892
+player_performances.csv,88375,88375,0,0
+player_teammates_played_with.csv,84401,84401,0,0
+transfer_history.csv,117944,91211,26733,262140

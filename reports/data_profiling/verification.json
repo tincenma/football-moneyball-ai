@@ -1,0 +1,153 @@
+{
+  "independent_csv_counts": [
+    {
+      "file": "female_coaches.csv",
+      "rows": 52,
+      "missing_cells": 55
+    },
+    {
+      "file": "female_players (legacy).csv",
+      "rows": 3196,
+      "missing_cells": 46602
+    },
+    {
+      "file": "female_players.csv",
+      "rows": 181361,
+      "missing_cells": 2883528
+    },
+    {
+      "file": "female_teams.csv",
+      "rows": 7941,
+      "missing_cells": 115261
+    },
+    {
+      "file": "male_players (legacy).csv",
+      "rows": 161583,
+      "missing_cells": 1218702
+    },
+    {
+      "file": "male_teams.csv",
+      "rows": 385055,
+      "missing_cells": 4172566
+    },
+    {
+      "file": "male_coaches.csv",
+      "rows": 1155,
+      "missing_cells": 888
+    },
+    {
+      "file": "player_injuries.csv",
+      "rows": 143195,
+      "missing_cells": 1567
+    },
+    {
+      "file": "player_latest_market_value.csv",
+      "rows": 69441,
+      "missing_cells": 0
+    },
+    {
+      "file": "player_market_value.csv",
+      "rows": 901429,
+      "missing_cells": 0
+    },
+    {
+      "file": "player_national_performances.csv",
+      "rows": 92701,
+      "missing_cells": 159970
+    },
+    {
+      "file": "player_performances.csv",
+      "rows": 1878719,
+      "missing_cells": 1308760
+    },
+    {
+      "file": "player_profiles.csv",
+      "rows": 92671,
+      "missing_cells": 1508269
+    },
+    {
+      "file": "player_teammates_played_with.csv",
+      "rows": 1257342,
+      "missing_cells": 1876410
+    },
+    {
+      "file": "team_children.csv",
+      "rows": 7695,
+      "missing_cells": 0
+    },
+    {
+      "file": "team_competitions_seasons.csv",
+      "rows": 196378,
+      "missing_cells": 96567
+    },
+    {
+      "file": "team_details.csv",
+      "rows": 2175,
+      "missing_cells": 2024
+    },
+    {
+      "file": "transfer_history.csv",
+      "rows": 1101440,
+      "missing_cells": 582
+    }
+  ],
+  "exact_duplicate_checks": [
+    {
+      "file": "player_injuries.csv",
+      "duplicates": 111
+    },
+    {
+      "file": "player_national_performances.csv",
+      "duplicates": 32
+    },
+    {
+      "file": "team_competitions_seasons.csv",
+      "duplicates": 143359
+    },
+    {
+      "file": "transfer_history.csv",
+      "duplicates": 123
+    }
+  ],
+  "snapshot_checks": [
+    {
+      "file": "female_players (legacy).csv",
+      "snapshots": 8,
+      "rows": 3196
+    },
+    {
+      "file": "female_players.csv",
+      "snapshots": 519,
+      "rows": 181361
+    },
+    {
+      "file": "female_teams.csv",
+      "snapshots": 519,
+      "rows": 7941
+    },
+    {
+      "file": "male_players (legacy).csv",
+      "snapshots": 9,
+      "rows": 161583
+    },
+    {
+      "file": "male_teams.csv",
+      "snapshots": 558,
+      "rows": 385055
+    },
+    {
+      "file": "male_players.csv",
+      "snapshots": 558,
+      "rows": 10003590
+    }
+  ],
+  "training": {
+    "rows": 2886,
+    "raw_features": 27,
+    "metadata_columns": 5,
+    "target_columns": 2,
+    "missing_core": 0,
+    "future_value_rows": 0
+  },
+  "result": "all_checks_passed"
+}

@@ -1,0 +1,2157 @@
+[
+  {
+    "source": "fifa_female",
+    "file": "female_coaches.csv",
+    "member": "female_coaches.csv",
+    "uncompressed_bytes": 5356,
+    "zip_crc32": "e0c8b8a2",
+    "rows": 52,
+    "columns": 8,
+    "missing_cells": 55,
+    "missing_pct": 13.221153846153847,
+    "missing_by_column": {
+      "coach_id": 0,
+      "coach_url": 0,
+      "short_name": 0,
+      "long_name": 0,
+      "dob": 11,
+      "nationality_id": 0,
+      "nationality_name": 0,
+      "face_url": 44
+    },
+    "literal_sentinel_counts": {
+      "coach_id": 0,
+      "coach_url": 0,
+      "short_name": 0,
+      "long_name": 0,
+      "dob": 0,
+      "nationality_id": 0,
+      "nationality_name": 0,
+      "face_url": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "coach_id"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "coach_id": 52
+    },
+    "date_ranges_lexical": {
+      "dob": {
+        "min": "1959-08-22",
+        "max": "1984-08-04"
+      }
+    },
+    "categories": {},
+    "numeric": {
+      "coach_id": {
+        "n": 52,
+        "invalid": 0,
+        "min": 2079.0,
+        "max": 37667852.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nationality_id": {
+        "n": 52,
+        "invalid": 0,
+        "min": 7.0,
+        "max": 198.0,
+        "zero": 0,
+        "negative": 0
+      }
+    }
+  },
+  {
+    "source": "fifa_female",
+    "file": "female_players (legacy).csv",
+    "member": "female_players (legacy).csv",
+    "uncompressed_bytes": 1685124,
+    "zip_crc32": "92a14d82",
+    "rows": 3196,
+    "columns": 110,
+    "missing_cells": 46602,
+    "missing_pct": 13.255774263283651,
+    "missing_by_column": {
+      "player_id": 0,
+      "player_url": 0,
+      "fifa_version": 0,
+      "fifa_update": 0,
+      "fifa_update_date": 0,
+      "short_name": 0,
+      "long_name": 0,
+      "player_positions": 0,
+      "overall": 0,
+      "potential": 0,
+      "value_eur": 2632,
+      "wage_eur": 2632,
+      "age": 0,
+      "dob": 0,
+      "height_cm": 0,
+      "weight_kg": 0,
+      "league_id": 2678,
+      "league_name": 2678,
+      "league_level": 2678,
+      "club_team_id": 2678,
+      "club_name": 2678,
+      "club_position": 2678,
+      "club_jersey_number": 2678,
+      "club_loaned_from": 3187,
+      "club_joined_date": 2687,
+      "club_contract_valid_until_year": 2678,
+      "nationality_id": 0,
+      "nationality_name": 0,
+      "nation_team_id": 423,
+      "nation_position": 423,
+      "nation_jersey_number": 423,
+      "preferred_foot": 0,
+      "weak_foot": 0,
+      "skill_moves": 0,
+      "international_reputation": 0,
+      "work_rate": 0,
+      "body_type": 0,
+      "real_face": 0,
+      "release_clause_eur": 2641,
+      "player_tags": 2686,
+      "player_traits": 1977,
+      "pace": 400,
+      "shooting": 400,
+      "passing": 400,
+      "dribbling": 400,
+      "defending": 400,
+      "physic": 400,
+      "attacking_crossing": 0,
+      "attacking_finishing": 0,
+      "attacking_heading_accuracy": 0,
+      "attacking_short_passing": 0,
+      "attacking_volleys": 0,
+      "skill_dribbling": 0,
+      "skill_curve": 0,
+      "skill_fk_accuracy": 0,
+      "skill_long_passing": 0,
+      "skill_ball_control": 0,
+      "movement_acceleration": 0,
+      "movement_sprint_speed": 0,
+      "movement_agility": 0,
+      "movement_reactions": 0,
+      "movement_balance": 0,
+      "power_shot_power": 0,
+      "power_jumping": 0,
+      "power_stamina": 0,
+      "power_strength": 0,
+      "power_long_shots": 0,
+      "mentality_aggression": 0,
+      "mentality_interceptions": 0,
+      "mentality_positioning": 0,
+      "mentality_vision": 0,
+      "mentality_penalties": 0,
+      "mentality_composure": 271,
+      "defending_marking_awareness": 0,
+      "defending_standing_tackle": 0,
+      "defending_sliding_tackle": 0,
+      "goalkeeping_diving": 0,
+      "goalkeeping_handling": 0,
+      "goalkeeping_kicking": 0,
+      "goalkeeping_positioning": 0,
+      "goalkeeping_reflexes": 0,
+      "goalkeeping_speed": 2796,
+      "ls": 0,
+      "st": 0,
+      "rs": 0,
+      "lw": 0,
+      "lf": 0,
+      "cf": 0,
+      "rf": 0,
+      "rw": 0,
+      "lam": 0,
+      "cam": 0,
+      "ram": 0,
+      "lm": 0,
+      "lcm": 0,
+      "cm": 0,
+      "rcm": 0,
+      "rm": 0,
+      "lwb": 0,
+      "ldm": 0,
+      "cdm": 0,
+      "rdm": 0,
+      "rwb": 0,
+      "lb": 0,
+      "lcb": 0,
+      "cb": 0,
+      "rcb": 0,
+      "rb": 0,
+      "gk": 0,
+      "player_face_url": 0
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "player_url": 0,
+      "fifa_version": 0,
+      "fifa_update": 0,
+      "fifa_update_date": 0,
+      "short_name": 0,
+      "long_name": 0,
+      "player_positions": 0,
+      "overall": 0,
+      "potential": 0,
+      "value_eur": 0,
+      "wage_eur": 0,
+      "age": 0,
+      "dob": 0,
+      "height_cm": 0,
+      "weight_kg": 0,
+      "league_id": 0,
+      "league_name": 0,
+      "league_level": 0,
+      "club_team_id": 0,
+      "club_name": 0,
+      "club_position": 0,
+      "club_jersey_number": 0,
+      "club_loaned_from": 0,
+      "club_joined_date": 0,
+      "club_contract_valid_until_year": 0,
+      "nationality_id": 0,
+      "nationality_name": 0,
+      "nation_team_id": 0,
+      "nation_position": 0,
+      "nation_jersey_number": 0,
+      "preferred_foot": 0,
+      "weak_foot": 0,
+      "skill_moves": 0,
+      "international_reputation": 0,
+      "work_rate": 0,
+      "body_type": 0,
+      "real_face": 0,
+      "release_clause_eur": 0,
+      "player_tags": 0,
+      "player_traits": 0,
+      "pace": 0,
+      "shooting": 0,
+      "passing": 0,
+      "dribbling": 0,
+      "defending": 0,
+      "physic": 0,
+      "attacking_crossing": 0,
+      "attacking_finishing": 0,
+      "attacking_heading_accuracy": 0,
+      "attacking_short_passing": 0,
+      "attacking_volleys": 0,
+      "skill_dribbling": 0,
+      "skill_curve": 0,
+      "skill_fk_accuracy": 0,
+      "skill_long_passing": 0,
+      "skill_ball_control": 0,
+      "movement_acceleration": 0,
+      "movement_sprint_speed": 0,
+      "movement_agility": 0,
+      "movement_reactions": 0,
+      "movement_balance": 0,
+      "power_shot_power": 0,
+      "power_jumping": 0,
+      "power_stamina": 0,
+      "power_strength": 0,
+      "power_long_shots": 0,
+      "mentality_aggression": 0,
+      "mentality_interceptions": 0,
+      "mentality_positioning": 0,
+      "mentality_vision": 0,
+      "mentality_penalties": 0,
+      "mentality_composure": 0,
+      "defending_marking_awareness": 0,
+      "defending_standing_tackle": 0,
+      "defending_sliding_tackle": 0,
+      "goalkeeping_diving": 0,
+      "goalkeeping_handling": 0,
+      "goalkeeping_kicking": 0,
+      "goalkeeping_positioning": 0,
+      "goalkeeping_reflexes": 0,
+      "goalkeeping_speed": 0,
+      "ls": 0,
+      "st": 0,
+      "rs": 0,
+      "lw": 0,
+      "lf": 0,
+      "cf": 0,
+      "rf": 0,
+      "rw": 0,
+      "lam": 0,
+      "cam": 0,
+      "ram": 0,
+      "lm": 0,
+      "lcm": 0,
+      "cm": 0,
+      "rcm": 0,
+      "rm": 0,
+      "lwb": 0,
+      "ldm": 0,
+      "cdm": 0,
+      "rdm": 0,
+      "rwb": 0,
+      "lb": 0,
+      "lcb": 0,
+      "cb": 0,
+      "rcb": 0,
+      "rb": 0,
+      "gk": 0,
+      "player_face_url": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "player_id",
+      "fifa_version",
+      "fifa_update"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "player_id": 1266
+    },
+    "date_ranges_lexical": {
+      "dob": {
+        "min": "1975-06-24",
+        "max": "2005-02-14"
+      },
+      "fifa_update_date": {
+        "min": "2015-09-21",
+        "max": "2022-09-26"
+      },
+      "club_joined_date": {
+        "min": "2006-07-01",
+        "max": "2022-09-16"
+      }
+    },
+    "categories": {
+      "fifa_version": {
+        "23": 814,
+        "22": 391,
+        "21": 368,
+        "20": 368,
+        "18": 340,
+        "19": 322,
+        "17": 322,
+        "16": 271
+      }
+    },
+    "numeric": {
+      "player_id": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 226177.0,
+        "max": 271823.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "fifa_version": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 16.0,
+        "max": 23.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "fifa_update": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 2.0,
+        "max": 2.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "overall": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 57.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "potential": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 63.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "value_eur": {
+        "n": 564,
+        "invalid": 0,
+        "min": 325000.0,
+        "max": 173500000.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "wage_eur": {
+        "n": 564,
+        "invalid": 0,
+        "min": 500.0,
+        "max": 4000.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "age": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 17.0,
+        "max": 41.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "height_cm": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 150.0,
+        "max": 188.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "weight_kg": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 45.0,
+        "max": 84.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "league_id": {
+        "n": 518,
+        "invalid": 0,
+        "min": 2216.0,
+        "max": 2218.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "league_level": {
+        "n": 518,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 1.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "club_team_id": {
+        "n": 518,
+        "invalid": 0,
+        "min": 116009.0,
+        "max": 116416.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "club_jersey_number": {
+        "n": 518,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 51.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "club_contract_valid_until_year": {
+        "n": 518,
+        "invalid": 0,
+        "min": 2022.0,
+        "max": 2027.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nationality_id": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 198.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nation_team_id": {
+        "n": 2773,
+        "invalid": 0,
+        "min": 112998.0,
+        "max": 116428.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nation_jersey_number": {
+        "n": 2773,
+        "invalid": 0,
+        "min": -1.0,
+        "max": 51.0,
+        "zero": 0,
+        "negative": 46
+      },
+      "weak_foot": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 5.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_moves": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 5.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "international_reputation": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 5.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "release_clause_eur": {
+        "n": 555,
+        "invalid": 0,
+        "min": 715000.0,
+        "max": 368700000.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "pace": {
+        "n": 2796,
+        "invalid": 0,
+        "min": 30.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "shooting": {
+        "n": 2796,
+        "invalid": 0,
+        "min": 20.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "passing": {
+        "n": 2796,
+        "invalid": 0,
+        "min": 26.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "dribbling": {
+        "n": 2796,
+        "invalid": 0,
+        "min": 34.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "defending": {
+        "n": 2796,
+        "invalid": 0,
+        "min": 16.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "physic": {
+        "n": 2796,
+        "invalid": 0,
+        "min": 34.0,
+        "max": 89.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_crossing": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 6.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_finishing": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_heading_accuracy": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 6.0,
+        "max": 96.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_short_passing": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 11.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_volleys": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 92.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_dribbling": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_curve": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 8.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_fk_accuracy": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 7.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_long_passing": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 14.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_ball_control": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 8.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_acceleration": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 15.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_sprint_speed": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 15.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_agility": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 21.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_reactions": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 38.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_balance": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 26.0,
+        "max": 98.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_shot_power": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 12.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_jumping": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 29.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_stamina": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 16.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_strength": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 21.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_long_shots": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 92.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_aggression": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 12.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_interceptions": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 6.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_positioning": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 96.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_vision": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 10.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_penalties": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 10.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_composure": {
+        "n": 2925,
+        "invalid": 0,
+        "min": 11.0,
+        "max": 96.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "defending_marking_awareness": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "defending_standing_tackle": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 7.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "defending_sliding_tackle": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 8.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_diving": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 89.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_handling": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 90.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_kicking": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 92.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_positioning": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 91.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_reflexes": {
+        "n": 3196,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 92.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_speed": {
+        "n": 400,
+        "invalid": 0,
+        "min": 17.0,
+        "max": 61.0,
+        "zero": 0,
+        "negative": 0
+      }
+    },
+    "cm_rows": 694,
+    "cm_unique_players": 298,
+    "primary_cm_rows": 384,
+    "primary_cm_unique_players": 188,
+    "cm_unique_by_version": {
+      "16": 56,
+      "17": 63,
+      "18": 80,
+      "19": 67,
+      "20": 83,
+      "21": 77,
+      "22": 84,
+      "23": 184
+    },
+    "unique_players_by_version": {
+      "16": 271,
+      "17": 322,
+      "18": 340,
+      "19": 322,
+      "20": 368,
+      "21": 368,
+      "22": 391,
+      "23": 814
+    },
+    "snapshot_count": 8,
+    "fifa23_latest_date": "2022-09-26",
+    "fifa23_latest_rows": 814
+  },
+  {
+    "source": "fifa_female",
+    "file": "female_players.csv",
+    "member": "female_players.csv",
+    "uncompressed_bytes": 94212088,
+    "zip_crc32": "54e4a147",
+    "rows": 181361,
+    "columns": 110,
+    "missing_cells": 2883528,
+    "missing_pct": 14.453984544136231,
+    "missing_by_column": {
+      "player_id": 0,
+      "player_url": 0,
+      "fifa_version": 0,
+      "fifa_update": 0,
+      "fifa_update_date": 0,
+      "short_name": 0,
+      "long_name": 0,
+      "player_positions": 0,
+      "overall": 0,
+      "potential": 0,
+      "value_eur": 176530,
+      "wage_eur": 176530,
+      "age": 0,
+      "dob": 0,
+      "height_cm": 0,
+      "weight_kg": 0,
+      "league_id": 176485,
+      "league_name": 176485,
+      "league_level": 176576,
+      "club_team_id": 176485,
+      "club_name": 176485,
+      "club_position": 176485,
+      "club_jersey_number": 176485,
+      "club_loaned_from": 181280,
+      "club_joined_date": 176657,
+      "club_contract_valid_until_year": 176576,
+      "nationality_id": 0,
+      "nationality_name": 0,
+      "nation_team_id": 3997,
+      "nation_position": 3997,
+      "nation_jersey_number": 3997,
+      "preferred_foot": 0,
+      "weak_foot": 0,
+      "skill_moves": 0,
+      "international_reputation": 0,
+      "work_rate": 0,
+      "body_type": 0,
+      "real_face": 0,
+      "release_clause_eur": 176611,
+      "player_tags": 151198,
+      "player_traits": 109593,
+      "pace": 22741,
+      "shooting": 22741,
+      "passing": 22741,
+      "dribbling": 22741,
+      "defending": 22741,
+      "physic": 22741,
+      "attacking_crossing": 0,
+      "attacking_finishing": 0,
+      "attacking_heading_accuracy": 0,
+      "attacking_short_passing": 0,
+      "attacking_volleys": 0,
+      "skill_dribbling": 0,
+      "skill_curve": 0,
+      "skill_fk_accuracy": 0,
+      "skill_long_passing": 0,
+      "skill_ball_control": 0,
+      "movement_acceleration": 0,
+      "movement_sprint_speed": 0,
+      "movement_agility": 0,
+      "movement_reactions": 0,
+      "movement_balance": 0,
+      "power_shot_power": 0,
+      "power_jumping": 0,
+      "power_stamina": 0,
+      "power_strength": 0,
+      "power_long_shots": 0,
+      "mentality_aggression": 0,
+      "mentality_interceptions": 0,
+      "mentality_positioning": 0,
+      "mentality_vision": 0,
+      "mentality_penalties": 0,
+      "mentality_composure": 16003,
+      "defending_marking_awareness": 0,
+      "defending_standing_tackle": 0,
+      "defending_sliding_tackle": 0,
+      "goalkeeping_diving": 0,
+      "goalkeeping_handling": 0,
+      "goalkeeping_kicking": 0,
+      "goalkeeping_positioning": 0,
+      "goalkeeping_reflexes": 0,
+      "goalkeeping_speed": 158627,
+      "ls": 0,
+      "st": 0,
+      "rs": 0,
+      "lw": 0,
+      "lf": 0,
+      "cf": 0,
+      "rf": 0,
+      "rw": 0,
+      "lam": 0,
+      "cam": 0,
+      "ram": 0,
+      "lm": 0,
+      "lcm": 0,
+      "cm": 0,
+      "rcm": 0,
+      "rm": 0,
+      "lwb": 0,
+      "ldm": 0,
+      "cdm": 0,
+      "rdm": 0,
+      "rwb": 0,
+      "lb": 0,
+      "lcb": 0,
+      "cb": 0,
+      "rcb": 0,
+      "rb": 0,
+      "gk": 0,
+      "player_face_url": 0
+    },
+    "literal_sentinel_counts": {
+      "player_id": 0,
+      "player_url": 0,
+      "fifa_version": 0,
+      "fifa_update": 0,
+      "fifa_update_date": 0,
+      "short_name": 0,
+      "long_name": 0,
+      "player_positions": 0,
+      "overall": 0,
+      "potential": 0,
+      "value_eur": 0,
+      "wage_eur": 0,
+      "age": 0,
+      "dob": 0,
+      "height_cm": 0,
+      "weight_kg": 0,
+      "league_id": 0,
+      "league_name": 0,
+      "league_level": 0,
+      "club_team_id": 0,
+      "club_name": 0,
+      "club_position": 0,
+      "club_jersey_number": 0,
+      "club_loaned_from": 0,
+      "club_joined_date": 0,
+      "club_contract_valid_until_year": 0,
+      "nationality_id": 0,
+      "nationality_name": 0,
+      "nation_team_id": 0,
+      "nation_position": 0,
+      "nation_jersey_number": 0,
+      "preferred_foot": 0,
+      "weak_foot": 0,
+      "skill_moves": 0,
+      "international_reputation": 0,
+      "work_rate": 0,
+      "body_type": 0,
+      "real_face": 0,
+      "release_clause_eur": 0,
+      "player_tags": 0,
+      "player_traits": 0,
+      "pace": 0,
+      "shooting": 0,
+      "passing": 0,
+      "dribbling": 0,
+      "defending": 0,
+      "physic": 0,
+      "attacking_crossing": 0,
+      "attacking_finishing": 0,
+      "attacking_heading_accuracy": 0,
+      "attacking_short_passing": 0,
+      "attacking_volleys": 0,
+      "skill_dribbling": 0,
+      "skill_curve": 0,
+      "skill_fk_accuracy": 0,
+      "skill_long_passing": 0,
+      "skill_ball_control": 0,
+      "movement_acceleration": 0,
+      "movement_sprint_speed": 0,
+      "movement_agility": 0,
+      "movement_reactions": 0,
+      "movement_balance": 0,
+      "power_shot_power": 0,
+      "power_jumping": 0,
+      "power_stamina": 0,
+      "power_strength": 0,
+      "power_long_shots": 0,
+      "mentality_aggression": 0,
+      "mentality_interceptions": 0,
+      "mentality_positioning": 0,
+      "mentality_vision": 0,
+      "mentality_penalties": 0,
+      "mentality_composure": 0,
+      "defending_marking_awareness": 0,
+      "defending_standing_tackle": 0,
+      "defending_sliding_tackle": 0,
+      "goalkeeping_diving": 0,
+      "goalkeeping_handling": 0,
+      "goalkeeping_kicking": 0,
+      "goalkeeping_positioning": 0,
+      "goalkeeping_reflexes": 0,
+      "goalkeeping_speed": 0,
+      "ls": 0,
+      "st": 0,
+      "rs": 0,
+      "lw": 0,
+      "lf": 0,
+      "cf": 0,
+      "rf": 0,
+      "rw": 0,
+      "lam": 0,
+      "cam": 0,
+      "ram": 0,
+      "lm": 0,
+      "lcm": 0,
+      "cm": 0,
+      "rcm": 0,
+      "rm": 0,
+      "lwb": 0,
+      "ldm": 0,
+      "cdm": 0,
+      "rdm": 0,
+      "rwb": 0,
+      "lb": 0,
+      "lcb": 0,
+      "cb": 0,
+      "rcb": 0,
+      "rb": 0,
+      "gk": 0,
+      "player_face_url": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "player_id",
+      "fifa_version",
+      "fifa_update"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "player_id": 1635
+    },
+    "date_ranges_lexical": {
+      "dob": {
+        "min": "1975-06-24",
+        "max": "2005-05-27"
+      },
+      "fifa_update_date": {
+        "min": "2015-08-28",
+        "max": "2023-01-13"
+      },
+      "club_joined_date": {
+        "min": "2006-07-01",
+        "max": "2023-01-11"
+      }
+    },
+    "categories": {
+      "fifa_version": {
+        "22": 27107,
+        "23": 7425,
+        "21": 23552,
+        "20": 22533,
+        "19": 24309,
+        "18": 28756,
+        "17": 31676,
+        "16": 16003
+      }
+    },
+    "numeric": {
+      "player_id": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 226177.0,
+        "max": 273050.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "fifa_version": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 16.0,
+        "max": 23.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "fifa_update": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 99.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "overall": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 49.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "potential": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 49.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "value_eur": {
+        "n": 4831,
+        "invalid": 0,
+        "min": 325000.0,
+        "max": 173500000.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "wage_eur": {
+        "n": 4831,
+        "invalid": 0,
+        "min": 500.0,
+        "max": 4000.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "age": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 16.0,
+        "max": 41.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "height_cm": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 150.0,
+        "max": 188.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "weight_kg": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 45.0,
+        "max": 84.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "league_id": {
+        "n": 4876,
+        "invalid": 0,
+        "min": 2136.0,
+        "max": 2218.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "league_level": {
+        "n": 4785,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 1.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "club_team_id": {
+        "n": 4876,
+        "invalid": 0,
+        "min": 113000.0,
+        "max": 116416.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "club_jersey_number": {
+        "n": 4876,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 99.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "club_contract_valid_until_year": {
+        "n": 4785,
+        "invalid": 0,
+        "min": 2022.0,
+        "max": 2027.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nationality_id": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 198.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nation_team_id": {
+        "n": 177364,
+        "invalid": 0,
+        "min": 112998.0,
+        "max": 116428.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nation_jersey_number": {
+        "n": 177364,
+        "invalid": 0,
+        "min": -1.0,
+        "max": 98.0,
+        "zero": 0,
+        "negative": 46
+      },
+      "weak_foot": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 5.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_moves": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 5.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "international_reputation": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 5.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "release_clause_eur": {
+        "n": 4750,
+        "invalid": 0,
+        "min": 715000.0,
+        "max": 368700000.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "pace": {
+        "n": 158620,
+        "invalid": 0,
+        "min": 30.0,
+        "max": 96.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "shooting": {
+        "n": 158620,
+        "invalid": 0,
+        "min": 20.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "passing": {
+        "n": 158620,
+        "invalid": 0,
+        "min": 26.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "dribbling": {
+        "n": 158620,
+        "invalid": 0,
+        "min": 30.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "defending": {
+        "n": 158620,
+        "invalid": 0,
+        "min": 16.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "physic": {
+        "n": 158620,
+        "invalid": 0,
+        "min": 34.0,
+        "max": 89.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_crossing": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_finishing": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_heading_accuracy": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 96.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_short_passing": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 11.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attacking_volleys": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 3.0,
+        "max": 92.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_dribbling": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_curve": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_fk_accuracy": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 7.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_long_passing": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 12.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "skill_ball_control": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 8.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_acceleration": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 15.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_sprint_speed": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 15.0,
+        "max": 96.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_agility": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 19.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_reactions": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 30.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "movement_balance": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 26.0,
+        "max": 99.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_shot_power": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 12.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_jumping": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 15.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_stamina": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 14.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_strength": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 21.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "power_long_shots": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 92.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_aggression": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 12.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_interceptions": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_positioning": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 3.0,
+        "max": 96.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_vision": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 10.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_penalties": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 10.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "mentality_composure": {
+        "n": 165358,
+        "invalid": 0,
+        "min": 11.0,
+        "max": 96.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "defending_marking_awareness": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 95.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "defending_standing_tackle": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 94.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "defending_sliding_tackle": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 4.0,
+        "max": 93.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_diving": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 91.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_handling": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 91.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_kicking": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 92.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_positioning": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 91.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_reflexes": {
+        "n": 181361,
+        "invalid": 0,
+        "min": 5.0,
+        "max": 92.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "goalkeeping_speed": {
+        "n": 22734,
+        "invalid": 0,
+        "min": 17.0,
+        "max": 61.0,
+        "zero": 0,
+        "negative": 0
+      }
+    },
+    "cm_rows": 38771,
+    "cm_unique_players": 410,
+    "primary_cm_rows": 20562,
+    "primary_cm_unique_players": 252,
+    "cm_unique_by_version": {
+      "22": 134,
+      "23": 216,
+      "21": 91,
+      "20": 108,
+      "19": 139,
+      "18": 104,
+      "17": 79,
+      "16": 61
+    },
+    "unique_players_by_version": {
+      "22": 577,
+      "23": 899,
+      "21": 415,
+      "20": 470,
+      "19": 597,
+      "18": 460,
+      "17": 377,
+      "16": 336
+    },
+    "snapshot_count": 519,
+    "fifa23_latest_date": "2023-01-13",
+    "fifa23_latest_rows": 832
+  },
+  {
+    "source": "fifa_female",
+    "file": "female_teams.csv",
+    "member": "female_teams.csv",
+    "uncompressed_bytes": 2214250,
+    "zip_crc32": "5294e085",
+    "rows": 7941,
+    "columns": 54,
+    "missing_cells": 115261,
+    "missing_pct": 26.879019808121935,
+    "missing_by_column": {
+      "team_id": 0,
+      "team_url": 0,
+      "fifa_version": 0,
+      "fifa_update": 0,
+      "fifa_update_date": 0,
+      "team_name": 0,
+      "league_id": 0,
+      "league_name": 0,
+      "league_level": 7725,
+      "nationality_id": 0,
+      "nationality_name": 0,
+      "overall": 0,
+      "attack": 0,
+      "midfield": 0,
+      "defence": 0,
+      "coach_id": 519,
+      "home_stadium": 7,
+      "rival_team": 0,
+      "international_prestige": 0,
+      "domestic_prestige": 7723,
+      "transfer_budget_eur": 7939,
+      "club_worth_eur": 7723,
+      "starting_xi_average_age": 0,
+      "whole_team_average_age": 0,
+      "captain": 0,
+      "short_free_kick": 2,
+      "long_free_kick": 32,
+      "left_short_free_kick": 2,
+      "right_short_free_kick": 7,
+      "penalties": 0,
+      "left_corner": 0,
+      "right_corner": 2,
+      "def_style": 3342,
+      "def_team_width": 3342,
+      "def_team_depth": 3342,
+      "def_defence_pressure": 3542,
+      "def_defence_aggression": 3542,
+      "def_defence_width": 3542,
+      "def_defence_defender_line": 3542,
+      "off_style": 4884,
+      "off_build_up_play": 6399,
+      "off_chance_creation": 6399,
+      "off_team_width": 3342,
+      "off_players_in_box": 3342,
+      "off_corners": 3342,
+      "off_free_kicks": 3342,
+      "build_up_play_speed": 3542,
+      "build_up_play_dribbling": 3542,
+      "build_up_play_passing": 3542,
+      "build_up_play_positioning": 3542,
+      "chance_creation_passing": 3542,
+      "chance_creation_crossing": 3542,
+      "chance_creation_shooting": 3542,
+      "chance_creation_positioning": 3542
+    },
+    "literal_sentinel_counts": {
+      "team_id": 0,
+      "team_url": 0,
+      "fifa_version": 0,
+      "fifa_update": 0,
+      "fifa_update_date": 0,
+      "team_name": 0,
+      "league_id": 0,
+      "league_name": 0,
+      "league_level": 0,
+      "nationality_id": 0,
+      "nationality_name": 0,
+      "overall": 0,
+      "attack": 0,
+      "midfield": 0,
+      "defence": 0,
+      "coach_id": 0,
+      "home_stadium": 0,
+      "rival_team": 0,
+      "international_prestige": 0,
+      "domestic_prestige": 0,
+      "transfer_budget_eur": 0,
+      "club_worth_eur": 0,
+      "starting_xi_average_age": 0,
+      "whole_team_average_age": 0,
+      "captain": 0,
+      "short_free_kick": 0,
+      "long_free_kick": 0,
+      "left_short_free_kick": 0,
+      "right_short_free_kick": 0,
+      "penalties": 0,
+      "left_corner": 0,
+      "right_corner": 0,
+      "def_style": 0,
+      "def_team_width": 0,
+      "def_team_depth": 0,
+      "def_defence_pressure": 0,
+      "def_defence_aggression": 0,
+      "def_defence_width": 0,
+      "def_defence_defender_line": 0,
+      "off_style": 0,
+      "off_build_up_play": 0,
+      "off_chance_creation": 0,
+      "off_team_width": 0,
+      "off_players_in_box": 0,
+      "off_corners": 0,
+      "off_free_kicks": 0,
+      "build_up_play_speed": 0,
+      "build_up_play_dribbling": 0,
+      "build_up_play_passing": 0,
+      "build_up_play_positioning": 0,
+      "chance_creation_passing": 0,
+      "chance_creation_crossing": 0,
+      "chance_creation_shooting": 0,
+      "chance_creation_positioning": 0
+    },
+    "duplicate_rows_hash": 0,
+    "key": [
+      "team_id",
+      "fifa_version",
+      "fifa_update"
+    ],
+    "duplicate_key_rows_hash": 0,
+    "unique_ids": {
+      "team_id": 52,
+      "coach_id": 52
+    },
+    "date_ranges_lexical": {
+      "fifa_update_date": {
+        "min": "2015-08-28",
+        "max": "2023-01-13"
+      }
+    },
+    "categories": {
+      "fifa_version": {
+        "17": 1386,
+        "18": 1260,
+        "22": 1173,
+        "19": 1057,
+        "21": 1024,
+        "20": 976,
+        "16": 696,
+        "23": 369
+      }
+    },
+    "numeric": {
+      "team_id": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 112998.0,
+        "max": 116428.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "fifa_version": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 16.0,
+        "max": 23.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "fifa_update": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 99.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "league_id": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 2136.0,
+        "max": 2218.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "league_level": {
+        "n": 216,
+        "invalid": 0,
+        "min": 1.0,
+        "max": 1.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "nationality_id": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 7.0,
+        "max": 198.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "overall": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 51.0,
+        "max": 86.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "attack": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 52.0,
+        "max": 91.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "midfield": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 51.0,
+        "max": 87.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "defence": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 51.0,
+        "max": 86.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "coach_id": {
+        "n": 7422,
+        "invalid": 0,
+        "min": 2079.0,
+        "max": 37667852.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "rival_team": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 111473.0,
+        "max": 116416.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "international_prestige": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 20.0,
+        "zero": 3,
+        "negative": 0
+      },
+      "domestic_prestige": {
+        "n": 218,
+        "invalid": 0,
+        "min": 2.0,
+        "max": 10.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "transfer_budget_eur": {
+        "n": 2,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 0.0,
+        "zero": 2,
+        "negative": 0
+      },
+      "club_worth_eur": {
+        "n": 218,
+        "invalid": 0,
+        "min": 0.0,
+        "max": 1000000.0,
+        "zero": 2,
+        "negative": 0
+      },
+      "starting_xi_average_age": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 21.64,
+        "max": 31.18,
+        "zero": 0,
+        "negative": 0
+      },
+      "whole_team_average_age": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 20.52,
+        "max": 31.3,
+        "zero": 0,
+        "negative": 0
+      },
+      "captain": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 226177.0,
+        "max": 269211.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "short_free_kick": {
+        "n": 7939,
+        "invalid": 0,
+        "min": 226308.0,
+        "max": 271739.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "long_free_kick": {
+        "n": 7909,
+        "invalid": 0,
+        "min": 226308.0,
+        "max": 270049.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "left_short_free_kick": {
+        "n": 7939,
+        "invalid": 0,
+        "min": 226308.0,
+        "max": 271739.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "right_short_free_kick": {
+        "n": 7934,
+        "invalid": 0,
+        "min": 226308.0,
+        "max": 271739.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "penalties": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 226301.0,
+        "max": 269216.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "left_corner": {
+        "n": 7941,
+        "invalid": 0,
+        "min": 226308.0,
+        "max": 270049.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "right_corner": {
+        "n": 7939,
+        "invalid": 0,
+        "min": 226308.0,
+        "max": 271347.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "def_team_width": {
+        "n": 4599,
+        "invalid": 0,
+        "min": 3.0,
+        "max": 71.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "def_team_depth": {
+        "n": 4599,
+        "invalid": 0,
+        "min": 3.0,
+        "max": 81.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "def_defence_pressure": {
+        "n": 4399,
+        "invalid": 0,
+        "min": 26.0,
+        "max": 76.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "def_defence_aggression": {
+        "n": 4399,
+        "invalid": 0,
+        "min": 22.0,
+        "max": 79.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "def_defence_width": {
+        "n": 4399,
+        "invalid": 0,
+        "min": 20.0,
+        "max": 70.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "off_team_width": {
+        "n": 4599,
+        "invalid": 0,
+        "min": 3.0,
+        "max": 81.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "off_players_in_box": {
+        "n": 4599,
+        "invalid": 0,
+        "min": 3.0,
+        "max": 7.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "off_corners": {
+        "n": 4599,
+        "invalid": 0,
+        "min": 3.0,
+        "max": 3.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "off_free_kicks": {
+        "n": 4599,
+        "invalid": 0,
+        "min": 3.0,
+        "max": 3.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "build_up_play_speed": {
+        "n": 4399,
+        "invalid": 0,
+        "min": 36.0,
+        "max": 73.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "build_up_play_dribbling": {
+        "n": 4399,
+        "invalid": 0,
+        "min": 21.0,
+        "max": 80.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "build_up_play_passing": {
+        "n": 4399,
+        "invalid": 0,
+        "min": 35.0,
+        "max": 73.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "chance_creation_passing": {
+        "n": 4399,
+        "invalid": 0,
+        "min": 31.0,
+        "max": 79.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "chance_creation_crossing": {
+        "n": 4399,
+        "invalid": 0,
+        "min": 23.0,
+        "max": 79.0,
+        "zero": 0,
+        "negative": 0
+      },
+      "chance_creation_shooting": {
+        "n": 4399,
+        "invalid": 0,
+        "min": 32.0,
+        "max": 78.0,
+        "zero": 0,
+        "negative": 0
+      }
+    },
+    "snapshot_count": 519
+  }
+]

@@ -1,0 +1,283 @@
+source,file,column,missing,missing_pct,literal_sentinels,numeric_first_chunk,n,invalid,min,max,zero,negative
+fifa_female,female_coaches.csv,coach_id,0,0.0,0,True,52.0,0.0,2079.0,37667852.0,0.0,0.0
+fifa_female,female_coaches.csv,coach_url,0,0.0,0,False,,,,,,
+fifa_female,female_coaches.csv,short_name,0,0.0,0,False,,,,,,
+fifa_female,female_coaches.csv,long_name,0,0.0,0,False,,,,,,
+fifa_female,female_coaches.csv,dob,11,21.153846153846153,0,False,,,,,,
+fifa_female,female_coaches.csv,nationality_id,0,0.0,0,True,52.0,0.0,7.0,198.0,0.0,0.0
+fifa_female,female_coaches.csv,nationality_name,0,0.0,0,False,,,,,,
+fifa_female,female_coaches.csv,face_url,44,84.61538461538461,0,False,,,,,,
+fifa_female,female_players (legacy).csv,player_id,0,0.0,0,True,3196.0,0.0,226177.0,271823.0,0.0,0.0
+fifa_female,female_players (legacy).csv,player_url,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,fifa_version,0,0.0,0,True,3196.0,0.0,16.0,23.0,0.0,0.0
+fifa_female,female_players (legacy).csv,fifa_update,0,0.0,0,True,3196.0,0.0,2.0,2.0,0.0,0.0
+fifa_female,female_players (legacy).csv,fifa_update_date,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,short_name,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,long_name,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,player_positions,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,overall,0,0.0,0,True,3196.0,0.0,57.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,potential,0,0.0,0,True,3196.0,0.0,63.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,value_eur,2632,82.3529411764706,0,True,564.0,0.0,325000.0,173500000.0,0.0,0.0
+fifa_female,female_players (legacy).csv,wage_eur,2632,82.3529411764706,0,True,564.0,0.0,500.0,4000.0,0.0,0.0
+fifa_female,female_players (legacy).csv,age,0,0.0,0,True,3196.0,0.0,17.0,41.0,0.0,0.0
+fifa_female,female_players (legacy).csv,dob,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,height_cm,0,0.0,0,True,3196.0,0.0,150.0,188.0,0.0,0.0
+fifa_female,female_players (legacy).csv,weight_kg,0,0.0,0,True,3196.0,0.0,45.0,84.0,0.0,0.0
+fifa_female,female_players (legacy).csv,league_id,2678,83.79224030037547,0,True,518.0,0.0,2216.0,2218.0,0.0,0.0
+fifa_female,female_players (legacy).csv,league_name,2678,83.79224030037547,0,False,,,,,,
+fifa_female,female_players (legacy).csv,league_level,2678,83.79224030037547,0,True,518.0,0.0,1.0,1.0,0.0,0.0
+fifa_female,female_players (legacy).csv,club_team_id,2678,83.79224030037547,0,True,518.0,0.0,116009.0,116416.0,0.0,0.0
+fifa_female,female_players (legacy).csv,club_name,2678,83.79224030037547,0,False,,,,,,
+fifa_female,female_players (legacy).csv,club_position,2678,83.79224030037547,0,False,,,,,,
+fifa_female,female_players (legacy).csv,club_jersey_number,2678,83.79224030037547,0,True,518.0,0.0,1.0,51.0,0.0,0.0
+fifa_female,female_players (legacy).csv,club_loaned_from,3187,99.71839799749687,0,False,,,,,,
+fifa_female,female_players (legacy).csv,club_joined_date,2687,84.0738423028786,0,False,,,,,,
+fifa_female,female_players (legacy).csv,club_contract_valid_until_year,2678,83.79224030037547,0,True,518.0,0.0,2022.0,2027.0,0.0,0.0
+fifa_female,female_players (legacy).csv,nationality_id,0,0.0,0,True,3196.0,0.0,4.0,198.0,0.0,0.0
+fifa_female,female_players (legacy).csv,nationality_name,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,nation_team_id,423,13.235294117647058,0,True,2773.0,0.0,112998.0,116428.0,0.0,0.0
+fifa_female,female_players (legacy).csv,nation_position,423,13.235294117647058,0,False,,,,,,
+fifa_female,female_players (legacy).csv,nation_jersey_number,423,13.235294117647058,0,True,2773.0,0.0,-1.0,51.0,0.0,46.0
+fifa_female,female_players (legacy).csv,preferred_foot,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,weak_foot,0,0.0,0,True,3196.0,0.0,1.0,5.0,0.0,0.0
+fifa_female,female_players (legacy).csv,skill_moves,0,0.0,0,True,3196.0,0.0,1.0,5.0,0.0,0.0
+fifa_female,female_players (legacy).csv,international_reputation,0,0.0,0,True,3196.0,0.0,1.0,5.0,0.0,0.0
+fifa_female,female_players (legacy).csv,work_rate,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,body_type,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,real_face,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,release_clause_eur,2641,82.63454317897371,0,True,555.0,0.0,715000.0,368700000.0,0.0,0.0
+fifa_female,female_players (legacy).csv,player_tags,2686,84.04255319148936,0,False,,,,,,
+fifa_female,female_players (legacy).csv,player_traits,1977,61.858573216520654,0,False,,,,,,
+fifa_female,female_players (legacy).csv,pace,400,12.515644555694617,0,True,2796.0,0.0,30.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,shooting,400,12.515644555694617,0,True,2796.0,0.0,20.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,passing,400,12.515644555694617,0,True,2796.0,0.0,26.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,dribbling,400,12.515644555694617,0,True,2796.0,0.0,34.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,defending,400,12.515644555694617,0,True,2796.0,0.0,16.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,physic,400,12.515644555694617,0,True,2796.0,0.0,34.0,89.0,0.0,0.0
+fifa_female,female_players (legacy).csv,attacking_crossing,0,0.0,0,True,3196.0,0.0,6.0,94.0,0.0,0.0
+fifa_female,female_players (legacy).csv,attacking_finishing,0,0.0,0,True,3196.0,0.0,5.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,attacking_heading_accuracy,0,0.0,0,True,3196.0,0.0,6.0,96.0,0.0,0.0
+fifa_female,female_players (legacy).csv,attacking_short_passing,0,0.0,0,True,3196.0,0.0,11.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,attacking_volleys,0,0.0,0,True,3196.0,0.0,4.0,92.0,0.0,0.0
+fifa_female,female_players (legacy).csv,skill_dribbling,0,0.0,0,True,3196.0,0.0,4.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,skill_curve,0,0.0,0,True,3196.0,0.0,8.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,skill_fk_accuracy,0,0.0,0,True,3196.0,0.0,7.0,94.0,0.0,0.0
+fifa_female,female_players (legacy).csv,skill_long_passing,0,0.0,0,True,3196.0,0.0,14.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,skill_ball_control,0,0.0,0,True,3196.0,0.0,8.0,94.0,0.0,0.0
+fifa_female,female_players (legacy).csv,movement_acceleration,0,0.0,0,True,3196.0,0.0,15.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,movement_sprint_speed,0,0.0,0,True,3196.0,0.0,15.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,movement_agility,0,0.0,0,True,3196.0,0.0,21.0,94.0,0.0,0.0
+fifa_female,female_players (legacy).csv,movement_reactions,0,0.0,0,True,3196.0,0.0,38.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,movement_balance,0,0.0,0,True,3196.0,0.0,26.0,98.0,0.0,0.0
+fifa_female,female_players (legacy).csv,power_shot_power,0,0.0,0,True,3196.0,0.0,12.0,94.0,0.0,0.0
+fifa_female,female_players (legacy).csv,power_jumping,0,0.0,0,True,3196.0,0.0,29.0,94.0,0.0,0.0
+fifa_female,female_players (legacy).csv,power_stamina,0,0.0,0,True,3196.0,0.0,16.0,94.0,0.0,0.0
+fifa_female,female_players (legacy).csv,power_strength,0,0.0,0,True,3196.0,0.0,21.0,94.0,0.0,0.0
+fifa_female,female_players (legacy).csv,power_long_shots,0,0.0,0,True,3196.0,0.0,5.0,92.0,0.0,0.0
+fifa_female,female_players (legacy).csv,mentality_aggression,0,0.0,0,True,3196.0,0.0,12.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,mentality_interceptions,0,0.0,0,True,3196.0,0.0,6.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,mentality_positioning,0,0.0,0,True,3196.0,0.0,4.0,96.0,0.0,0.0
+fifa_female,female_players (legacy).csv,mentality_vision,0,0.0,0,True,3196.0,0.0,10.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,mentality_penalties,0,0.0,0,True,3196.0,0.0,10.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,mentality_composure,271,8.479349186483104,0,True,2925.0,0.0,11.0,96.0,0.0,0.0
+fifa_female,female_players (legacy).csv,defending_marking_awareness,0,0.0,0,True,3196.0,0.0,5.0,95.0,0.0,0.0
+fifa_female,female_players (legacy).csv,defending_standing_tackle,0,0.0,0,True,3196.0,0.0,7.0,94.0,0.0,0.0
+fifa_female,female_players (legacy).csv,defending_sliding_tackle,0,0.0,0,True,3196.0,0.0,8.0,93.0,0.0,0.0
+fifa_female,female_players (legacy).csv,goalkeeping_diving,0,0.0,0,True,3196.0,0.0,5.0,89.0,0.0,0.0
+fifa_female,female_players (legacy).csv,goalkeeping_handling,0,0.0,0,True,3196.0,0.0,5.0,90.0,0.0,0.0
+fifa_female,female_players (legacy).csv,goalkeeping_kicking,0,0.0,0,True,3196.0,0.0,5.0,92.0,0.0,0.0
+fifa_female,female_players (legacy).csv,goalkeeping_positioning,0,0.0,0,True,3196.0,0.0,5.0,91.0,0.0,0.0
+fifa_female,female_players (legacy).csv,goalkeeping_reflexes,0,0.0,0,True,3196.0,0.0,5.0,92.0,0.0,0.0
+fifa_female,female_players (legacy).csv,goalkeeping_speed,2796,87.48435544430538,0,True,400.0,0.0,17.0,61.0,0.0,0.0
+fifa_female,female_players (legacy).csv,ls,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,st,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,rs,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,lw,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,lf,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,cf,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,rf,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,rw,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,lam,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,cam,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,ram,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,lm,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,lcm,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,cm,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,rcm,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,rm,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,lwb,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,ldm,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,cdm,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,rdm,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,rwb,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,lb,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,lcb,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,cb,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,rcb,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,rb,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,gk,0,0.0,0,False,,,,,,
+fifa_female,female_players (legacy).csv,player_face_url,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,player_id,0,0.0,0,True,181361.0,0.0,226177.0,273050.0,0.0,0.0
+fifa_female,female_players.csv,player_url,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,fifa_version,0,0.0,0,True,181361.0,0.0,16.0,23.0,0.0,0.0
+fifa_female,female_players.csv,fifa_update,0,0.0,0,True,181361.0,0.0,1.0,99.0,0.0,0.0
+fifa_female,female_players.csv,fifa_update_date,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,short_name,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,long_name,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,player_positions,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,overall,0,0.0,0,True,181361.0,0.0,49.0,93.0,0.0,0.0
+fifa_female,female_players.csv,potential,0,0.0,0,True,181361.0,0.0,49.0,95.0,0.0,0.0
+fifa_female,female_players.csv,value_eur,176530,97.33625200566826,0,True,4831.0,0.0,325000.0,173500000.0,0.0,0.0
+fifa_female,female_players.csv,wage_eur,176530,97.33625200566826,0,True,4831.0,0.0,500.0,4000.0,0.0,0.0
+fifa_female,female_players.csv,age,0,0.0,0,True,181361.0,0.0,16.0,41.0,0.0,0.0
+fifa_female,female_players.csv,dob,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,height_cm,0,0.0,0,True,181361.0,0.0,150.0,188.0,0.0,0.0
+fifa_female,female_players.csv,weight_kg,0,0.0,0,True,181361.0,0.0,45.0,84.0,0.0,0.0
+fifa_female,female_players.csv,league_id,176485,97.31143961491169,0,True,4876.0,0.0,2136.0,2218.0,0.0,0.0
+fifa_female,female_players.csv,league_name,176485,97.31143961491169,0,False,,,,,,
+fifa_female,female_players.csv,league_level,176576,97.36161578288606,0,True,4785.0,0.0,1.0,1.0,0.0,0.0
+fifa_female,female_players.csv,club_team_id,176485,97.31143961491169,0,True,4876.0,0.0,113000.0,116416.0,0.0,0.0
+fifa_female,female_players.csv,club_name,176485,97.31143961491169,0,False,,,,,,
+fifa_female,female_players.csv,club_position,176485,97.31143961491169,0,False,,,,,,
+fifa_female,female_players.csv,club_jersey_number,176485,97.31143961491169,0,True,4876.0,0.0,1.0,99.0,0.0,0.0
+fifa_female,female_players.csv,club_loaned_from,181280,99.9553376966382,0,False,,,,,,
+fifa_female,female_players.csv,club_joined_date,176657,97.40627808624787,0,False,,,,,,
+fifa_female,female_players.csv,club_contract_valid_until_year,176576,97.36161578288606,0,True,4785.0,0.0,2022.0,2027.0,0.0,0.0
+fifa_female,female_players.csv,nationality_id,0,0.0,0,True,181361.0,0.0,4.0,198.0,0.0,0.0
+fifa_female,female_players.csv,nationality_name,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,nation_team_id,3997,2.203891685643551,0,True,177364.0,0.0,112998.0,116428.0,0.0,0.0
+fifa_female,female_players.csv,nation_position,3997,2.203891685643551,0,False,,,,,,
+fifa_female,female_players.csv,nation_jersey_number,3997,2.203891685643551,0,True,177364.0,0.0,-1.0,98.0,0.0,46.0
+fifa_female,female_players.csv,preferred_foot,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,weak_foot,0,0.0,0,True,181361.0,0.0,1.0,5.0,0.0,0.0
+fifa_female,female_players.csv,skill_moves,0,0.0,0,True,181361.0,0.0,1.0,5.0,0.0,0.0
+fifa_female,female_players.csv,international_reputation,0,0.0,0,True,181361.0,0.0,1.0,5.0,0.0,0.0
+fifa_female,female_players.csv,work_rate,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,body_type,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,real_face,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,release_clause_eur,176611,97.38091430903006,0,True,4750.0,0.0,715000.0,368700000.0,0.0,0.0
+fifa_female,female_players.csv,player_tags,151198,83.36853016911023,0,False,,,,,,
+fifa_female,female_players.csv,player_traits,109593,60.4280964485198,0,False,,,,,,
+fifa_female,female_players.csv,pace,22741,12.539079515441578,0,True,158620.0,0.0,30.0,96.0,0.0,0.0
+fifa_female,female_players.csv,shooting,22741,12.539079515441578,0,True,158620.0,0.0,20.0,93.0,0.0,0.0
+fifa_female,female_players.csv,passing,22741,12.539079515441578,0,True,158620.0,0.0,26.0,93.0,0.0,0.0
+fifa_female,female_players.csv,dribbling,22741,12.539079515441578,0,True,158620.0,0.0,30.0,93.0,0.0,0.0
+fifa_female,female_players.csv,defending,22741,12.539079515441578,0,True,158620.0,0.0,16.0,93.0,0.0,0.0
+fifa_female,female_players.csv,physic,22741,12.539079515441578,0,True,158620.0,0.0,34.0,89.0,0.0,0.0
+fifa_female,female_players.csv,attacking_crossing,0,0.0,0,True,181361.0,0.0,5.0,94.0,0.0,0.0
+fifa_female,female_players.csv,attacking_finishing,0,0.0,0,True,181361.0,0.0,4.0,95.0,0.0,0.0
+fifa_female,female_players.csv,attacking_heading_accuracy,0,0.0,0,True,181361.0,0.0,5.0,96.0,0.0,0.0
+fifa_female,female_players.csv,attacking_short_passing,0,0.0,0,True,181361.0,0.0,11.0,95.0,0.0,0.0
+fifa_female,female_players.csv,attacking_volleys,0,0.0,0,True,181361.0,0.0,3.0,92.0,0.0,0.0
+fifa_female,female_players.csv,skill_dribbling,0,0.0,0,True,181361.0,0.0,4.0,95.0,0.0,0.0
+fifa_female,female_players.csv,skill_curve,0,0.0,0,True,181361.0,0.0,4.0,93.0,0.0,0.0
+fifa_female,female_players.csv,skill_fk_accuracy,0,0.0,0,True,181361.0,0.0,7.0,94.0,0.0,0.0
+fifa_female,female_players.csv,skill_long_passing,0,0.0,0,True,181361.0,0.0,12.0,93.0,0.0,0.0
+fifa_female,female_players.csv,skill_ball_control,0,0.0,0,True,181361.0,0.0,8.0,94.0,0.0,0.0
+fifa_female,female_players.csv,movement_acceleration,0,0.0,0,True,181361.0,0.0,15.0,95.0,0.0,0.0
+fifa_female,female_players.csv,movement_sprint_speed,0,0.0,0,True,181361.0,0.0,15.0,96.0,0.0,0.0
+fifa_female,female_players.csv,movement_agility,0,0.0,0,True,181361.0,0.0,19.0,94.0,0.0,0.0
+fifa_female,female_players.csv,movement_reactions,0,0.0,0,True,181361.0,0.0,30.0,95.0,0.0,0.0
+fifa_female,female_players.csv,movement_balance,0,0.0,0,True,181361.0,0.0,26.0,99.0,0.0,0.0
+fifa_female,female_players.csv,power_shot_power,0,0.0,0,True,181361.0,0.0,12.0,94.0,0.0,0.0
+fifa_female,female_players.csv,power_jumping,0,0.0,0,True,181361.0,0.0,15.0,94.0,0.0,0.0
+fifa_female,female_players.csv,power_stamina,0,0.0,0,True,181361.0,0.0,14.0,94.0,0.0,0.0
+fifa_female,female_players.csv,power_strength,0,0.0,0,True,181361.0,0.0,21.0,94.0,0.0,0.0
+fifa_female,female_players.csv,power_long_shots,0,0.0,0,True,181361.0,0.0,4.0,92.0,0.0,0.0
+fifa_female,female_players.csv,mentality_aggression,0,0.0,0,True,181361.0,0.0,12.0,95.0,0.0,0.0
+fifa_female,female_players.csv,mentality_interceptions,0,0.0,0,True,181361.0,0.0,4.0,94.0,0.0,0.0
+fifa_female,female_players.csv,mentality_positioning,0,0.0,0,True,181361.0,0.0,3.0,96.0,0.0,0.0
+fifa_female,female_players.csv,mentality_vision,0,0.0,0,True,181361.0,0.0,10.0,95.0,0.0,0.0
+fifa_female,female_players.csv,mentality_penalties,0,0.0,0,True,181361.0,0.0,10.0,93.0,0.0,0.0
+fifa_female,female_players.csv,mentality_composure,16003,8.823837539493056,0,True,165358.0,0.0,11.0,96.0,0.0,0.0
+fifa_female,female_players.csv,defending_marking_awareness,0,0.0,0,True,181361.0,0.0,4.0,95.0,0.0,0.0
+fifa_female,female_players.csv,defending_standing_tackle,0,0.0,0,True,181361.0,0.0,5.0,94.0,0.0,0.0
+fifa_female,female_players.csv,defending_sliding_tackle,0,0.0,0,True,181361.0,0.0,4.0,93.0,0.0,0.0
+fifa_female,female_players.csv,goalkeeping_diving,0,0.0,0,True,181361.0,0.0,5.0,91.0,0.0,0.0
+fifa_female,female_players.csv,goalkeeping_handling,0,0.0,0,True,181361.0,0.0,5.0,91.0,0.0,0.0
+fifa_female,female_players.csv,goalkeeping_kicking,0,0.0,0,True,181361.0,0.0,5.0,92.0,0.0,0.0
+fifa_female,female_players.csv,goalkeeping_positioning,0,0.0,0,True,181361.0,0.0,5.0,91.0,0.0,0.0
+fifa_female,female_players.csv,goalkeeping_reflexes,0,0.0,0,True,181361.0,0.0,5.0,92.0,0.0,0.0
+fifa_female,female_players.csv,goalkeeping_speed,158627,87.46478018978722,0,True,22734.0,0.0,17.0,61.0,0.0,0.0
+fifa_female,female_players.csv,ls,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,st,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,rs,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,lw,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,lf,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,cf,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,rf,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,rw,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,lam,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,cam,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,ram,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,lm,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,lcm,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,cm,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,rcm,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,rm,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,lwb,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,ldm,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,cdm,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,rdm,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,rwb,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,lb,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,lcb,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,cb,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,rcb,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,rb,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,gk,0,0.0,0,False,,,,,,
+fifa_female,female_players.csv,player_face_url,0,0.0,0,False,,,,,,
+fifa_female,female_teams.csv,team_id,0,0.0,0,True,7941.0,0.0,112998.0,116428.0,0.0,0.0
+fifa_female,female_teams.csv,team_url,0,0.0,0,False,,,,,,
+fifa_female,female_teams.csv,fifa_version,0,0.0,0,True,7941.0,0.0,16.0,23.0,0.0,0.0
+fifa_female,female_teams.csv,fifa_update,0,0.0,0,True,7941.0,0.0,1.0,99.0,0.0,0.0
+fifa_female,female_teams.csv,fifa_update_date,0,0.0,0,False,,,,,,
+fifa_female,female_teams.csv,team_name,0,0.0,0,False,,,,,,
+fifa_female,female_teams.csv,league_id,0,0.0,0,True,7941.0,0.0,2136.0,2218.0,0.0,0.0
+fifa_female,female_teams.csv,league_name,0,0.0,0,False,,,,,,
+fifa_female,female_teams.csv,league_level,7725,97.27993955421232,0,True,216.0,0.0,1.0,1.0,0.0,0.0
+fifa_female,female_teams.csv,nationality_id,0,0.0,0,True,7941.0,0.0,7.0,198.0,0.0,0.0
+fifa_female,female_teams.csv,nationality_name,0,0.0,0,False,,,,,,
+fifa_female,female_teams.csv,overall,0,0.0,0,True,7941.0,0.0,51.0,86.0,0.0,0.0
+fifa_female,female_teams.csv,attack,0,0.0,0,True,7941.0,0.0,52.0,91.0,0.0,0.0
+fifa_female,female_teams.csv,midfield,0,0.0,0,True,7941.0,0.0,51.0,87.0,0.0,0.0
+fifa_female,female_teams.csv,defence,0,0.0,0,True,7941.0,0.0,51.0,86.0,0.0,0.0
+fifa_female,female_teams.csv,coach_id,519,6.535700793350963,0,True,7422.0,0.0,2079.0,37667852.0,0.0,0.0
+fifa_female,female_teams.csv,home_stadium,7,0.08815010703941568,0,False,,,,,,
+fifa_female,female_teams.csv,rival_team,0,0.0,0,True,7941.0,0.0,111473.0,116416.0,0.0,0.0
+fifa_female,female_teams.csv,international_prestige,0,0.0,0,True,7941.0,0.0,0.0,20.0,3.0,0.0
+fifa_female,female_teams.csv,domestic_prestige,7723,97.25475380934391,0,True,218.0,0.0,2.0,10.0,0.0,0.0
+fifa_female,female_teams.csv,transfer_budget_eur,7939,99.97481425513159,0,True,2.0,0.0,0.0,0.0,2.0,0.0
+fifa_female,female_teams.csv,club_worth_eur,7723,97.25475380934391,0,True,218.0,0.0,0.0,1000000.0,2.0,0.0
+fifa_female,female_teams.csv,starting_xi_average_age,0,0.0,0,True,7941.0,0.0,21.64,31.18,0.0,0.0
+fifa_female,female_teams.csv,whole_team_average_age,0,0.0,0,True,7941.0,0.0,20.52,31.3,0.0,0.0
+fifa_female,female_teams.csv,captain,0,0.0,0,True,7941.0,0.0,226177.0,269211.0,0.0,0.0
+fifa_female,female_teams.csv,short_free_kick,2,0.025185744868404483,0,True,7939.0,0.0,226308.0,271739.0,0.0,0.0
+fifa_female,female_teams.csv,long_free_kick,32,0.40297191789447173,0,True,7909.0,0.0,226308.0,270049.0,0.0,0.0
+fifa_female,female_teams.csv,left_short_free_kick,2,0.025185744868404483,0,True,7939.0,0.0,226308.0,271739.0,0.0,0.0
+fifa_female,female_teams.csv,right_short_free_kick,7,0.08815010703941568,0,True,7934.0,0.0,226308.0,271739.0,0.0,0.0
+fifa_female,female_teams.csv,penalties,0,0.0,0,True,7941.0,0.0,226301.0,269216.0,0.0,0.0
+fifa_female,female_teams.csv,left_corner,0,0.0,0,True,7941.0,0.0,226308.0,270049.0,0.0,0.0
+fifa_female,female_teams.csv,right_corner,2,0.025185744868404483,0,True,7939.0,0.0,226308.0,271347.0,0.0,0.0
+fifa_female,female_teams.csv,def_style,3342,42.085379675103894,0,False,,,,,,
+fifa_female,female_teams.csv,def_team_width,3342,42.085379675103894,0,True,4599.0,0.0,3.0,71.0,0.0,0.0
+fifa_female,female_teams.csv,def_team_depth,3342,42.085379675103894,0,True,4599.0,0.0,3.0,81.0,0.0,0.0
+fifa_female,female_teams.csv,def_defence_pressure,3542,44.60395416194434,0,True,4399.0,0.0,26.0,76.0,0.0,0.0
+fifa_female,female_teams.csv,def_defence_aggression,3542,44.60395416194434,0,True,4399.0,0.0,22.0,79.0,0.0,0.0
+fifa_female,female_teams.csv,def_defence_width,3542,44.60395416194434,0,True,4399.0,0.0,20.0,70.0,0.0,0.0
+fifa_female,female_teams.csv,def_defence_defender_line,3542,44.60395416194434,0,False,,,,,,
+fifa_female,female_teams.csv,off_style,4884,61.50358896864375,0,False,,,,,,
+fifa_female,female_teams.csv,off_build_up_play,6399,80.58179070646014,0,False,,,,,,
+fifa_female,female_teams.csv,off_chance_creation,6399,80.58179070646014,0,False,,,,,,
+fifa_female,female_teams.csv,off_team_width,3342,42.085379675103894,0,True,4599.0,0.0,3.0,81.0,0.0,0.0
+fifa_female,female_teams.csv,off_players_in_box,3342,42.085379675103894,0,True,4599.0,0.0,3.0,7.0,0.0,0.0
+fifa_female,female_teams.csv,off_corners,3342,42.085379675103894,0,True,4599.0,0.0,3.0,3.0,0.0,0.0
+fifa_female,female_teams.csv,off_free_kicks,3342,42.085379675103894,0,True,4599.0,0.0,3.0,3.0,0.0,0.0
+fifa_female,female_teams.csv,build_up_play_speed,3542,44.60395416194434,0,True,4399.0,0.0,36.0,73.0,0.0,0.0
+fifa_female,female_teams.csv,build_up_play_dribbling,3542,44.60395416194434,0,True,4399.0,0.0,21.0,80.0,0.0,0.0
+fifa_female,female_teams.csv,build_up_play_passing,3542,44.60395416194434,0,True,4399.0,0.0,35.0,73.0,0.0,0.0
+fifa_female,female_teams.csv,build_up_play_positioning,3542,44.60395416194434,0,False,,,,,,
+fifa_female,female_teams.csv,chance_creation_passing,3542,44.60395416194434,0,True,4399.0,0.0,31.0,79.0,0.0,0.0
+fifa_female,female_teams.csv,chance_creation_crossing,3542,44.60395416194434,0,True,4399.0,0.0,23.0,79.0,0.0,0.0
+fifa_female,female_teams.csv,chance_creation_shooting,3542,44.60395416194434,0,True,4399.0,0.0,32.0,78.0,0.0,0.0
+fifa_female,female_teams.csv,chance_creation_positioning,3542,44.60395416194434,0,False,,,,,,
