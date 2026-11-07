@@ -1,98 +1,154 @@
-# Moneyball 2.0 — AI-Powered Football Scouting
+# ⚽ Moneyball 2.0 — AI-Powered Football Scouting
 
-> **Status:** data preparation, exploratory research, tested K-Means/KNN and Random Forest valuation models are implemented. Feature Set v1 and the rating-only baseline are fixed. Independent confirmatory evaluation remains pending. The Streamlit starter still uses its original six-attribute demo schema; the new models are exercised in Steps 6–7.
+**Historical, evidence-aware decision support for finding affordable central midfielders.**
 
-An academic research project exploring whether machine-learning-based player similarity can identify **potentially cost-effective alternatives** to expensive central midfielders (CM) for football clubs with limited transfer budgets.
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7.2-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Status](https://img.shields.io/badge/Status-Research%20Prototype-0B766E)](#research-integrity-and-limitations)
 
-## Research question
+> **Research snapshot:** 26 September 2022 (FIFA 23) · **Position:** CM · **Currency:** source units, *not independently verified as EUR* · **Scope:** academic research, **not** live transfer advice.
 
-**To what extent can machine learning methods identify potentially undervalued central midfielders with playing characteristics comparable to more expensive players, and how do these recommendations compare with traditional rating-based selection methods?**
+## Why this project?
 
-We use the term *potentially undervalued* cautiously: a lower recorded value paired with a similar feature profile is a **scouting lead**, not proof of mispricing or a guaranteed successful transfer.
+A club with a limited transfer budget cannot always afford the highest-rated players. **Moneyball 2.0** tests whether a player-profile recommender can identify central midfielders with similar game-derived characteristics at lower **recorded historical valuations** than a simple overall-rating baseline.
 
-## Team
+**Research question:** *To what extent can machine learning methods identify potentially undervalued central midfielders with playing characteristics comparable to more expensive players, and how do these recommendations compare with traditional rating-based selection methods?*
 
-- Ilyassov Temirlan
-- Amanzholova Dilnaz
-- Adylbekova Zhanel
-- Zhunussov Nurbeket
+A *potentially undervalued player* here means a **scouting lead**, not proven market mispricing, a bargain transfer fee, or a prediction of future sporting success.
 
-Course: Laboratory Work No. 2 — **AI Football Intelligence**, Scenario 3: *Moneyball 2.0*.
+## What it does
 
-## Research objectives
-
-1. Audit and prepare football player data, preserving data provenance and season information.
-2. Explore how playing attributes, positions, age, and recorded value are associated.
-3. Build a comparable-player recommendation system using feature similarity (initially cosine similarity on standardized attributes).
-4. Compare the approach against a simple rating-based selection baseline.
-5. Test stability, identify at least two limitations, and present concrete budget-aware scouting recommendations.
-
-## Repository structure
+- **Profile matching:** 18 detailed FIFA attributes, train-fitted standardization, group weighting and cosine-nearest-neighbor search.
+- **Style exploration:** K-Means (three algorithmic clusters); optional same-cluster filter. Clusters are **not** externally validated football positions.
+- **Recorded-value modeling:** Random Forest regression with 27 allowable features. Out-of-fit predictions are used for training-player residuals; current recorded values never enter similarity geometry.
+- **Decision support:** filter by budget, age, playing style or reference player; compare rankings; inspect per-candidate explanations and research audits.
+- **Streamlit UI:** historical shortlist, identical initial-eligibility rating baseline, export to CSV and JSON, and explicit uncertainty warnings.
 
 ```text
-app/                     Streamlit UI (starter demo)
-src/                     Similarity and baseline ranking logic
-tests/                   Unit tests with synthetic data
-data/                    Instructions; external datasets are not committed
-notebooks/               Executed profiling, preparation, research and modeling notebooks
-docs/                    Research question, hypotheses, methodological plan
-requirements.txt         Python dependencies
+FIFA 23 player snapshot           Transfermarkt historical records
+          │                                   │
+          └────────── identity matching ───────┘
+                              │
+                    2022-09-26 CM cohort
+                              │
+                     cleaning + features
+                              │
+                   ┌──────────┴──────────┐
+                   │                     │
+               similarity             valuation
+            18 attributes          27 raw features
+           K-Means + KNN            RF + OOF gaps
+                   │                     │
+                   └──────────┬──────────┘
+                              │
+                    rules + explanations
+                              │
+                  Streamlit scouting UI
 ```
 
-## Quick start
+## Dataset and audit
 
-The completed [data profiling report](docs/data_profiling.md) covers all 19 CSVs in the supplied FIFA and Transfermarkt archives, missingness, historical dates, CM counts, entity matching, and dated market-value joins. The [feature specification](docs/feature_set.md) and [machine-readable contract](config/feature_set_v1.json) fix 18 playing attributes for similarity and 27 raw inputs for valuation. The primary 2022-09-26 snapshot contains 4,184 CM players; 2,886 have a usable linked historical valuation. This contract has not yet been integrated into the demo below.
+| Data checkpoint | Players | Notes |
+|---|---:|---|
+| FIFA 23 male CM population | **4,184** | Exact `CM` position token, snapshot 2022-09-26 |
+| Reliably matched to Transfermarkt | **3,057** | 73.06% cross-source coverage |
+| Positive, historically usable valuations | **2,886** | Value timestamp ≤ cutoff, at most 365 days old |
+| Training / diagnostic split | **2,308 / 578** | The 578-player split has been inspected during EDA; **not** an untouched confirmatory test |
 
-Open [Step 1: Data Profiling & Understanding](notebooks/01_data_profiling.ipynb) for executable checks, saved tables and 12 embedded figures. For rerunning, install `requirements-notebooks.txt` and use Run All. The default run validates the complete cached audit against archive SHA-256 hashes and independently recounts 18 CSVs; set `RUN_FULL_PROFILE=True` to repeat the full scan of all 19 CSVs. Archive paths are configurable with `MONEYBALL_DATA_DIR`.
+**Sources:** [FIFA 23 Complete Player Dataset (Kaggle)](https://www.kaggle.com/datasets/stefanoleone992/fifa-23-complete-player-dataset) · [Football Datasets / Transfermarkt (Kaggle)](https://www.kaggle.com/datasets/xfkzujqjvx97n/football-datasets/data).
 
-[Step 2: Data Cleaning & Integration](notebooks/02_data_preprocessing.ipynb) rebuilds the cleaned 2022-09-26 CM dataset directly from the ZIPs, normalizes positions, quarantines conflicting keys, matches identities, and joins only historical market values. It exports 2,886 players with 27 model inputs plus targets and metadata to `data/processed/preprocessing/`, alongside a schema/manifest and selection audit. Seven unknown league levels remain explicitly marked for training-fold imputation. All notebook cells have saved outputs, including four figures.
+Identity matching does **not** join the unrelated FIFA and Transfermarkt numeric player IDs: it checks normalized name aliases, birth dates and conflicts. Fuzzy candidates require manual review. Source ZIPs, individual joined records and saved model bundles are **not committed**; see [profiling](docs/data_profiling.md), the [feature contract](config/feature_set_v1.json) and [data handling notes](data/README.md).
 
-[Step 3: Feature Engineering](notebooks/03_feature_engineering.ipynb) separates playing, performance and economic features. It derives total-goals/90 and assists/90 for the retrospective 21/22 layer, adds same-snapshot potential for economic analysis, and fits scaling/imputation/encoding on training players only. Standardized and block-weighted 18-attribute similarity matrices exclude price, age, potential and performance. Feature tables, player splits and transformation parameters are exported to `data/processed/features/`; five figures and all execution results are embedded in the notebook.
+## Research findings (descriptive)
 
-[Step 4: Exploratory Data Analysis](notebooks/04_exploratory_data_analysis.ipynb) examines H1–H4 through price-independent neighbors, train-only correlations and model selection, holdout regression, cluster separation/stability and budget-aware candidates. Nine figures are embedded and exported as PNG/SVG to `reports/eda/`. See [computed research findings](docs/eda_findings.md) for evidence and limitations. The existing test split has now been inspected for EDA and must not be described as an untouched final test in later work.
+| Experiment | Reported result | Interpretation |
+|---|---|---|
+| Similar profiles, different values | 132/221 (59.7%) high-similarity nearest pairs had ≥2× recorded-value difference | A screening opportunity in this sample; **not proof** of mispricing |
+| K-Means (k=3) | Test silhouette **0.169**; median refit ARI **0.863** | Fairly stable assignments, **weak** cluster separation |
+| Expensive reference cohort (41 players) | Mean cosine: **0.819** baseline vs **0.934** KNN | Model improves a *same-feature* metric by construction; not independent transfer quality |
+| Market-value regression | RF raw-value MAE **1.334M**, R² **0.811**; Ridge raw-value MAE **1.316M** | Different models win on different error scales; no universal RF superiority |
+| Dated valuation backtest, 15M budget | **40/41** complete pairs; average `(KNN − baseline)` log-value change **+0.1539** | Descriptive, dependent query slots; **10M budget reverses sign** (−0.0541) |
 
-[Step 5: Baseline Model](notebooks/05_baseline_model.ipynb) implements the independent rating-only control: exact CM token, individual budget, maximum age, descending FIFA overall, TOP-5. The demonstration uses 15 million and age ≤30.0 years; EUR is explicitly a scenario assumption for the unverified TM currency. The reusable [baseline module](src/baseline.py) has no fitting or similarity dependency. Candidate lists and eligible IDs are local under `data/processed/baseline/`; `reports/baseline/baseline_protocol.json` fixes ranking, tie-breaks, source hashes and identical-pool requirements for later ML comparisons.
+All amounts are **recorded source units**; the scenario's `€` label, when selected, is an **unverified assumption**. Follow-up market-value quotes are not transfer profits or sporting outcomes.
 
-[Step 6: ML Models](notebooks/06_ml_models.ipynb) fits [K-Means and an exact KNN recommendation engine](src/models.py) on training players only. KNN ranks the entire gallery before applying budget/age/self filters, then returns TOP-k. Same-cluster search is optional and never silently falls back to other clusters. Validation covers independent distance calculations, identical baseline pools, all 578 query players, refitted cluster stability, rating noise, held-out feature blocks and persistence. See [measured results and limitations](docs/ml_models_validation.md); aggregate metrics/PNG/SVG are in `reports/models/`. Diagnostic results for the 41 expensive references are reported separately, including cases where baseline performs better.
+Read the **[full Research Report](docs/research_report.md)** for methods, hypotheses, results, limitations and a worked scouting decision. Supporting machine-readable evidence lives in [`reports/`](reports/), especially [`reports/eda/`](reports/eda/), [`reports/models/`](reports/models/), [`reports/valuation/`](reports/valuation/) and [`reports/evaluation/`](reports/evaluation/).
 
-[Model 3: Market Value Prediction](notebooks/07_market_value_prediction.ipynb) fits a [Random Forest regressor](src/valuation.py) using the 27 valuation inputs and a log-transformed historical target. Train-only CV selects parameters; median and Ridge controls provide comparisons. Nested 5×3 CV produces out-of-fit predictions for all training players; the saved train-only model predicts the 578 test players. `PredictedValue − MarketValue` is a scouting signal, not a fair price. Five figures cover prediction error, signed gaps, candidates, importance/bias and sensitivity. See [computed valuation findings](docs/market_value_prediction.md) and `reports/valuation/`; individual predictions and the model remain local in `data/processed/valuation/`.
+## Case study: 15M / ≤25 / Deep-Lying Playmaker
 
-[Step 7: Model Evaluation & Validation](notebooks/07_model_evaluation.ipynb) evaluates frozen K-Means/KNN/RF models, compares baseline and KNN candidates under identical eligibility rules, and audits subsequent dated Transfermarkt values at a nominal 12-month horizon. The 41 expensive references are the primary group. Recommendations are frozen before outcome loading; missing follow-up never replaces candidates. Six figures and full budget/date-window sensitivity results distinguish profile similarity from subsequent value changes and causal sporting/transfer effectiveness. See [findings and limitations](docs/model_evaluation.md), `reports/evaluation/`, and local per-player exports in `data/processed/evaluation/`. The separate regression notebook keeps its existing filename.
+The saved Step 8 validation reports **986** initially eligible CM candidates, **32** qualifying the style/similarity gates and a TOP-5 shortlist. A local execution of the historical scorer listed **J. Veerman, Jean Lucas, Manu Morlanes, J. Moder and Y. Adli**. This is a **2022 scouting demonstration**, not a current transfer ranking. A positive estimated value gap should trigger **manual review**, not automatic purchase. See [`reports/recommendation/example_validation.json`](reports/recommendation/example_validation.json).
 
-Requires Python 3.10+.
+## Run locally
 
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-streamlit run app/streamlit_app.py
+**Requirements:** Python 3.12 and the versions in [`requirements.txt`](requirements.txt); local **trusted** research artifacts produced from the historical source ZIPs. `joblib` files may fail to deserialize across pandas/NumPy/scikit-learn versions.
+
+```powershell
+# From the repository root (PowerShell)
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-notebooks.txt
+.\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Upload a CSV with the expected schema (see `data/README.md`), then choose a reference player and transfer budget. The app returns affordable CM candidates ranked by attribute similarity; a simple rating-based baseline is provided for comparison. A small **synthetic demonstration file** is included so you can test the interface; it must not be treated as research evidence.
+### First-time artifact preparation
 
-Run tests:
+Cloning GitHub **does not** fetch the source ZIPs or models. Place the following two ZIP archives in `data/raw/`, or set `MONEYBALL_DATA_DIR` to the folder containing them:
 
-```bash
-pytest -q
+```text
+stefanoleone992_fifa-23-complete-player-dataset_male.zip
+xfkzujqjvx97n_football-datasets_data.zip
 ```
 
-## Proposed data source
+The pipeline checks the ZIPs against the hashes recorded in [`reports/data_profiling/`](reports/data_profiling/). **Do not silently replace the audited versions.** Open the following notebooks (for example, in JupyterLab) and run all cells **in this order**:
 
-The assignment recommends [FIFA 23 Complete Player Dataset](https://www.kaggle.com/datasets/stefanoleone992/fifa-23-complete-player-dataset), alongside other open football datasets. Verify licensing and available columns before importing. **FIFA ratings and FIFA in-game values do not necessarily represent actual market performance or transfer fees.** We will record the season, measurement definitions, missing values, and sources before drawing conclusions.
+1. [`02_data_preprocessing.ipynb`](notebooks/02_data_preprocessing.ipynb) → cleaned historical cohort.
+2. [`03_feature_engineering.ipynb`](notebooks/03_feature_engineering.ipynb) → dated feature tables, split and manifest.
+3. [`06_ml_models.ipynb`](notebooks/06_ml_models.ipynb) → fitted K-Means/KNN bundle.
+4. [`07_market_value_prediction.ipynb`](notebooks/07_market_value_prediction.ipynb) → Random Forest, OOF predictions and manifest.
 
-## Independent evaluation plan (pending)
+The optional [`01_data_profiling.ipynb`](notebooks/01_data_profiling.ipynb) repeats source audits. Other notebooks reproduce EDA and backtesting but are not required to load the dashboard. Models are stored under **`data/processed/` (gitignored)**; the app never downloads unknown model binaries or retrains silently.
 
-- Baseline: select affordable players in the same position using highest `overall` rating.
-- Candidate system: feature-based similarity plus the same budget / position / age filters.
-- Audit: compare similarity to the reference player, candidate price distribution, rank stability under feature perturbations, and case studies reviewed against external evidence where possible.
-- Avoid circular validation: similarity computed from the features used to rank candidates cannot, on its own, demonstrate real-world superiority. A future independent evaluation criterion (e.g., outcomes, expert assessments, or held-out attributes) is required for stronger claims.
-- Analyze at least two limitations: positional comparability; outdated or game-derived valuations; league-strength differences; small sample sizes; selection bias; potential leakage.
+Check artifact loading and launch:
 
-## AI usage disclosure
+```powershell
+.\.venv\Scripts\python.exe -c "from src.recommendation import RecommendationSystem; RecommendationSystem.from_artifacts(); print('Artifacts OK')"
+.\.venv\Scripts\python.exe -m streamlit run app/streamlit_app.py
+```
 
-AI assistance may be used for drafting, code scaffolding, or debugging. Any such contribution should be documented and checked by the team. All empirical claims and final recommendations must be independently verified.
+The UI will open at **http://localhost:8501**. If required files are missing or their hashes do not match, the app displays an error rather than substituting synthetic data.
 
-## Academic integrity
+## Repository guide
 
-This is a **project starter**, not a completed research study. Do not present demonstration values or untested hypotheses as experimental results.
+| Path | Purpose |
+|---|---|
+| [`src/models.py`](src/models.py) | Train-only K-Means, exact cosine-neighbor retrieval |
+| [`src/valuation.py`](src/valuation.py) | Leak-resistant recorded-value regression |
+| [`src/baseline.py`](src/baseline.py) | Rating-only control and shared eligibility policy |
+| [`src/evaluation.py`](src/evaluation.py) | Dated follow-up market-value analysis |
+| [`src/recommendation.py`](src/recommendation.py) | Decision pipeline, styles, economic screening and explanations |
+| [`app/`](app/) | Streamlit dashboard and UI helpers |
+| [`config/feature_set_v1.json`](config/feature_set_v1.json) | Fixed input-feature and temporal contract |
+| [`notebooks/`](notebooks/) | End-to-end research notebooks with saved analysis |
+| [`scripts/`](scripts/) | Notebook builders and data audits |
+| [`reports/`](reports/) | Figures, summary metrics and reproducibility manifests |
+| [`tests/`](tests/) | Unit/contract tests; not a substitute for live end-to-end validation |
+
+`src/scouting.py` is the **legacy six-aggregate-feature starter prototype**; the research dashboard uses the newer 18-feature system.
+
+## Research integrity and limitations
+
+- **Historical** (2022): no live player availability, current contracts, real-time pricing or completed-deal prediction.
+- FIFA ratings describe **game-derived assessments**, not measured progressive passes, pressures, xA or verified match-by-match actions.
+- Recorded Transfermarkt valuations are **not** fees, wages or objective fair value. The source's currency denomination was not independently verified.
+- Data matching is incomplete and rating-biased; the historical candidate gallery contains only **training players (2,308)**.
+- K-Means separation is weak; the Deep-Lying Playmaker profile is an explicit training-data recipe, not a validated position label.
+- The test split was explored during model development; independent temporal validation and measured sporting outcomes are still needed.
+- Subsequent-value comparisons reuse candidate identities, are sensitive to budget and quote coverage, and do **not** prove superior transfer returns.
+
+## Team and acknowledgement
+
+**Temirlan Ilyassov · Dilnaz Amanzholova · Zhanel Adylbekova · Nurbeket Zhunussov**  
+Laboratory Work No. 2 — *AI Football Intelligence*, Scenario 3, *Moneyball 2.0*.
+
+AI tools assisted with portions of code/document drafting. The team is responsible for verifying primary data, reproducibility, source conditions and all scientific claims. The report separates reproducible repository results from assumptions and illustrative decision recommendations.
+
+*External datasets retain their original terms and licenses; check them before redistribution. No license for this project's original code has been declared in this repository.*
