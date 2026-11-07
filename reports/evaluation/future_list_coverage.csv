@@ -1,0 +1,5 @@
+population,method,references,slots,observed_slots,unique_candidates,observed_unique_candidates,mean_log_ratio_unique_observed
+primary_expensive,baseline,41,205,205,5,5,-0.20376125907995002
+primary_expensive,knn,41,205,204,101,100,-0.025848972749389677
+all_test,baseline,578,2890,2890,5,5,-0.20376125907995002
+all_test,knn,578,2890,2766,1172,1117,0.1057394104615942

@@ -1,0 +1,33 @@
+{
+  "cutoff": "2022-09-26",
+  "primary_budget": 15000000,
+  "candidate_max_age": 30,
+  "top_k": 5,
+  "query_population": "test; primary subset recorded value > 15m; never changed by follow-up",
+  "candidate_gallery": "2308 training players only",
+  "recommendation": "frozen global KNN, no regression-gap reranking",
+  "baseline": "overall descending, price then ID ascending; same eligible IDs",
+  "future_horizon_days": 365,
+  "primary_max_future_quote_lag_days": 120,
+  "future_lag_sensitivity_days": [
+    90,
+    120,
+    180
+  ],
+  "baseline_quote_age_sensitivity_days": [
+    120,
+    365
+  ],
+  "budget_sensitivity": [
+    5000000,
+    10000000,
+    15000000,
+    20000000
+  ],
+  "future_endpoint": "mean log(followup value / recorded selection value), paired only if both fixed TOP-5 fully observed",
+  "missing": "no zero imputation, no recommendation replacement; zero/conflicting quotes unavailable",
+  "inference": "descriptive; no independent query-slot tests because candidates are reused",
+  "currency": "unverified source units; EUR assumed for budget scenario",
+  "seed": 42,
+  "frozen_recommendations_sha256": "8e0a3e1cc2e9954ffebc79431a63ff593ae7a638547c2c85ecb224755207c859"
+}

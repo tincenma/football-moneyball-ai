@@ -57,6 +57,8 @@ Open [Step 1: Data Profiling & Understanding](notebooks/01_data_profiling.ipynb)
 
 [Model 3: Market Value Prediction](notebooks/07_market_value_prediction.ipynb) fits a [Random Forest regressor](src/valuation.py) using the 27 valuation inputs and a log-transformed historical target. Train-only CV selects parameters; median and Ridge controls provide comparisons. Nested 5×3 CV produces out-of-fit predictions for all training players; the saved train-only model predicts the 578 test players. `PredictedValue − MarketValue` is a scouting signal, not a fair price. Five figures cover prediction error, signed gaps, candidates, importance/bias and sensitivity. See [computed valuation findings](docs/market_value_prediction.md) and `reports/valuation/`; individual predictions and the model remain local in `data/processed/valuation/`.
 
+[Step 7: Model Evaluation & Validation](notebooks/07_model_evaluation.ipynb) evaluates frozen K-Means/KNN/RF models, compares baseline and KNN candidates under identical eligibility rules, and audits subsequent dated Transfermarkt values at a nominal 12-month horizon. The 41 expensive references are the primary group. Recommendations are frozen before outcome loading; missing follow-up never replaces candidates. Six figures and full budget/date-window sensitivity results distinguish profile similarity from subsequent value changes and causal sporting/transfer effectiveness. See [findings and limitations](docs/model_evaluation.md), `reports/evaluation/`, and local per-player exports in `data/processed/evaluation/`. The separate regression notebook keeps its existing filename.
+
 Requires Python 3.10+.
 
 ```bash

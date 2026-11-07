@@ -1,0 +1,167 @@
+{
+  "protocol": {
+    "cutoff": "2022-09-26",
+    "primary_budget": 15000000,
+    "candidate_max_age": 30,
+    "top_k": 5,
+    "query_population": "test; primary subset recorded value > 15m; never changed by follow-up",
+    "candidate_gallery": "2308 training players only",
+    "recommendation": "frozen global KNN, no regression-gap reranking",
+    "baseline": "overall descending, price then ID ascending; same eligible IDs",
+    "future_horizon_days": 365,
+    "primary_max_future_quote_lag_days": 120,
+    "future_lag_sensitivity_days": [
+      90,
+      120,
+      180
+    ],
+    "baseline_quote_age_sensitivity_days": [
+      120,
+      365
+    ],
+    "budget_sensitivity": [
+      5000000,
+      10000000,
+      15000000,
+      20000000
+    ],
+    "future_endpoint": "mean log(followup value / recorded selection value), paired only if both fixed TOP-5 fully observed",
+    "missing": "no zero imputation, no recommendation replacement; zero/conflicting quotes unavailable",
+    "inference": "descriptive; no independent query-slot tests because candidates are reused",
+    "currency": "unverified source units; EUR assumed for budget scenario",
+    "seed": 42,
+    "frozen_recommendations_sha256": "8e0a3e1cc2e9954ffebc79431a63ff593ae7a638547c2c85ecb224755207c859"
+  },
+  "history_audit": {
+    "rows": 901429,
+    "min_date": "2003-12-14",
+    "max_date": "2025-09-11",
+    "rows_after_cutoff": 252736,
+    "invalid_dates": 0,
+    "zip_member": "player_market_value/player_market_value.csv",
+    "archive_sha256": "fb8481050cf6e246a6f4db9358a9c73b687ad6d17a08a743cff8f718f1e130fb"
+  },
+  "cluster_metrics": {
+    "k": 3,
+    "train_sample_silhouette": 0.16960894121504397,
+    "test_silhouette": 0.16894033570422504,
+    "refit_ari_median": 0.8626346049737121,
+    "refit_ari_p05": 0.7528175793605171,
+    "refit_ari_p95": 0.9361275674809502
+  },
+  "regression_metrics": {
+    "Train median": {
+      "MAE": 3284256.0553633217,
+      "RMSE": 7901858.684812104,
+      "R2": -0.14716271277937265,
+      "MAE_log": 1.2735716855420047,
+      "R2_log": -0.020918440474016142
+    },
+    "Ridge log": {
+      "MAE": 1315547.0362724762,
+      "RMSE": 2950271.8508287775,
+      "R2": 0.840084494095128,
+      "MAE_log": 0.5087853611341557,
+      "R2_log": 0.824075648437868
+    },
+    "Random Forest log": {
+      "MAE": 1333985.2668253148,
+      "RMSE": 3203744.742328183,
+      "R2": 0.811425780841347,
+      "MAE_log": 0.48693546923838743,
+      "R2_log": 0.8392249661961362
+    }
+  },
+  "noise_primary_overlap_sigma1": 0.8409756097560978,
+  "future_results": [
+    {
+      "population": "primary_expensive",
+      "references": 41,
+      "complete_pairs": 40,
+      "baseline_mean_log_ratio": -0.20376125907995002,
+      "knn_mean_log_ratio": -0.04986393429070977,
+      "mean_knn_minus_baseline_log_ratio": 0.15389732478924026,
+      "median_knn_minus_baseline_log_ratio": 0.17174767734979807,
+      "fraction_pairs_knn_higher": 0.825
+    },
+    {
+      "population": "all_test",
+      "references": 578,
+      "complete_pairs": 474,
+      "baseline_mean_log_ratio": -0.20376125907995002,
+      "knn_mean_log_ratio": 0.08710097855378575,
+      "mean_knn_minus_baseline_log_ratio": 0.29086223763373575,
+      "median_knn_minus_baseline_log_ratio": 0.22752608283165915,
+      "fraction_pairs_knn_higher": 0.8586497890295358
+    }
+  ],
+  "future_coverage": [
+    {
+      "population": "primary_expensive",
+      "method": "baseline",
+      "references": 41,
+      "slots": 205,
+      "observed_slots": 205,
+      "unique_candidates": 5,
+      "observed_unique_candidates": 5,
+      "mean_log_ratio_unique_observed": -0.20376125907995002
+    },
+    {
+      "population": "primary_expensive",
+      "method": "knn",
+      "references": 41,
+      "slots": 205,
+      "observed_slots": 204,
+      "unique_candidates": 101,
+      "observed_unique_candidates": 100,
+      "mean_log_ratio_unique_observed": -0.025848972749389677
+    },
+    {
+      "population": "all_test",
+      "method": "baseline",
+      "references": 578,
+      "slots": 2890,
+      "observed_slots": 2890,
+      "unique_candidates": 5,
+      "observed_unique_candidates": 5,
+      "mean_log_ratio_unique_observed": -0.20376125907995002
+    },
+    {
+      "population": "all_test",
+      "method": "knn",
+      "references": 578,
+      "slots": 2890,
+      "observed_slots": 2766,
+      "unique_candidates": 1172,
+      "observed_unique_candidates": 1117,
+      "mean_log_ratio_unique_observed": 0.1057394104615942
+    }
+  ],
+  "future_interpretation": "Полных пар 40/41; средняя разница KNN minus baseline log-ratio=0.1539. Наблюдаемый показатель KNN выше, но причинная/спортивная эффективность и обобщаемое превосходство не установлены.",
+  "sensitivity_interpretation": "При бюджете 10 млн: разница log-ratio=-0.0541, полных пар 39. При основном бюджете и окне будущей оценки 90 дней: полных пар 0. Знак результата зависит от бюджета; доступность зависит от календаря переоценок.",
+  "validation": {
+    "source_verified": true,
+    "bundles_verified": true,
+    "no_future_in_selection": true,
+    "disjoint_queries_gallery": true,
+    "same_eligible_pool": true,
+    "recommendations_unchanged_after_future_join": true,
+    "valid_followup_dates": true,
+    "unavailable_returns_missing": true,
+    "regression_metrics_reproduced": true
+  },
+  "figures": [
+    "01_baseline_vs_knn",
+    "02_clusters_and_roles",
+    "03_knn_top5_stability",
+    "04_regression_validation",
+    "05_future_outcomes_and_coverage",
+    "06_protocol_and_budget_sensitivity"
+  ],
+  "inputs_sha256": {
+    "feature_table": "87a552730bd4f3832a8ba175aa508feade3fad4665697dc7b07760049bae6f73",
+    "knn_bundle": "02d18f64935389341676ec6ab9fea3b8fbe46f1ef9ccf75065595936416d271a",
+    "rf_bundle": "f0ae800cc1016b1344a4978d14fd0a01f706a00c321ab797449940d41b402313"
+  },
+  "conclusion": "Descriptive selection trade-offs and subsequent recorded-value outcomes; no causal transfer or sporting-success proof."
+}

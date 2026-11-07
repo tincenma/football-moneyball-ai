@@ -10,6 +10,8 @@ This document retains the confirmatory evaluation plan. Completed exploratory wo
 
 **Valuation update:** [Model 3](../notebooks/07_market_value_prediction.ipynb) uses Random Forest regression on 27 allowlisted inputs with a log-transformed historical target. Parameter selection and preprocessing stay within training folds; training-player signals use nested out-of-fold predictions. The fixed test split remains exploratory. [Computed results](market_value_prediction.md) compare median/Ridge baselines, raw/log errors, price-dependent bias and candidate sensitivity. Predicted minus recorded value is a screening signal with omitted-factor and target-transformation limitations, not an objective fair price. It does not enter style similarity.
 
+**Evaluation update:** [Step 7](../notebooks/07_model_evaluation.ipynb) freezes budget-aware baseline/KNN lists before joining dated subsequent valuations. It reports cluster refit stability, TOP-5 noise sensitivity, regression errors and complete-pair future-value comparisons with full missingness, repeated-candidate counts and window/budget sensitivity. The 12-month horizon is a nominal inspection date; actual quote intervals vary. [Findings](model_evaluation.md) are descriptive: subsequent recorded values are not realized transfer returns, sporting success, or causal evidence of policy superiority. A separate period and sporting outcomes remain necessary for confirmation.
+
 ## 1. Study scope
 
 Focus on central midfielders (`CM`). Keep the dataset season fixed. Filter to comparable positions before computing recommendations. Record how multi-position players are handled.

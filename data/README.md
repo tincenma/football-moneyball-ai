@@ -18,6 +18,8 @@ Step 6 saves the fitted local bundle `player_models_2022-09-26.joblib`, KNN and 
 
 Model 3 saves `market_value_rf_2022-09-26.joblib`, `test_value_gaps.csv`, `train_nested_oof_value_gaps.csv`, `all_out_of_fit_predictions.csv`, separate TOP-10 lists, test sensitivity, outer-fold ID audit and a hashed prediction manifest in `data/processed/valuation/`. All 2,886 predictions exclude the player's own target from fitting and parameter selection: nested 5×3 CV for train, train-only model for test. Aggregate metrics and five PNG/SVG figures are in `reports/valuation/`. Preserve `prediction_origin`; OOF and test lists come from different fits and are ranked separately. Values are in unverified source currency units. Positive model gaps are screening signals, not objective fair prices.
 
+Step 7 stores frozen recommendations for four budgets, pool hashes, per-reference quality, query-noise trials, the Kroos side-by-side lists, dated future outcomes and complete-pair comparisons in `data/processed/evaluation/`. `reports/evaluation/` contains the protocol, aggregate coverage/metrics, six PNG/SVG figures and all future-window/baseline-age/budget sensitivities. Future values come directly from the hash-verified TM ZIP and never enter selection or fitting. The primary horizon is 26.09.2023, with latest quote lag ≤120 days; actual quote-to-quote intervals vary and are not annualized. Missing, zero and conflicting quotes are explicit unavailable statuses. Reused candidate IDs mean query slots are not independent outcomes. The source directory can be overridden with `MONEYBALL_DATA_DIR`.
+
 Required columns:
 
 - `short_name` (str) — player name

@@ -1,0 +1,3 @@
+population,references,complete_pairs,baseline_mean_log_ratio,knn_mean_log_ratio,mean_knn_minus_baseline_log_ratio,median_knn_minus_baseline_log_ratio,fraction_pairs_knn_higher
+primary_expensive,41,40,-0.20376125907995002,-0.04986393429070977,0.15389732478924026,0.17174767734979807,0.825
+all_test,578,474,-0.20376125907995002,0.08710097855378575,0.29086223763373575,0.22752608283165915,0.8586497890295358
